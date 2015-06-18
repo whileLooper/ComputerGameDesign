@@ -6,7 +6,7 @@ public class PlayerScript : MonoBehaviour {
 	public float animSpeed = 1.5f;
 	Vector3 input;
 	Animator anim;
-	bool collision = false, push = false;
+	bool running = false, collision = false, push = false;
 	public float moveSpeed = 1f;
 
 	public GameObject ragdoll;
@@ -37,24 +37,14 @@ public class PlayerScript : MonoBehaviour {
 		//currentBaseState = anim.GetCurrentAnimatorStateInfo(0);	// set our currentState variable to the current state of the Base Layer (0) of animation
 		anim.SetBool ("Jump", false);
 		anim.SetBool ("Push", false);
-<<<<<<< HEAD
 		anim.SetBool ("Left", false);
-=======
->>>>>>> origin/master
 
 		if (anim.GetFloat ("Speed") > 0.1) {
-			transform.Translate (Vector3.forward * moveSpeed);
+			running = true;
 		}
-		if (anim.GetFloat ("Speed") < -0.1) {
+		if (running) {
 			transform.Translate (Vector3.forward * moveSpeed);
-		}
-
-		if (anim.GetFloat ("Direction") > 0.1) {
-			transform.Translate (Vector3.forward * moveSpeed);
-		}
-
-		if (anim.GetFloat ("Direction") < -0.1) {
-			transform.Translate (Vector3.forward * moveSpeed);
+			running = false;
 		}
 
 
@@ -75,6 +65,7 @@ public class PlayerScript : MonoBehaviour {
 			if (Input.GetKeyDown ("e")) {
 				push = true;
 				anim.SetBool ("Push", true);
+				print ("hello");
 			}
 		}
 
@@ -86,6 +77,21 @@ public class PlayerScript : MonoBehaviour {
 
 
 
+
+
+		// Character turns left on A key
+		if (Input.GetKeyDown (KeyCode.Q)) {
+			Vector3 targetDirection = new Vector3(0, 0f, 3f);
+			
+			// Create a rotation based on this new vector assuming that up is the global y axis.
+			Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
+			
+			// Create a rotation that is an increment closer to the target rotation from the player's rotation.
+			Quaternion newRotation = Quaternion.Lerp(GetComponent<Rigidbody>().rotation, targetRotation, 15f * Time.deltaTime);
+			
+			// Change the players rotation to this new rotation.
+			GetComponent<Rigidbody>().MoveRotation(newRotation);
+		}
 		if (h != 0f || v != 0f) {
 			//anim.SetBool ("Left", true);
 			//transform.Rotate(0, -90, 0);
