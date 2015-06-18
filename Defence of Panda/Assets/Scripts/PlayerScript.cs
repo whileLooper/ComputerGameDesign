@@ -75,15 +75,7 @@ public class PlayerScript : MonoBehaviour {
 			collision = false;
 		}
 
-		// Character drops dead on G key
-		if (Input.GetKeyDown (KeyCode.G)) {
-			//Instantiate(ragdoll, deathPos.transform.position, deathPos.transform.rotation);
-			GameObject rag = GameObject.Instantiate(ragdoll, deathPos.transform.position, 
-			                                        deathPos.transform.rotation) as GameObject;
-			CopyTransformRecurse(deathPos, rag.transform);
 
-			gameObject.SetActive(false);
-		}
 
 
 
@@ -117,6 +109,19 @@ public class PlayerScript : MonoBehaviour {
 			GetComponent<Rigidbody>().MoveRotation(newRotation);
 
 		}
+	}
+
+	void Update() {
+		// Character drops dead on G key
+		if (Input.GetKeyDown (KeyCode.G)) {
+			//Instantiate(ragdoll, deathPos.transform.position, deathPos.transform.rotation);
+			GameObject rag = GameObject.Instantiate(ragdoll, deathPos.transform.position, 
+			                                        deathPos.transform.rotation) as GameObject;
+			CopyTransformRecurse(deathPos, rag.transform);
+			
+			gameObject.SetActive(false);
+		}
+
 	}
 
 	// Function to set Ragdoll in player's pose
