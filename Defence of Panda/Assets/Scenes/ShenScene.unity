@@ -316,7 +316,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
-  m_StereoMirrorMode: 0
 --- !u!4 &1385770299
 Transform:
   m_ObjectHideFlags: 0
@@ -367,10 +366,6 @@ Prefab:
     - target: {fileID: 406116, guid: f3542a431dcf68c4496712a48298d625, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 134126, guid: f3542a431dcf68c4496712a48298d625, type: 2}
-      propertyPath: m_Name
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f3542a431dcf68c4496712a48298d625, type: 2}
