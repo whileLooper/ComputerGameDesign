@@ -9,6 +9,9 @@ public class PlayerScript : MonoBehaviour {
 	bool running = false, collision = false, push = false;
 	public float moveSpeed = 1f;
 
+	public GameObject ragdoll;
+	public Transform deathPos;
+
 	GameObject currentObject;
 
 	float [][] map;
@@ -55,6 +58,14 @@ public class PlayerScript : MonoBehaviour {
 
 
 			collision = false;
+
+		}
+
+		if (Input.GetKeyDown (KeyCode.G)) {
+
+			Instantiate(ragdoll, deathPos.transform.position, deathPos.transform.rotation);
+
+			gameObject.SetActive(false);
 
 		}
 	}
