@@ -3,7 +3,11 @@
 --- !u!21 &2100000
 Material:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   serializedVersion: 6
+=======
+  serializedVersion: 5
+>>>>>>> Stashed changes
 =======
   serializedVersion: 5
 >>>>>>> Stashed changes
@@ -16,7 +20,10 @@ Material:
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   stringTagMap: {}
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   m_SavedProperties:
@@ -89,11 +96,17 @@ Material:
       data:
         first:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
           name: _Cutoff
         second: .5
       data:
         first:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
           name: _SrcBlend
         second: 1
@@ -104,10 +117,13 @@ Material:
       data:
         first:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           name: _Cutoff
         second: .5
       data:
         first:
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
           name: _Parallax
@@ -139,11 +155,17 @@ Material:
       data:
         first:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
           name: _EmissionScaleUI
         second: 0
       data:
         first:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
           name: _Mode
         second: 0
@@ -161,9 +183,15 @@ Material:
           name: _Color
         second: {r: .5, g: .5, b: .5, a: 1}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       data:
         first:
           name: _EmissionColorUI
         second: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

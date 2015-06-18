@@ -12,12 +12,18 @@ public class PlayerScript : MonoBehaviour {
 	public GameObject ragdoll;
 	public Transform deathPos;
 	bool hello = false;
+	static int jumpState = Animator.StringToHash("Base Layer.Jump");
+	bool boxInRange = false;
+
 	GameObject currentObject;
+	private CapsuleCollider col;
 
 	float [][] map;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
+		col = GetComponent<CapsuleCollider> ();
+		col.height = 2;
 		//col = GetComponent<CapsuleCollider> ();
 	}
 	
@@ -32,6 +38,7 @@ public class PlayerScript : MonoBehaviour {
 		anim.SetBool ("Jump", false);
 		anim.SetBool ("Push", false);
 		anim.SetBool ("Left", false);
+
 		if (anim.GetFloat ("Speed") > 0.1) {
 			running = true;
 		}
@@ -39,13 +46,20 @@ public class PlayerScript : MonoBehaviour {
 			transform.Translate (Vector3.forward * moveSpeed);
 			running = false;
 		}
+
+
 		if (Input.GetKeyDown ("space")) {
 			Debug.Log ("space key was pressed");
 			anim.SetBool("Jump", true);
+			col.height = anim.GetFloat("ColliderHeight");
 
 		}
 
 		// Check for collision with the block and press e to do animation when collided.
+		if (!anim.IsInTransition (0)) {
+			col.height = anim.GetFloat("ColliderHeight");
+		}
+		
 		if (collision && currentObject.name == "Cube") {
 			//collision = false;
 			if (Input.GetKeyDown ("e")) {
@@ -113,13 +127,24 @@ public class PlayerScript : MonoBehaviour {
 		dst.gameObject.SetActive (true);
 		
 		foreach (Transform child in dst) {
-			var curSrc = src.Find(child.name);
-			if (curSrc){
+			var curSrc = src.Find (child.name);
+			if (curSrc) {
 				CopyTransformRecurse (curSrc, child);
 			}
 
 		}
-
+	}
+	void OnTriggerEnter(Collider other) {
+		if (other.gameObject.tag == "Box") {
+			Debug.Log("in box range");
+			boxInRange = true;
+		}
+	}
+	void OnTriggerExit(Collider other) {
+		if (other.gameObject.tag == "Box") {
+			Debug.Log("out of box range");
+			boxInRange = false;
+		}
 	}
 
 	void OnCollisionEnter(Collision other) {
