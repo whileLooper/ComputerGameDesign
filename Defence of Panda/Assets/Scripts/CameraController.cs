@@ -20,6 +20,6 @@ public class CameraController : MonoBehaviour
 			// return the camera to standard position and direction
 			transform.position = Vector3.Lerp(transform.position, standardPos.position, Time.deltaTime * smooth);	
 			transform.forward = Vector3.Lerp(transform.forward, standardPos.forward, Time.deltaTime * smooth);
-		
+
 	}
 }
