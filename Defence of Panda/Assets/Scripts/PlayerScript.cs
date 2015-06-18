@@ -63,9 +63,15 @@ public class PlayerScript : MonoBehaviour {
 
 		// Character drops dead on G key
 		if (Input.GetKeyDown (KeyCode.G)) {
-			Instantiate(ragdoll, deathPos.transform.position, deathPos.transform.rotation);
+			//Instantiate(ragdoll, deathPos.transform.position, deathPos.transform.rotation);
+			GameObject rag = GameObject.Instantiate(ragdoll, deathPos.transform.position, 
+			                                        deathPos.transform.rotation) as GameObject;
+			CopyTransformRecurse(deathPos, rag.transform);
+
 			gameObject.SetActive(false);
 		}
+
+
 
 		// Character turns left on A key
 		if (Input.GetKeyDown (KeyCode.Q)) {
@@ -97,6 +103,23 @@ public class PlayerScript : MonoBehaviour {
 			GetComponent<Rigidbody>().MoveRotation(newRotation);
 
 		}
+	}
+
+	// Function to set Ragdoll in player's pose
+	// Recursively copies each object's transform position and rotation
+	void CopyTransformRecurse(Transform src, Transform dst) {
+		dst.position = src.position;
+		dst.rotation = src.rotation;
+		dst.gameObject.SetActive (true);
+		
+		foreach (Transform child in dst) {
+			var curSrc = src.Find(child.name);
+			if (curSrc){
+				CopyTransformRecurse (curSrc, child);
+			}
+
+		}
+
 	}
 
 	void OnCollisionEnter(Collision other) {
