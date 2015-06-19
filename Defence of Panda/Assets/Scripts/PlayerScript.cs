@@ -24,7 +24,6 @@ public class PlayerScript : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 		col = GetComponent<CapsuleCollider> ();
 		col.height = 2;
-		//col = GetComponent<CapsuleCollider> ();
 	}
 	
 	void FixedUpdate () {
@@ -55,11 +54,14 @@ public class PlayerScript : MonoBehaviour {
 
 		}
 
-		// Check for collision with the block and press e to do animation when collided.
+		// commented this off because it isn't doing anything but making the player fall into the ground.
+		/*
 		if (!anim.IsInTransition (0)) {
 			col.height = anim.GetFloat("ColliderHeight");
 		}
-		
+		*/
+
+		// Check for collision with the block and press e to do animation when collided.
 		if (collision && currentObject.name == "Cube") {
 			//collision = false;
 			if (Input.GetKeyDown ("e")) {
