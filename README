@@ -4,3 +4,7 @@ Bo Chen
 Ryan Diaz
 Yuanzheng Zhu
 Shen Yang
+
+
+Note:
+After some team meeting discussion, we’ve decided to change the core game-play to a new way.  We originally planned to combine shooting and tower-defence, but we came up with a more interesting idea of game play: combining pushing boxes and tower-defence. In traditional tower-defense games, players can only build, destroy or upgrade a tower at the same spot. Giving player the freedom of changing tower position by pushing towers around may create infinite kinds of paths and defending stratagies, which may bring more fun and surprise to the player. 

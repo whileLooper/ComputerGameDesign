@@ -5,7 +5,13 @@ public class PlayerScript : MonoBehaviour {
 
 	Vector3 input;
 	Animator anim;
+<<<<<<< HEAD
 	private AnimatorStateInfo currentBaseState;			// a reference to the current state of the animator, used for base layer
+=======
+	bool running = false, collision = false, push = false;
+	public float moveSpeed = 1f;
+
+>>>>>>> origin/master
 	public GameObject ragdoll;
 	GameObject currentObject;
 	private CapsuleCollider col;
@@ -27,7 +33,11 @@ public class PlayerScript : MonoBehaviour {
 	void Start () {
 		anim = GetComponent<Animator> ();
 		col = GetComponent<CapsuleCollider> ();
+<<<<<<< HEAD
 
+=======
+		col.height = 2;
+>>>>>>> origin/master
 	}
 	
 	void FixedUpdate () {
@@ -39,23 +49,21 @@ public class PlayerScript : MonoBehaviour {
 		anim.speed = animSpeed;								// set the speed of our animator to the public variable 'animSpeed'
 		currentBaseState = anim.GetCurrentAnimatorStateInfo(0);	// set our currentState variable to the current state of the Base Layer (0) of animation
 		anim.SetBool ("Push", false);
+<<<<<<< HEAD
 
+=======
+		anim.SetBool ("Left", false);
+>>>>>>> origin/master
 
 		if (anim.GetFloat ("Speed") > 0.1) {
-			transform.Translate (Vector3.forward * moveSpeed);
+			running = true;
 		}
-		if (anim.GetFloat ("Speed") < -0.1) {
+		if (running) {
 			transform.Translate (Vector3.forward * moveSpeed);
-		}
-
-		if (anim.GetFloat ("Direction") > 0.1) {
-			transform.Translate (Vector3.forward * moveSpeed);
+			running = false;
 		}
 
-		if (anim.GetFloat ("Direction") < -0.1) {
-			transform.Translate (Vector3.forward * moveSpeed);
-		}
-
+<<<<<<< HEAD
 		// if we are currently in a state called Locomotion (see line 25), then allow Jump input (Space) to set the Jump bool parameter in the Animator to true
 		if (currentBaseState.nameHash == idleState) {
 			Debug.Log ("in idel state");
@@ -79,11 +87,30 @@ public class PlayerScript : MonoBehaviour {
 			}
 		}
 
+=======
+
+		if (Input.GetKeyDown ("space")) {
+			Debug.Log ("space key was pressed");
+			anim.SetBool("Jump", true);
+			col.height = anim.GetFloat("ColliderHeight");
+
+		}
+
+		// commented this off because it isn't doing anything but making the player fall into the ground.
+		/*
+		if (!anim.IsInTransition (0)) {
+			col.height = anim.GetFloat("ColliderHeight");
+		}
+		*/
+
+		// Check for collision with the block and press e to do animation when collided.
+>>>>>>> origin/master
 		if (collision && currentObject.name == "Cube") {
 			//collision = false;
 			if (Input.GetKeyDown ("e")) {
 				push = true;
 				anim.SetBool ("Push", true);
+				print ("hello");
 			}
 		}
 
@@ -93,6 +120,26 @@ public class PlayerScript : MonoBehaviour {
 			collision = false;
 		}
 
+<<<<<<< HEAD
+=======
+
+
+
+
+		// Character turns left on A key
+		if (Input.GetKeyDown (KeyCode.Q)) {
+			Vector3 targetDirection = new Vector3(0, 0f, 3f);
+			
+			// Create a rotation based on this new vector assuming that up is the global y axis.
+			Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
+			
+			// Create a rotation that is an increment closer to the target rotation from the player's rotation.
+			Quaternion newRotation = Quaternion.Lerp(GetComponent<Rigidbody>().rotation, targetRotation, 15f * Time.deltaTime);
+			
+			// Change the players rotation to this new rotation.
+			GetComponent<Rigidbody>().MoveRotation(newRotation);
+		}
+>>>>>>> origin/master
 		if (h != 0f || v != 0f) {
 
 			Vector3 targetDirection = new Vector3(h, 0f, v);
