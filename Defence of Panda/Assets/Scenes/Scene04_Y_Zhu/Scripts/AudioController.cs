@@ -17,7 +17,7 @@ public class AudioController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (anim.GetFloat("Speed") > 0.01) {
 			playerFootstepGrass.Play ();
 		}
