@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿// PandaDev
+// Shen Yang, Bo Chen, Ryan Diaz, Yuanzheng Zhu
+
+using UnityEngine;
 using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
@@ -6,25 +9,27 @@ public class PlayerScript : MonoBehaviour {
 	Vector3 input;
 	Animator anim;
 	private AnimatorStateInfo currentBaseState;			// a reference to the current state of the animator, used for base layer
-
+	
 	public GameObject ragdoll;
 	GameObject currentObject;
 	private CapsuleCollider col;
 	public Transform deathPos;
-
-	public float moveSpeed = 1f;
+	
+	public float moveSpeed = 0.3f;
 	public float animSpeed = 1.5f;
-
+	
 	public bool useCurve;
 	bool collision = false;
 	bool push = false;
 	bool running = false;
 	bool boxInRange = false;
 
-	
+
 	static int idleState = Animator.StringToHash("Base Layer.Idle");
 	static int jumpState = Animator.StringToHash("Base Layer.Jump");
 
+
+	float [][] map;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
@@ -38,28 +43,57 @@ public class PlayerScript : MonoBehaviour {
 		anim.SetFloat ("Direction", h);
 
 		anim.speed = animSpeed;								// set the speed of our animator to the public variable 'animSpeed'
-		currentBaseState = anim.GetCurrentAnimatorStateInfo(0);	// set our currentState variable to the current state of the Base Layer (0) of animation
+		//currentBaseState = anim.GetCurrentAnimatorStateInfo(0);	// set our currentState variable to the current state of the Base Layer (0) of animation
+		anim.SetBool ("Jump", false);
 		anim.SetBool ("Push", false);
 
-		
 		if (anim.GetFloat ("Speed") > 0.1) {
 			transform.Translate (Vector3.forward * moveSpeed);
 		}
 		if (anim.GetFloat ("Speed") < -0.1) {
 			transform.Translate (Vector3.forward * moveSpeed);
 		}
-		
+
 		if (anim.GetFloat ("Direction") > 0.1) {
 			transform.Translate (Vector3.forward * moveSpeed);
 		}
-		
+
 		if (anim.GetFloat ("Direction") < -0.1) {
 			transform.Translate (Vector3.forward * moveSpeed);
+		}
+		if (Input.GetKeyDown ("space")) {
+			Debug.Log ("space key was pressed");
+			anim.SetBool("Jump", true);
+
+		}
+
+		if (Input.GetKeyDown(KeyCode.F1)) {
+			Application.LoadLevel(0);
+		}
+		if (Input.GetKeyDown(KeyCode.F2)) {
+			Application.LoadLevel(1);
+		}
+		if (Input.GetKeyDown(KeyCode.F3)) {
+			Application.LoadLevel(2);
+		}
+		if (Input.GetKeyDown(KeyCode.F4)) {
+			Application.LoadLevel(3);
+		}
+
+		// Check for collision with the block and press e to do animation when collided.
+		if (Input.GetKeyDown ("e")) {
+			push = true;
+			anim.SetBool ("Push", true);
+			if (collision && currentObject.CompareTag("Boxes") == true) {
+				print ("Collided with a box!");
+				StartCoroutine(WaitTwoSeconds());
+				collision = false;
+			}
 		}
 
 		// if we are currently in a state called Locomotion (see line 25), then allow Jump input (Space) to set the Jump bool parameter in the Animator to true
 		if (currentBaseState.nameHash == idleState) {
-			Debug.Log ("in idel state");
+			Debug.Log ("in idle state");
 			if (Input.GetButtonDown ("Jump")) {
 				anim.SetBool ("Jump", true);
 			}
@@ -70,7 +104,7 @@ public class PlayerScript : MonoBehaviour {
 			Debug.Log("in jump state");
 			//  ..and not still in transition..
 			if (!anim.IsInTransition (0)) {
-
+				
 				if (useCurve)
 					// ..set the collider height to a float curve in the clip called ColliderHeight
 					col.height = anim.GetFloat ("ColliderHeight");
@@ -80,35 +114,6 @@ public class PlayerScript : MonoBehaviour {
 			}
 		}
 
-		if (collision && currentObject.name == "Cube") {
-			//collision = false;
-			if (Input.GetKeyDown ("e")) {
-				push = true;
-				anim.SetBool ("Push", true);
-				print ("hello");
-			}
-		}
-
-		// Wait for 2 seconds before moving the block
-		if (anim.GetBool ("Push") == true) {
-			StartCoroutine(WaitTwoSeconds());
-			collision = false;
-		}
-
-		if (h != 0f || v != 0f) {
-
-			Vector3 targetDirection = new Vector3(h, 0f, v);
-			
-			// Create a rotation based on this new vector assuming that up is the global y axis.
-			Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
-			
-			// Create a rotation that is an increment closer to the target rotation from the player's rotation.
-			Quaternion newRotation = Quaternion.Lerp(GetComponent<Rigidbody>().rotation, targetRotation, 15f * Time.deltaTime);
-			
-			// Change the players rotation to this new rotation.
-			GetComponent<Rigidbody>().MoveRotation(newRotation);
-
-		}
 
 		// Character drops dead on G key
 		if (Input.GetKeyDown (KeyCode.G)) {
@@ -116,8 +121,16 @@ public class PlayerScript : MonoBehaviour {
 			GameObject rag = GameObject.Instantiate(ragdoll, deathPos.transform.position, 
 			                                        deathPos.transform.rotation) as GameObject;
 			CopyTransformRecurse(deathPos, rag.transform);
-			
+
 			gameObject.SetActive(false);
+		}
+
+		if (h != 0f || v != 0f) {
+			Vector3 targetDirection = new Vector3(h, 0f, v);
+			Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
+			Quaternion newRotation = Quaternion.Lerp(GetComponent<Rigidbody>().rotation, targetRotation, 15f * Time.deltaTime);
+			GetComponent<Rigidbody>().MoveRotation(newRotation);
+
 		}
 	}
 
@@ -129,24 +142,13 @@ public class PlayerScript : MonoBehaviour {
 		dst.gameObject.SetActive (true);
 		
 		foreach (Transform child in dst) {
-			var curSrc = src.Find (child.name);
-			if (curSrc) {
+			var curSrc = src.Find(child.name);
+			if (curSrc){
 				CopyTransformRecurse (curSrc, child);
 			}
 
 		}
-	}
-	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.tag == "Box") {
-			Debug.Log("in box range");
-			boxInRange = true;
-		}
-	}
-	void OnTriggerExit(Collider other) {
-		if (other.gameObject.tag == "Box") {
-			Debug.Log("out of box range");
-			boxInRange = false;
-		}
+
 	}
 
 	void OnCollisionEnter(Collision other) {
@@ -160,17 +162,8 @@ public class PlayerScript : MonoBehaviour {
 	IEnumerator WaitTwoSeconds() {
 		print(Time.time);
 		yield return new WaitForSeconds(1);
-		currentObject.transform.Translate (Vector3.forward * 2f);
+		print (currentObject.name);
+		currentObject.transform.Translate (transform.forward * 1f);
 		print(Time.time);
 	}
-
-	IEnumerator TurnLeft() {
-		yield return new WaitForSeconds(0.6f);
-		transform.Rotate(0, -90, 0);
-	}
-
-	IEnumerator ChangeToIdle() {
-		yield return new WaitForSeconds (2);
-	}
-
 }

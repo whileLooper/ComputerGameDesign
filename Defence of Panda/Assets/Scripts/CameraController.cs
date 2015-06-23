@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿// PandaDev
+// Shen Yang, Bo Chen, Ryan Diaz, Yuanzheng Zhu
+
+using UnityEngine;
 using System.Collections;
 
 public class CameraController : MonoBehaviour
