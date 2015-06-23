@@ -50,15 +50,15 @@ public class PlayerScript : MonoBehaviour {
 		if (anim.GetFloat ("Speed") > 0.1) {
 			transform.Translate (Vector3.forward * moveSpeed);
 		}
-		if (anim.GetFloat ("Speed") < -0.1) {
+		else if (anim.GetFloat ("Speed") < -0.1) {
 			transform.Translate (Vector3.forward * moveSpeed);
 		}
 
-		if (anim.GetFloat ("Direction") > 0.1) {
+		else if (anim.GetFloat ("Direction") > 0.1) {
 			transform.Translate (Vector3.forward * moveSpeed);
 		}
 
-		if (anim.GetFloat ("Direction") < -0.1) {
+		else if (anim.GetFloat ("Direction") < -0.1) {
 			transform.Translate (Vector3.forward * moveSpeed);
 		}
 		if (Input.GetKeyDown ("space")) {
