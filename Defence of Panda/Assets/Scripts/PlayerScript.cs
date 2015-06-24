@@ -46,7 +46,6 @@ public class PlayerScript : MonoBehaviour {
 		//currentBaseState = anim.GetCurrentAnimatorStateInfo(0);	// set our currentState variable to the current state of the Base Layer (0) of animation
 		anim.SetBool ("Jump", false);
 		anim.SetBool ("Push", false);
-
 		if (anim.GetFloat ("Speed") > 0.1) {
 			transform.Translate (Vector3.forward * moveSpeed);
 		}
@@ -84,8 +83,9 @@ public class PlayerScript : MonoBehaviour {
 		if (Input.GetKeyDown ("e")) {
 			push = true;
 			anim.SetBool ("Push", true);
+			print ("Not boxes: + " + currentObject.tag);
 			if (collision && currentObject.CompareTag("Boxes") == true) {
-				print ("Collided with a box!");
+				print (currentObject.tag);
 				StartCoroutine(WaitTwoSeconds());
 				collision = false;
 			}
@@ -152,18 +152,20 @@ public class PlayerScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision other) {
-		print ("Collided with something " + other.gameObject);
 		currentObject = other.gameObject;
 		if (other.gameObject.name != "Floor") {
 			collision = true;
 		}
 	}
 
+	void OnCollisionExit(Collision other) {
+		print ("collision exited");
+		collision = false;
+	}
+
 	IEnumerator WaitTwoSeconds() {
-		print(Time.time);
 		yield return new WaitForSeconds(1);
 		print (currentObject.name);
 		currentObject.transform.Translate (transform.forward * 1f);
-		print(Time.time);
 	}
 }

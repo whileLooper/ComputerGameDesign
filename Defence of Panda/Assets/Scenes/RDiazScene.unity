@@ -460,7 +460,6 @@ GameObject:
   - 33: {fileID: 145813640}
   - 65: {fileID: 145813639}
   - 23: {fileID: 145813638}
-  - 54: {fileID: 145813641}
   m_Layer: 0
   m_Name: Cube 4
   m_TagString: Untagged
@@ -523,21 +522,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 145813636}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &145813641
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 145813636}
-  serializedVersion: 2
-  m_Mass: 1000
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &150808336
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,7 +878,6 @@ GameObject:
   - 33: {fileID: 339387441}
   - 65: {fileID: 339387440}
   - 23: {fileID: 339387439}
-  - 54: {fileID: 339387442}
   m_Layer: 0
   m_Name: Cube 1
   m_TagString: Untagged
@@ -957,21 +940,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 339387437}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &339387442
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 339387437}
-  serializedVersion: 2
-  m_Mass: 1000
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &339425347
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,6 +1099,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &359095403
 Transform:
   m_ObjectHideFlags: 0
@@ -1227,8 +1196,8 @@ HingeJoint:
   m_Limits:
     min: -90
     max: 90
-    minBounce: 0
-    maxBounce: 0
+    bounciness: 0
+    bounceMinVelocity: .200000003
     contactDistance: 0
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -1865,7 +1834,6 @@ GameObject:
   - 33: {fileID: 461456130}
   - 65: {fileID: 461456129}
   - 23: {fileID: 461456128}
-  - 54: {fileID: 461456131}
   m_Layer: 0
   m_Name: Cube 3
   m_TagString: Untagged
@@ -1928,21 +1896,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 461456126}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &461456131
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 461456126}
-  serializedVersion: 2
-  m_Mass: 1000
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &473369081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2881,7 +2834,6 @@ GameObject:
   - 33: {fileID: 862474352}
   - 65: {fileID: 862474351}
   - 23: {fileID: 862474350}
-  - 54: {fileID: 862474353}
   m_Layer: 0
   m_Name: Cube 2
   m_TagString: Untagged
@@ -2944,21 +2896,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 862474348}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &862474353
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 862474348}
-  serializedVersion: 2
-  m_Mass: 1000
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &912575461
 GameObject:
   m_ObjectHideFlags: 0
@@ -5287,11 +5224,11 @@ HingeJoint:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1289273800}
-  m_ConnectedBody: {fileID: 862474353}
+  m_ConnectedBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: -.5}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.0331640244, y: -.167437077, z: .525960922}
+  m_ConnectedAnchor: {x: 7.0200038, y: .99768877, z: -7.80900192}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -5306,8 +5243,8 @@ HingeJoint:
   m_Limits:
     min: -90
     max: 90
-    minBounce: 0
-    maxBounce: 0
+    bounciness: 0
+    bounceMinVelocity: .200000003
     contactDistance: 0
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -6026,7 +5963,6 @@ GameObject:
   - 33: {fileID: 1512336138}
   - 65: {fileID: 1512336137}
   - 23: {fileID: 1512336136}
-  - 54: {fileID: 1512336140}
   m_Layer: 0
   m_Name: Cube 5
   m_TagString: Untagged
@@ -6089,21 +6025,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1961196024}
   m_RootOrder: 1
---- !u!54 &1512336140
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1512336135}
-  serializedVersion: 2
-  m_Mass: 1000
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1526388720
 GameObject:
   m_ObjectHideFlags: 0
@@ -6307,6 +6228,7 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
+  m_RepeatDelay: .5
   m_AllowActivationOnMobileDevice: 0
 --- !u!114 &1624907275
 MonoBehaviour:
@@ -7295,7 +7217,6 @@ GameObject:
   - 33: {fileID: 2032805121}
   - 65: {fileID: 2032805120}
   - 23: {fileID: 2032805119}
-  - 54: {fileID: 2032805122}
   m_Layer: 0
   m_Name: Roof
   m_TagString: Untagged
@@ -7358,21 +7279,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2032805117}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &2032805122
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2032805117}
-  serializedVersion: 2
-  m_Mass: 1000
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &2040246313
 GameObject:
   m_ObjectHideFlags: 0
@@ -7523,8 +7429,8 @@ HingeJoint:
   m_Limits:
     min: -90
     max: 90
-    minBounce: 0
-    maxBounce: 0
+    bounciness: 0
+    bounceMinVelocity: .200000003
     contactDistance: 0
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
