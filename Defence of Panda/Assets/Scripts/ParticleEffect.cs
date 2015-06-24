@@ -19,7 +19,7 @@ public class ParticleEffect : MonoBehaviour {
 	void Update () {
 		//particle system position follow palyer position
 
-		if (anim.GetFloat("Speed") > 0.2){
+		if (anim.GetFloat("Speed") > 0.2 || anim.GetFloat("Speed") < -0.2 || anim.GetFloat("Direction") > 0.2 || anim.GetFloat("Direction") < -0.2){
 			runParticle.Play ();
 		}
 	}
