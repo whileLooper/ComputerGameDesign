@@ -14,7 +14,17 @@ public class PlayerScript : MonoBehaviour {
 	GameObject currentObject;
 	private CapsuleCollider col;
 	public Transform deathPos;
-	
+
+	//Box moving variables
+	public int boxCount = 5;
+	public float rayLength = 1f;
+	public GameObject box;
+	private RaycastHit hit;
+	private Vector3 rayStart;
+	private Vector3 boxPos;
+
+
+
 	public float moveSpeed = 0.3f;
 	public float animSpeed = 1.5f;
 	
@@ -35,12 +45,14 @@ public class PlayerScript : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 		col = GetComponent<CapsuleCollider> ();
 	}
-	
-	void FixedUpdate () {
+
+	void Update () {
 		float h = Input.GetAxis ("Horizontal");				// setup h variable as our horizontal input axis
 		float v = Input.GetAxis ("Vertical");				// setup v variables as our vertical input axis
 		anim.SetFloat ("Speed", v);							// set our animator's float parameter 'Speed' equal to the vertical input axis				
 		anim.SetFloat ("Direction", h);
+
+		//rayStart = new Vector3 (transform.position.x, transform.position.y + 0.5f, transform.position.z);
 
 		anim.speed = animSpeed;								// set the speed of our animator to the public variable 'animSpeed'
 		//currentBaseState = anim.GetCurrentAnimatorStateInfo(0);	// set our currentState variable to the current state of the Base Layer (0) of animation
@@ -80,7 +92,7 @@ public class PlayerScript : MonoBehaviour {
 		}
 
 		// Check for collision with the block and press e to do animation when collided.
-		if (Input.GetKeyDown ("e")) {
+		/*if (Input.GetKeyDown ("e")) {
 			push = true;
 			anim.SetBool ("Push", true);
 			print ("Not boxes: + " + currentObject.tag);
@@ -89,7 +101,28 @@ public class PlayerScript : MonoBehaviour {
 				StartCoroutine(WaitTwoSeconds());
 				collision = false;
 			}
+		}*/
+
+		// Handles Picking up/Dropping Boxes on pressing E
+		if (Input.GetKeyDown ("e")) {
+			if (Physics.Raycast(transform.position, transform.forward, out hit, rayLength)) {
+				print (hit.transform.gameObject.tag);
+				if (hit.collider.gameObject.CompareTag("Boxes")) {
+					Destroy(hit.transform.gameObject);
+					boxCount++;
+				}
+			}
+			else {
+				if (boxCount > 0) {
+					boxPos = new Vector3(transform.position.x, 0.5f, transform.position.z) + (transform.forward * 1.1f);
+					boxPos.x = Mathf.Round(boxPos.x);
+					boxPos.z = Mathf.Round(boxPos.z);
+					Instantiate(box, boxPos, new Quaternion());
+					boxCount--;
+				}
+			}
 		}
+
 
 		// if we are currently in a state called Locomotion (see line 25), then allow Jump input (Space) to set the Jump bool parameter in the Animator to true
 		if (currentBaseState.nameHash == idleState) {

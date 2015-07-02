@@ -2570,6 +2570,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ragdoll: {fileID: 143832, guid: 062c98c7db131804087f67a2dba3a939, type: 2}
   deathPos: {fileID: 491354}
+  boxCount: 5
+  rayLength: 1
+  box: {fileID: 0}
   moveSpeed: .100000001
   animSpeed: 1.5
   useCurve: 0
