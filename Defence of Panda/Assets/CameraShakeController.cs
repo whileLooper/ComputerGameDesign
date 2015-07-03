@@ -50,6 +50,9 @@ public class CameraShakeController : MonoBehaviour {
 	}
 
 	void Shake(){
+		if(ShakeCamera() != null){
+			StopCoroutine(ShakeCamera());
+		}
 		StartCoroutine(ShakeCamera());
 	}
 
@@ -63,7 +66,8 @@ public class CameraShakeController : MonoBehaviour {
 			yield return camTransform.localPosition;
 		}
 		Debug.Log(shakeDuration);
-		shakeDuration = 0;
+
+		shakeDuration = 4.5f;
 		camTransform.localPosition = originalPos;
 
 
