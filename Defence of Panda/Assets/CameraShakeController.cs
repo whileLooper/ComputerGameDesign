@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//yzhu319, 07/03/2015
+using UnityEngine;
 using System.Collections;
 
 public class CameraShakeController : MonoBehaviour {
@@ -7,19 +8,15 @@ public class CameraShakeController : MonoBehaviour {
 	ParticleSystem earthquakeParticle;
 
 
-	// Transform of the camera to shake. Grabs the gameObject's transform
-	// if null.
+	// Grabs the camera's transform
 	public Transform camTransform;
-	
-	// How long the object should shake for.
 	public float shakeDuration = 4.5f;
 	
-	// Amplitude of the shake. A larger value shakes the camera harder.
+	// Amplitude of the shake.
 	public float shakeAmount = 0.2f;
 	public float decreaseFactor = 1.0f;
 	
 	Vector3 originalPos;
-
 
 
 	void Start () {
