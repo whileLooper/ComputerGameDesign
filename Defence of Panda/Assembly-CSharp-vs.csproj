@@ -52,7 +52,7 @@
      <Compile Include="Assets\Scripts\DoorSound.cs" />
      <Compile Include="Assets\Scripts\ParticleEffect.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
-     <Compile Include="Assets\TowerShooting\cannonShoot.cs" />
+     <Compile Include="Assets\WeaponSystem\cannonShoot.cs" />
      <None Include="Assets\batteries\SciFi_Battery_Pack_free\SCI-fi battery pack FREE.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
