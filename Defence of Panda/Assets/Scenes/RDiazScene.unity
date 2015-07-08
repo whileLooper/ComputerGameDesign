@@ -505,11 +505,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 64744611}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: .5, z: 5}
+  m_LocalPosition: {x: 4, y: 0, z: 2}
   m_LocalScale: {x: .949999988, y: 1, z: .949999988}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 207635415}
+  m_RootOrder: 4
 --- !u!23 &64744614
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1129,6 +1129,7 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 447730, guid: 4f20df53be2f843ad849622d8c8b2a87, type: 2}
   m_PrefabInternal: {fileID: 531628930}
+<<<<<<< Updated upstream
 --- !u!1 &208582619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,11 +1140,24 @@ GameObject:
   - 4: {fileID: 208582620}
   m_Layer: 0
   m_Name: mixamorig:Spine
+=======
+--- !u!1 &207635414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 207635415}
+  m_Layer: 0
+  m_Name: HayBox
+>>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< Updated upstream
 --- !u!4 &208582620
 Transform:
   m_ObjectHideFlags: 0
@@ -1157,6 +1171,30 @@ Transform:
   - {fileID: 1163977126}
   m_Father: {fileID: 756704524}
   m_RootOrder: 2
+=======
+--- !u!4 &207635415
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 207635414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: .5, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1797296308}
+  - {fileID: 1437825743}
+  - {fileID: 792347444}
+  - {fileID: 977133140}
+  - {fileID: 64744612}
+  - {fileID: 2089031117}
+  - {fileID: 830793003}
+  - {fileID: 1489318278}
+  - {fileID: 1057234075}
+  - {fileID: 1567470366}
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+>>>>>>> Stashed changes
 --- !u!1 &211454440
 GameObject:
   m_ObjectHideFlags: 0
@@ -4778,7 +4816,7 @@ Transform:
   - {fileID: 1121297086}
   - {fileID: 912575462}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 11
 --- !u!1 &761933837
 GameObject:
   m_ObjectHideFlags: 0
@@ -5039,9 +5077,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 792347439}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: .5, z: 7}
+  m_LocalPosition: {x: 5, y: 0, z: 4}
   m_LocalScale: {x: .949999988, y: 1, z: .949999988}
   m_Children: []
+<<<<<<< Updated upstream
   m_Father: {fileID: 0}
   m_RootOrder: 13
 --- !u!1 &797779231
@@ -5137,6 +5176,10 @@ SkinnedMeshRenderer:
     m_Center: {x: .000125788152, y: .0716330558, z: .04752101}
     m_Extent: {x: .0777283609, y: .0257915929, z: .0750029087}
   m_DirtyAABB: 0
+=======
+  m_Father: {fileID: 207635415}
+  m_RootOrder: 2
+>>>>>>> Stashed changes
 --- !u!1001 &821925481
 Prefab:
   m_ObjectHideFlags: 0
@@ -5266,19 +5309,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 207635415}
     m_Modifications:
     - target: {fileID: 414798, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 414798, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 414798, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -4
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 414798, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
       propertyPath: m_LocalRotation.x
@@ -5298,11 +5341,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 414798, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &830793003 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 414798, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
+  m_PrefabInternal: {fileID: 830793002}
 --- !u!1 &841900445
 GameObject:
   m_ObjectHideFlags: 0
@@ -5370,6 +5417,7 @@ Transform:
   m_LocalScale: {x: 2.16000009, y: 1, z: 2.23000002}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
   m_RootOrder: 24
 --- !u!1 &849960703
 GameObject:
@@ -5398,6 +5446,9 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2061748143}
   m_RootOrder: 1
+=======
+  m_RootOrder: 14
+>>>>>>> Stashed changes
 --- !u!1 &855417772
 GameObject:
   m_ObjectHideFlags: 0
@@ -5938,11 +5989,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 977133135}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: .5, z: 4}
+  m_LocalPosition: {x: 2, y: 0, z: 1}
   m_LocalScale: {x: .949999988, y: 1, z: .949999988}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 207635415}
+  m_RootOrder: 3
 --- !u!1 &996578453
 GameObject:
   m_ObjectHideFlags: 0
@@ -6264,11 +6315,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1057234074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .5, z: -5}
+  m_LocalPosition: {x: -2, y: 0, z: -8}
   m_LocalScale: {x: .949999988, y: 1, z: .949999988}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 207635415}
+  m_RootOrder: 8
 --- !u!23 &1057234077
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10434,11 +10485,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1437825738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: .5, z: -8}
+  m_LocalPosition: {x: 2, y: 0, z: -11}
   m_LocalScale: {x: .949999988, y: 1, z: .949999988}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 207635415}
+  m_RootOrder: 1
 --- !u!1 &1449964904
 GameObject:
   m_ObjectHideFlags: 0
@@ -10496,7 +10547,11 @@ Transform:
   - {fileID: 1761393618}
   - {fileID: 197311807}
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
   m_RootOrder: 22
+=======
+  m_RootOrder: 12
+>>>>>>> Stashed changes
 --- !u!1 &1458291212
 GameObject:
   m_ObjectHideFlags: 0
@@ -10631,11 +10686,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1489318277}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: .5, z: -4}
+  m_LocalPosition: {x: 1, y: 0, z: -7}
   m_LocalScale: {x: .949999988, y: 1, z: .949999988}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 207635415}
+  m_RootOrder: 7
 --- !u!23 &1489318280
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10861,11 +10916,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1567470365}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: .5, z: 3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: .949999988, y: 1, z: .949999988}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 207635415}
+  m_RootOrder: 9
 --- !u!23 &1567470368
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11745,11 +11800,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1797296303}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8, y: .5, z: 3}
+  m_LocalPosition: {x: 6, y: 0, z: 0}
   m_LocalScale: {x: .949999988, y: 1, z: .949999988}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 207635415}
+  m_RootOrder: 0
 --- !u!1 &1807905545
 GameObject:
   m_ObjectHideFlags: 0
@@ -13187,11 +13242,16 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2089031116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: .5, z: -5}
+  m_LocalPosition: {x: 2, y: 0, z: -8}
   m_LocalScale: {x: .949999988, y: 1, z: .949999988}
   m_Children: []
+<<<<<<< Updated upstream
   m_Father: {fileID: 0}
   m_RootOrder: 16
+=======
+  m_Father: {fileID: 207635415}
+  m_RootOrder: 5
+>>>>>>> Stashed changes
 --- !u!23 &2089031119
 MeshRenderer:
   m_ObjectHideFlags: 0
