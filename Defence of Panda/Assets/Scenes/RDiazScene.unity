@@ -1129,7 +1129,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 447730, guid: 4f20df53be2f843ad849622d8c8b2a87, type: 2}
   m_PrefabInternal: {fileID: 531628930}
-<<<<<<< Updated upstream
 --- !u!1 &208582619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,7 +1139,6 @@ GameObject:
   - 4: {fileID: 208582620}
   m_Layer: 0
   m_Name: mixamorig:Spine
-=======
 --- !u!1 &207635414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,13 +1149,11 @@ GameObject:
   - 4: {fileID: 207635415}
   m_Layer: 0
   m_Name: HayBox
->>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream
 --- !u!4 &208582620
 Transform:
   m_ObjectHideFlags: 0
@@ -5080,7 +5076,6 @@ Transform:
   m_LocalPosition: {x: 5, y: 0, z: 4}
   m_LocalScale: {x: .949999988, y: 1, z: .949999988}
   m_Children: []
-<<<<<<< Updated upstream
   m_Father: {fileID: 0}
   m_RootOrder: 13
 --- !u!1 &797779231
@@ -5417,7 +5412,6 @@ Transform:
   m_LocalScale: {x: 2.16000009, y: 1, z: 2.23000002}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
   m_RootOrder: 24
 --- !u!1 &849960703
 GameObject:
@@ -13245,13 +13239,8 @@ Transform:
   m_LocalPosition: {x: 2, y: 0, z: -8}
   m_LocalScale: {x: .949999988, y: 1, z: .949999988}
   m_Children: []
-<<<<<<< Updated upstream
   m_Father: {fileID: 0}
   m_RootOrder: 16
-=======
-  m_Father: {fileID: 207635415}
-  m_RootOrder: 5
->>>>>>> Stashed changes
 --- !u!23 &2089031119
 MeshRenderer:
   m_ObjectHideFlags: 0
