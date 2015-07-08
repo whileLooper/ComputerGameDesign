@@ -199,6 +199,8 @@ public class PlayerScript : MonoBehaviour {
 	IEnumerator WaitTwoSeconds() {
 		yield return new WaitForSeconds(1);
 		print (currentObject.name);
-		currentObject.transform.Translate (transform.forward * 1f);
+		Debug.Log (transform.forward);
+		//transform.forward = new Vector3(0, 0, Mathf.Round (transform.forward.z));
+		currentObject.transform.Translate (transform.forward * 1.0f);
 	}
 }
