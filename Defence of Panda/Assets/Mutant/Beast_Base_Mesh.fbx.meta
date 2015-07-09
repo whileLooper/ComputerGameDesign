@@ -1,0 +1,950 @@
+fileFormatVersion: 2
+guid: 4837ec0eb915246078a1c8567d474670
+timeCreated: 1436420873
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Beast_Hi
+    100004: BeastBaseMesh:Head
+    100006: BeastBaseMesh:HeadTop_End
+    100008: BeastBaseMesh:Hips
+    100010: BeastBaseMesh:LeftArm
+    100012: BeastBaseMesh:LeftFoot
+    100014: BeastBaseMesh:LeftForeArm
+    100016: BeastBaseMesh:LeftHand
+    100018: BeastBaseMesh:LeftHandIndex1
+    100020: BeastBaseMesh:LeftHandIndex2
+    100022: BeastBaseMesh:LeftHandIndex3
+    100024: BeastBaseMesh:LeftHandIndex4
+    100026: BeastBaseMesh:LeftHandMiddle1
+    100028: BeastBaseMesh:LeftHandMiddle2
+    100030: BeastBaseMesh:LeftHandMiddle3
+    100032: BeastBaseMesh:LeftHandMiddle4
+    100034: BeastBaseMesh:LeftHandPinky1
+    100036: BeastBaseMesh:LeftHandPinky2
+    100038: BeastBaseMesh:LeftHandPinky3
+    100040: BeastBaseMesh:LeftHandPinky4
+    100042: BeastBaseMesh:LeftHandRing1
+    100044: BeastBaseMesh:LeftHandRing2
+    100046: BeastBaseMesh:LeftHandRing3
+    100048: BeastBaseMesh:LeftHandRing4
+    100050: BeastBaseMesh:LeftHandThumb1
+    100052: BeastBaseMesh:LeftHandThumb2
+    100054: BeastBaseMesh:LeftHandThumb3
+    100056: BeastBaseMesh:LeftHandThumb4
+    100058: BeastBaseMesh:LeftLeg
+    100060: BeastBaseMesh:LeftShoulder
+    100062: BeastBaseMesh:LeftToe_End
+    100064: BeastBaseMesh:LeftToeBase
+    100066: BeastBaseMesh:LeftUpLeg
+    100068: BeastBaseMesh:Neck
+    100070: BeastBaseMesh:RightArm
+    100072: BeastBaseMesh:RightFoot
+    100074: BeastBaseMesh:RightForeArm
+    100076: BeastBaseMesh:RightHand
+    100078: BeastBaseMesh:RightHandIndex1
+    100080: BeastBaseMesh:RightHandIndex2
+    100082: BeastBaseMesh:RightHandIndex3
+    100084: BeastBaseMesh:RightHandIndex4
+    100086: BeastBaseMesh:RightHandMiddle1
+    100088: BeastBaseMesh:RightHandMiddle2
+    100090: BeastBaseMesh:RightHandMiddle3
+    100092: BeastBaseMesh:RightHandMiddle4
+    100094: BeastBaseMesh:RightHandPinky1
+    100096: BeastBaseMesh:RightHandPinky2
+    100098: BeastBaseMesh:RightHandPinky3
+    100100: BeastBaseMesh:RightHandPinky4
+    100102: BeastBaseMesh:RightHandRing1
+    100104: BeastBaseMesh:RightHandRing2
+    100106: BeastBaseMesh:RightHandRing3
+    100108: BeastBaseMesh:RightHandRing4
+    100110: BeastBaseMesh:RightHandThumb1
+    100112: BeastBaseMesh:RightHandThumb2
+    100114: BeastBaseMesh:RightHandThumb3
+    100116: BeastBaseMesh:RightHandThumb4
+    100118: BeastBaseMesh:RightLeg
+    100120: BeastBaseMesh:RightShoulder
+    100122: BeastBaseMesh:RightToe_End
+    100124: BeastBaseMesh:RightToeBase
+    100126: BeastBaseMesh:RightUpLeg
+    100128: BeastBaseMesh:Spine
+    100130: BeastBaseMesh:Spine1
+    100132: BeastBaseMesh:Spine2
+    400000: //RootNode
+    400002: Beast_Hi
+    400004: BeastBaseMesh:Head
+    400006: BeastBaseMesh:HeadTop_End
+    400008: BeastBaseMesh:Hips
+    400010: BeastBaseMesh:LeftArm
+    400012: BeastBaseMesh:LeftFoot
+    400014: BeastBaseMesh:LeftForeArm
+    400016: BeastBaseMesh:LeftHand
+    400018: BeastBaseMesh:LeftHandIndex1
+    400020: BeastBaseMesh:LeftHandIndex2
+    400022: BeastBaseMesh:LeftHandIndex3
+    400024: BeastBaseMesh:LeftHandIndex4
+    400026: BeastBaseMesh:LeftHandMiddle1
+    400028: BeastBaseMesh:LeftHandMiddle2
+    400030: BeastBaseMesh:LeftHandMiddle3
+    400032: BeastBaseMesh:LeftHandMiddle4
+    400034: BeastBaseMesh:LeftHandPinky1
+    400036: BeastBaseMesh:LeftHandPinky2
+    400038: BeastBaseMesh:LeftHandPinky3
+    400040: BeastBaseMesh:LeftHandPinky4
+    400042: BeastBaseMesh:LeftHandRing1
+    400044: BeastBaseMesh:LeftHandRing2
+    400046: BeastBaseMesh:LeftHandRing3
+    400048: BeastBaseMesh:LeftHandRing4
+    400050: BeastBaseMesh:LeftHandThumb1
+    400052: BeastBaseMesh:LeftHandThumb2
+    400054: BeastBaseMesh:LeftHandThumb3
+    400056: BeastBaseMesh:LeftHandThumb4
+    400058: BeastBaseMesh:LeftLeg
+    400060: BeastBaseMesh:LeftShoulder
+    400062: BeastBaseMesh:LeftToe_End
+    400064: BeastBaseMesh:LeftToeBase
+    400066: BeastBaseMesh:LeftUpLeg
+    400068: BeastBaseMesh:Neck
+    400070: BeastBaseMesh:RightArm
+    400072: BeastBaseMesh:RightFoot
+    400074: BeastBaseMesh:RightForeArm
+    400076: BeastBaseMesh:RightHand
+    400078: BeastBaseMesh:RightHandIndex1
+    400080: BeastBaseMesh:RightHandIndex2
+    400082: BeastBaseMesh:RightHandIndex3
+    400084: BeastBaseMesh:RightHandIndex4
+    400086: BeastBaseMesh:RightHandMiddle1
+    400088: BeastBaseMesh:RightHandMiddle2
+    400090: BeastBaseMesh:RightHandMiddle3
+    400092: BeastBaseMesh:RightHandMiddle4
+    400094: BeastBaseMesh:RightHandPinky1
+    400096: BeastBaseMesh:RightHandPinky2
+    400098: BeastBaseMesh:RightHandPinky3
+    400100: BeastBaseMesh:RightHandPinky4
+    400102: BeastBaseMesh:RightHandRing1
+    400104: BeastBaseMesh:RightHandRing2
+    400106: BeastBaseMesh:RightHandRing3
+    400108: BeastBaseMesh:RightHandRing4
+    400110: BeastBaseMesh:RightHandThumb1
+    400112: BeastBaseMesh:RightHandThumb2
+    400114: BeastBaseMesh:RightHandThumb3
+    400116: BeastBaseMesh:RightHandThumb4
+    400118: BeastBaseMesh:RightLeg
+    400120: BeastBaseMesh:RightShoulder
+    400122: BeastBaseMesh:RightToe_End
+    400124: BeastBaseMesh:RightToeBase
+    400126: BeastBaseMesh:RightUpLeg
+    400128: BeastBaseMesh:Spine
+    400130: BeastBaseMesh:Spine1
+    400132: BeastBaseMesh:Spine2
+    4300000: Beast_Hi
+    7400000: mixamo.com
+    9500000: //RootNode
+    13700000: Beast_Hi
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: BeastBaseMesh:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BeastBaseMesh:RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Beast_Base_Mesh(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Beast_Hi
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:Hips
+      position: {x: .000993721769, y: .999860466, z: .00706884032}
+      rotation: {x: -.480920374, y: .497438937, z: -.50183332, w: .519069791}
+      scale: {x: 1, y: .99999994, z: 1.00000012}
+      transformModified: 1
+    - name: BeastBaseMesh:Spine
+      position: {x: -.109485768, y: -1.3322676e-17, z: -3.80251387e-17}
+      rotation: {x: -3.46944695e-18, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:Spine1
+      position: {x: -.127733395, y: 1.67765801e-12, z: 3.90826399e-11}
+      rotation: {x: -3.46944695e-18, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:Spine2
+      position: {x: -.145980939, y: -1.87759405e-10, z: 6.39724593e-11}
+      rotation: {x: -.0165542271, y: .00253413315, z: .117847875, w: .992890477}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:Neck
+      position: {x: -.180069044, y: -1.42108544e-16, z: 1.80411235e-18}
+      rotation: {x: -.00662028464, y: .00232721888, z: .0679370239, w: .997664988}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:Head
+      position: {x: -.101373918, y: 0, z: -2.08166812e-19}
+      rotation: {x: .00226280885, y: -.00103548914, z: .0231444947, w: .999729037}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:HeadTop_End
+      position: {x: -.178638339, y: 0, z: -7.00828278e-18}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftShoulder
+      position: {x: -.116407163, y: .0115264459, z: -.074090153}
+      rotation: {x: .439875066, y: -.583923697, z: .415707886, w: .541045308}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftArm
+      position: {x: -.181965992, y: -1.70530253e-15, z: 1.1546319e-16}
+      rotation: {x: -4.06180516e-05, y: -.00224786764, z: -.00118842802, w: .999996781}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftForeArm
+      position: {x: -.281761825, y: -2.84217088e-16, z: -1.94511079e-15}
+      rotation: {x: -.000429590611, y: .0397043005, z: -.0184593275, w: .999040902}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHand
+      position: {x: -.239963531, y: 0, z: -7.1054272e-17}
+      rotation: {x: -2.71050543e-20, y: 8.67361738e-19, z: -2.49027686e-19, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandThumb1
+      position: {x: -.0307950824, y: -.0132612549, z: .0375283621}
+      rotation: {x: .721598089, y: .271334618, z: -.24159573, w: .589326203}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandThumb2
+      position: {x: -.0459365249, y: 5.68434176e-16, z: -1.98951967e-15}
+      rotation: {x: -.389112145, y: -.0126875136, z: .0387727134, w: .920286715}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandThumb3
+      position: {x: -.0287248623, y: -7.10542693e-16, z: 1.42108539e-15}
+      rotation: {x: .0966620222, y: .0164597742, z: .0334813967, w: .99461782}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandThumb4
+      position: {x: -.0250062346, y: -7.1054272e-17, z: -2.55795374e-15}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandIndex1
+      position: {x: -.106986806, y: -.00116998272, z: .0279290881}
+      rotation: {x: -.00140803552, y: .0318995938, z: -.0148086026, w: .99938041}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandIndex2
+      position: {x: -.0409116969, y: -2.84217088e-16, z: 1.31561422e-16}
+      rotation: {x: .000756318623, y: -.0282552615, z: .0322304741, w: .999080718}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandIndex3
+      position: {x: -.0292845033, y: 0, z: -4.44089183e-17}
+      rotation: {x: -6.5993554e-05, y: .00333961193, z: -.0246301815, w: .999691069}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandIndex4
+      position: {x: -.0221857112, y: 4.54747341e-15, z: -1.7763568e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandMiddle1
+      position: {x: -.113021463, y: -.00110472494, z: .00766194984}
+      rotation: {x: -.000203461226, y: .00425885199, z: -.0184419472, w: .999820828}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandMiddle2
+      position: {x: -.0381692983, y: 2.55795374e-15, z: -4.88498128e-17}
+      rotation: {x: -1.41965638e-12, y: 8.88541836e-05, z: .0426862128, w: .999088526}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandMiddle3
+      position: {x: -.0323464498, y: 1.70530253e-15, z: 3.5527136e-17}
+      rotation: {x: -3.29665163e-05, y: -.00136403251, z: .00341693009, w: .999993265}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandMiddle4
+      position: {x: -.0208206847, y: -2.2737367e-15, z: -9.76996256e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandRing1
+      position: {x: -.110619396, y: -.0022322624, z: -.0122482441}
+      rotation: {x: .000133134614, y: -.0214124732, z: .0230693966, w: .999504566}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandRing2
+      position: {x: -.0377908945, y: 2.2737367e-15, z: -3.5527136e-17}
+      rotation: {x: .000386625616, y: .0229191277, z: 2.63178958e-06, w: .999737263}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandRing3
+      position: {x: -.0313803442, y: -8.52651264e-16, z: 9.99200696e-17}
+      rotation: {x: 5.06000797e-05, y: -.00981979351, z: .0412670337, w: .99909991}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandRing4
+      position: {x: -.0180805791, y: 1.42108539e-15, z: 3.5527136e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandPinky1
+      position: {x: -.10257794, y: -.00627851952, z: -.0315754935}
+      rotation: {x: .00136174331, y: -.048429925, z: .00665198639, w: .998803556}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandPinky2
+      position: {x: -.0294081923, y: 4.26325616e-15, z: 3.5527136e-17}
+      rotation: {x: -.001047645, y: .0402066782, z: -5.01754403e-05, w: .999190867}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandPinky3
+      position: {x: -.0217143204, y: -3.12638802e-15, z: 2.37587712e-16}
+      rotation: {x: .000107567976, y: -.0034945251, z: .0204179734, w: .999785423}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftHandPinky4
+      position: {x: -.0253110733, y: -1.13686835e-15, z: -3.10862448e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightShoulder
+      position: {x: -.116050348, y: .0128155006, z: .0735691115}
+      rotation: {x: -.443576425, y: .588835537, z: .411657125, w: .535771489}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightArm
+      position: {x: -.181965992, y: -1.70530253e-15, z: -2.04281027e-16}
+      rotation: {x: 4.06522777e-05, y: .00224743364, z: -.00118855922, w: .999996841}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightForeArm
+      position: {x: -.281761825, y: -1.13686835e-15, z: 1.99840144e-15}
+      rotation: {x: .00042959131, y: -.0397043079, z: -.0184593257, w: .999040902}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHand
+      position: {x: -.239963531, y: -2.84217088e-16, z: 1.9095835e-16}
+      rotation: {x: -2.71050543e-20, y: 8.67361738e-19, z: -1.28219612e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandThumb1
+      position: {x: -.0307950824, y: -.0132612549, z: -.0375283621}
+      rotation: {x: -.721595228, y: -.271334112, z: -.241595909, w: .589329898}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandThumb2
+      position: {x: -.0459365249, y: 1.42108544e-16, z: 2.55795374e-15}
+      rotation: {x: .38910982, y: .0126885921, z: .0387765393, w: .92028743}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandThumb3
+      position: {x: -.0287248623, y: -8.52651264e-16, z: -1.42108539e-15}
+      rotation: {x: -.0966624916, y: -.0164656844, z: .0334833302, w: .994617581}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandThumb4
+      position: {x: -.0250062346, y: -2.13162816e-16, z: 2.55795374e-15}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandIndex1
+      position: {x: -.106986806, y: -.00116998272, z: -.0279290881}
+      rotation: {x: .00140803622, y: -.0318996049, z: -.0148086008, w: .99938041}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandIndex2
+      position: {x: -.0409116969, y: -5.68434176e-16, z: -5.1625371e-17}
+      rotation: {x: -.000753996836, y: .0282553434, z: .0322304033, w: .999080718}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandIndex3
+      position: {x: -.0292845033, y: 0, z: 1.1546319e-16}
+      rotation: {x: 6.36707919e-05, y: -.0033396692, z: -.024630174, w: .999691069}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandIndex4
+      position: {x: -.0221857112, y: 4.83169065e-15, z: -1.59872109e-16}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandMiddle1
+      position: {x: -.113021463, y: -.00110472494, z: -.00766194984}
+      rotation: {x: .000203461444, y: -.00425885338, z: -.0184419341, w: .999820828}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandMiddle2
+      position: {x: -.0381692983, y: 2.2737367e-15, z: 3.5527136e-17}
+      rotation: {x: -3.61368205e-12, y: -8.88541399e-05, z: .0426862128, w: .999088526}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandMiddle3
+      position: {x: -.0323464498, y: 2.2737367e-15, z: 5.77315952e-17}
+      rotation: {x: 3.29665309e-05, y: .00136403297, z: .00341692986, w: .999993265}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandMiddle4
+      position: {x: -.0208206847, y: -1.70530253e-15, z: 3.5527136e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandRing1
+      position: {x: -.110619396, y: -.0022322624, z: .0122482441}
+      rotation: {x: -.000133134701, y: .0214124788, z: .0230693966, w: .999504566}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandRing2
+      position: {x: -.0377908945, y: 2.2737367e-15, z: 4.44089183e-17}
+      rotation: {x: -.000386622618, y: -.0229190495, z: 2.60893466e-06, w: .999737263}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandRing3
+      position: {x: -.0313803442, y: -1.13686835e-15, z: -1.11022302e-16}
+      rotation: {x: -5.05999233e-05, y: .00981979258, z: .0412670262, w: .99909991}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandRing4
+      position: {x: -.0180805791, y: 1.98951967e-15, z: -1.3322676e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandPinky1
+      position: {x: -.10257794, y: -.00627851952, z: .0315754935}
+      rotation: {x: -.00136164844, y: .0484301895, z: .00665149512, w: .998803496}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandPinky2
+      position: {x: -.0294081923, y: 4.26325616e-15, z: -8.88178367e-17}
+      rotation: {x: .00104712369, y: -.0402069129, z: -4.54308247e-05, w: .999190867}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandPinky3
+      position: {x: -.0217143204, y: -3.12638802e-15, z: -3.44169127e-16}
+      rotation: {x: -.000107568012, y: .0034945251, z: .0204179715, w: .999785423}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightHandPinky4
+      position: {x: -.0253110733, y: -1.13686835e-15, z: 1.19904078e-16}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftUpLeg
+      position: {x: .0606817044, y: .000650753791, z: -.107118368}
+      rotation: {x: .0126316166, y: .0168243777, z: .99952513, w: .0225134734}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftLeg
+      position: {x: -.383279383, y: -5.3290704e-17, z: 0}
+      rotation: {x: -.00776515901, y: .0229796953, z: .0412999392, w: .998852313}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftFoot
+      position: {x: -.422323763, y: 2.6645352e-17, z: 0}
+      rotation: {x: -.0363785699, y: -.0371636711, z: -.449508816, w: .891760767}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftToeBase
+      position: {x: -.207364082, y: 7.1054272e-17, z: -3.5527136e-17}
+      rotation: {x: -.014827908, y: -.0111847101, z: -.34681344, w: .93775028}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:LeftToe_End
+      position: {x: -.0770626739, y: 4.59236647e-17, z: -3.5527136e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightUpLeg
+      position: {x: .0609859265, y: .00965757389, z: .104532182}
+      rotation: {x: -.0119844005, y: .025720289, z: .999355495, w: .0219874661}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightLeg
+      position: {x: -.383279383, y: -1.7763568e-17, z: -7.1054272e-17}
+      rotation: {x: .00776992971, y: -.0229795054, z: .0413074717, w: .998852015}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightFoot
+      position: {x: -.422323763, y: 4.44089183e-17, z: -5.3290704e-17}
+      rotation: {x: .0363140628, y: .0373043269, z: -.449520469, w: .891751707}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightToeBase
+      position: {x: -.207364082, y: -1.7763568e-17, z: 1.7763568e-17}
+      rotation: {x: .0148252565, y: .011183735, z: -.34681344, w: .93775028}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BeastBaseMesh:RightToe_End
+      position: {x: -.0770626739, y: 6.25091588e-17, z: -1.06581408e-16}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
