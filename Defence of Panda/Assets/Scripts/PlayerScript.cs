@@ -2,9 +2,16 @@
 // Shen Yang, Bo Chen, Ryan Diaz, Yuanzheng Zhu
 
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
+
+	private static Vector3 UP = new Vector3 (0f, 0f, 1f);
+	private static Vector3 DOWN = new Vector3 (0f, 0f, -1f);
+	private static Vector3 LEFT = new Vector3 (-1f, 0f, 0f);
+	private static Vector3 RIGHT = new Vector3 (1f, 0f, 0f);
+	private Vector3 playerPos;
 
 	Vector3 input;
 	Animator anim;
@@ -14,16 +21,19 @@ public class PlayerScript : MonoBehaviour {
 	GameObject currentObject;
 	private CapsuleCollider col;
 	public Transform deathPos;
+	private Rigidbody body;
 
 	//Box moving variables
 	public int boxCount = 5;
-	public float rayLength = 1f;
+	public float rayLength = 1.5f;
 	public GameObject box;
+	public Text boxText;
 	private RaycastHit hit;
 	private Vector3 rayStart;
 	private Vector3 boxPos;
 
-
+	private Vector3 targetDirection;
+	private Vector3 targetDirection2;
 
 	public float moveSpeed = 0.3f;
 	public float animSpeed = 1.5f;
@@ -38,40 +48,111 @@ public class PlayerScript : MonoBehaviour {
 	static int idleState = Animator.StringToHash("Base Layer.Idle");
 	static int jumpState = Animator.StringToHash("Base Layer.Jump");
 
-
+	public bool oldMove;
 	float [][] map;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
 		col = GetComponent<CapsuleCollider> ();
+		playerPos = transform.position;
+		oldMove = false;
+		body = GetComponent<Rigidbody> ();
 	}
 
 	void Update () {
-		float h = Input.GetAxis ("Horizontal");				// setup h variable as our horizontal input axis
-		float v = Input.GetAxis ("Vertical");				// setup v variables as our vertical input axis
-		anim.SetFloat ("Speed", v);							// set our animator's float parameter 'Speed' equal to the vertical input axis				
-		anim.SetFloat ("Direction", h);
 
-		//rayStart = new Vector3 (transform.position.x, transform.position.y + 0.5f, transform.position.z);
 
 		anim.speed = animSpeed;								// set the speed of our animator to the public variable 'animSpeed'
 		//currentBaseState = anim.GetCurrentAnimatorStateInfo(0);	// set our currentState variable to the current state of the Base Layer (0) of animation
 		anim.SetBool ("Jump", false);
 		anim.SetBool ("Push", false);
-		if (anim.GetFloat ("Speed") > 0.1) {
-			transform.Translate (Vector3.forward * moveSpeed);
-		}
-		else if (anim.GetFloat ("Speed") < -0.1) {
-			transform.Translate (Vector3.forward * moveSpeed);
+		//anim.SetBool ("Moving", false);
+
+		if (Input.GetKeyDown (KeyCode.P)) {
+			oldMove = !oldMove;
 		}
 
-		else if (anim.GetFloat ("Direction") > 0.1) {
-			transform.Translate (Vector3.forward * moveSpeed);
+		if (oldMove) {
+
+			float h = Input.GetAxis ("Horizontal");				// setup h variable as our horizontal input axis
+			float v = Input.GetAxis ("Vertical");				// setup v variables as our vertical input axis
+			anim.SetFloat ("Speed", v);							// set our animator's float parameter 'Speed' equal to the vertical input axis				
+			anim.SetFloat ("Direction", h);
+
+			if (h != 0f || v != 0f) {
+				targetDirection = new Vector3 (h, 0f, v);
+				Quaternion targetRotation = Quaternion.LookRotation (targetDirection, Vector3.up);
+				Quaternion newRotation = Quaternion.Lerp (body.rotation, targetRotation, 20f * Time.deltaTime);
+				body.MoveRotation (newRotation);
+			}
+			if (v > 0.1) {
+				transform.Translate (Vector3.forward * moveSpeed);
+			} else if (v < -0.1) {
+				transform.Translate (Vector3.forward * moveSpeed);
+			} else if (h > 0.1) {
+				transform.Translate (Vector3.forward * moveSpeed);
+			} else if (h < -0.1) {
+				transform.Translate (Vector3.forward * moveSpeed);
+			}
+
+		}
+		else {
+			if (Input.GetKeyDown (KeyCode.W)) {
+				if (targetDirection2 == UP) {
+					if (!Physics.Raycast (transform.position + new Vector3 (0f, 0.5f, 0f), 
+				                     transform.forward, out hit, rayLength)) {
+						playerPos += UP;
+					}
+				} else {
+					targetDirection2 = UP;
+				}
+			}
+			if (Input.GetKeyDown (KeyCode.A)) {
+				if (targetDirection2 == LEFT) {
+					if (!Physics.Raycast (transform.position + new Vector3 (0f, 0.5f, 0f), 
+				                     transform.forward, out hit, rayLength)) {
+						playerPos += LEFT;
+					}
+				} else {
+					targetDirection2 = LEFT;
+				}
+			}
+			if (Input.GetKeyDown (KeyCode.S)) {
+				if (targetDirection2 == DOWN) {
+					if (!Physics.Raycast (transform.position + new Vector3 (0f, 0.5f, 0f), 
+				                     transform.forward, out hit, rayLength)) {
+						playerPos += DOWN;
+					}
+				} else {
+					targetDirection2 = DOWN;
+				}
+			}
+			if (Input.GetKeyDown (KeyCode.D)) {
+				if (targetDirection2 == RIGHT) {
+					if (!Physics.Raycast (transform.position + new Vector3 (0f, 0.5f, 0f), 
+				                     transform.forward, out hit, rayLength)) {
+						playerPos += RIGHT;
+					}
+				} else {
+					targetDirection2 = RIGHT;
+				}
+			}
+			if (playerPos != transform.position) {
+				anim.SetBool ("Moving", true);
+				transform.position = Vector3.MoveTowards (transform.position, playerPos, moveSpeed);
+			}
+			else {
+				anim.SetBool ("Moving", false);
+			}
+			if (targetDirection2 != transform.forward) {
+				Quaternion targetRotation = Quaternion.LookRotation(targetDirection2, Vector3.up);
+				Quaternion newRotation = Quaternion.Lerp(body.rotation, targetRotation, 15f * Time.deltaTime);
+				body.MoveRotation(newRotation);
+			}
 		}
 
-		else if (anim.GetFloat ("Direction") < -0.1) {
-			transform.Translate (Vector3.forward * moveSpeed);
-		}
+
+
 		if (Input.GetKeyDown ("space")) {
 			Debug.Log ("space key was pressed");
 			anim.SetBool("Jump", true);
@@ -103,9 +184,10 @@ public class PlayerScript : MonoBehaviour {
 			}
 		}*/
 
+		boxText.text = "Boxes: " + boxCount;
 		// Handles Picking up/Dropping Boxes on pressing E
 		if (Input.GetKeyDown ("e")) {
-			if (Physics.Raycast(transform.position, transform.forward, out hit, rayLength)) {
+			if (Physics.Raycast(transform.position + new Vector3(0f, 0.5f, 0f), transform.forward, out hit, rayLength)) {
 				print (hit.transform.gameObject.tag);
 				if (hit.collider.gameObject.CompareTag("Boxes")) {
 					Destroy(hit.transform.gameObject);
@@ -158,13 +240,7 @@ public class PlayerScript : MonoBehaviour {
 			gameObject.SetActive(false);
 		}
 
-		if (h != 0f || v != 0f) {
-			Vector3 targetDirection = new Vector3(h, 0f, v);
-			Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
-			Quaternion newRotation = Quaternion.Lerp(GetComponent<Rigidbody>().rotation, targetRotation, 15f * Time.deltaTime);
-			GetComponent<Rigidbody>().MoveRotation(newRotation);
 
-		}
 	}
 
 	// Function to set Ragdoll in player's pose
