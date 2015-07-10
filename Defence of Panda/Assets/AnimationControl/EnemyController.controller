@@ -483,7 +483,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Walking
+  m_Name: LocalMotion
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -637,7 +637,7 @@ AnimatorStateMachine:
     m_Position: {x: 320, y: 102, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110232662}
-    m_Position: {x: 324, y: 0, z: 0}
+    m_Position: {x: 36, y: 216, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110254036}
     m_Position: {x: 192, y: -120, z: 0}

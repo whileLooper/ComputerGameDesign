@@ -192,7 +192,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4837ec0eb915246078a1c8567d474670, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 4837ec0eb915246078a1c8567d474670, type: 3}
       propertyPath: m_Controller
@@ -335,7 +335,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &1101865813
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +500,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1 &1787028871
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,7 +560,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1 &2002843915
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,8 +610,8 @@ MonoBehaviour:
       id="_body" gameobject="0" /><field type="RAIN.Memory.BasicMemory" reference="1"
       id="_workingMemory" childrenvisible="False" /><field type="RAIN.Minds.BasicMind"
       reference="2" id="_mind" childrenvisible="False" /><field type="RAIN.Motion.BasicMotor"
-      reference="3" id="_motor" childrenvisible="True" /><field type="RAIN.Animation.MecanimAnimator"
-      reference="4" id="_animator" childrenvisible="False" /><field type="RAIN.Navigation.BasicNavigator"
+      reference="3" id="_motor" childrenvisible="False" /><field type="RAIN.Animation.MecanimAnimator"
+      reference="4" id="_animator" childrenvisible="True" /><field type="RAIN.Navigation.BasicNavigator"
       reference="5" id="_navigator" childrenvisible="False" /><field type="RAIN.Perception.BasicSenses"
       reference="6" id="_senses" childrenvisible="False" /><field type="System.Collections.Generic.List"
       id="_customElements" elementtype="RAIN.Core.CustomAIElement" childrenvisible="False"
@@ -635,7 +635,7 @@ MonoBehaviour:
       reference="10" id="_leftHand" /><field type="RAIN.Animation.MecanimAnimator+IKLookAt"
       reference="11" id="_lookAt" /><field type="System.Collections.Generic.List"
       id="_animationStates" elementtype="RAIN.Animation.MecanimAnimator+MecanimAnimatorState"><field
-      type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState" reference="12" id="element0"
+      type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState" reference="17" id="element0"
       /></field></reference><reference type="RAIN.Navigation.BasicNavigator" refcount="1"
       id="5"><field value="False" type="System.Boolean" id="_drawPaths" /><field value="0,1,0,1"
       type="UnityEngine.Color" id="_pathColor" /><field value="-0.5" type="System.Single"
@@ -671,32 +671,32 @@ MonoBehaviour:
       id="lookAtClampWeight" /><field value="90" type="System.Single" id="maxTurnRate"
       /><field value="0,0,0" type="UnityEngine.Vector3" id="positionVector" /><field
       value="0,0,0" type="UnityEngine.Vector3" id="lastPositionVector" /></reference><reference
-      type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState" refcount="1" id="12"><field
-      value="Base Layer.mutant_run" type="System.String" id="mecanimState" /><field
+      type="RAIN.Representation.Expression" refcount="1" id="12" customdata="19" /><reference
+      type="RAIN.Animation.MecanimParameterValue" refcount="0" id="13" /><reference
+      type="RAIN.Representation.Expression" refcount="0" id="14" customdata="10" /><reference
+      type="RAIN.Animation.MecanimParameterValue" refcount="0" id="15" /><reference
+      type="RAIN.Representation.Expression" refcount="0" id="16" customdata="14" /><reference
+      type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState" refcount="1" id="17"><field
+      value="Base Layer.LocalMotion" type="System.String" id="mecanimState" /><field
       value="0" type="System.Int32" id="layer" /><field type="RAIN.Animation.MecanimParameterValue"
-      reference="13" id="startParameter" childrenvisible="True" /><field type="RAIN.Animation.MecanimParameterValue"
-      reference="15" id="stopParameter" childrenvisible="False" /></reference><reference
-      type="RAIN.Animation.MecanimParameterValue" refcount="1" id="13"><field value="Speed"
-      type="System.String" id="parameterName" /><field value="Float" type="RAIN.Animation.MecanimParameterValue+SupportedMecanimType"
-      id="parameterType" /><field type="RAIN.Representation.Expression" reference="14"
+      reference="18" id="startParameter" childrenvisible="True" /><field type="RAIN.Animation.MecanimParameterValue"
+      reference="20" id="stopParameter" /></reference><reference type="RAIN.Animation.MecanimParameterValue"
+      refcount="1" id="18"><field value="Speed" type="System.String" id="parameterName"
+      /><field value="Float" type="RAIN.Animation.MecanimParameterValue+SupportedMecanimType"
+      id="parameterType" /><field type="RAIN.Representation.Expression" reference="12"
       id="parameterValue" /><field value="0" type="System.Single" id="dampTime" /></reference><reference
-      type="RAIN.Representation.Expression" refcount="1" id="14" customdata="10" /><reference
-      type="RAIN.Animation.MecanimParameterValue" refcount="1" id="15"><field value=""
+      type="RAIN.Representation.Expression" refcount="0" id="19" customdata="15" /><reference
+      type="RAIN.Animation.MecanimParameterValue" refcount="1" id="20"><field value=""
       type="System.String" id="parameterName" /><field value="Float" type="RAIN.Animation.MecanimParameterValue+SupportedMecanimType"
-      id="parameterType" /><field type="RAIN.Representation.Expression" reference="16"
+      id="parameterType" /><field type="RAIN.Representation.Expression" reference="21"
       id="parameterValue" /><field value="0" type="System.Single" id="dampTime" /></reference><reference
-      type="RAIN.Representation.Expression" refcount="1" id="16" customdata="14" /><reference
-      type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState" refcount="0" id="17"
-      /><reference type="RAIN.Animation.MecanimParameterValue" refcount="0" id="18"
-      /><reference type="RAIN.Representation.Expression" refcount="0" id="19" customdata="2"
-      /><reference type="RAIN.Animation.MecanimParameterValue" refcount="0" id="20"
-      /><reference type="RAIN.Representation.Expression" refcount="0" id="21" customdata="3"
-      /><reference type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState" refcount="0"
-      id="22" /><reference type="RAIN.Animation.MecanimParameterValue" refcount="0"
-      id="23" /><reference type="RAIN.Representation.Expression" refcount="0" id="24"
-      customdata="4" /><reference type="RAIN.Animation.MecanimParameterValue" refcount="0"
-      id="25" /><reference type="RAIN.Representation.Expression" refcount="0" id="26"
-      customdata="5" /></references></component>
+      type="RAIN.Representation.Expression" refcount="1" id="21" customdata="16" /><reference
+      type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState" refcount="0" id="22"
+      /><reference type="RAIN.Animation.MecanimParameterValue" refcount="0" id="23"
+      /><reference type="RAIN.Representation.Expression" refcount="0" id="24" customdata="4"
+      /><reference type="RAIN.Animation.MecanimParameterValue" refcount="0" id="25"
+      /><reference type="RAIN.Representation.Expression" refcount="0" id="26" customdata="5"
+      /></references></component>
     _serializedGameObjects:
     - {fileID: 404161961}
     - {fileID: 11400000, guid: f7409985677424ced856421e1ca34ead, type: 2}
@@ -731,3 +731,13 @@ MonoBehaviour:
       _stringData: MC4wCg==
     - _data: 
       _stringData: Cg==
+    - _data: 
+      _stringData: Cg==
+    - _data: 
+      _stringData: Cg==
+    - _data: 
+      _stringData: MAo=
+    - _data: 
+      _stringData: MC4K
+    - _data: 
+      _stringData: MC41Cg==

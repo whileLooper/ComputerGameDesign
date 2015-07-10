@@ -31,8 +31,8 @@ MonoBehaviour:
     BehaviorTreeName: SimplePatrol
     BehaviorTreeID: 9
     BehaviorTreeBindings: []
-    LastUpdate: 635720659648916030
-    LastModified: 635720657130000000
+    LastUpdate: 635720797273729040
+    LastModified: 635720665380000000
     Errored: 0
   TreeState:
     _branchRepo:
@@ -74,16 +74,16 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: animationstate
-        _currentValue: Base Layer.mutant_run
+        _currentValue: Base Layer.LocalMotion
         _recordChange: 1
         _changed: 0
       _type: 2
       _stateIndex: 1
       _parent: 4
-      _lastUpdate: 0
+      _lastUpdate: 635720797263601350
       _children: 
       _variables: 
-      _focused: 0
+      _focused: 1
     - _fields:
       - _field: name
         _currentValue: move
@@ -140,7 +140,7 @@ MonoBehaviour:
       _type: 14
       _stateIndex: 2
       _parent: 3
-      _lastUpdate: 635720659638678120
+      _lastUpdate: 0
       _children: 
       _variables: 
       _focused: 0
@@ -204,10 +204,10 @@ MonoBehaviour:
       _type: 22
       _stateIndex: 3
       _parent: 4
-      _lastUpdate: 635720659401744320
+      _lastUpdate: 635720793950239610
       _children: 02000000
       _variables: 
-      _focused: 1
+      _focused: 0
     - _fields:
       - _field: name
         _currentValue: root
@@ -256,7 +256,7 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 4
       _parent: 9
-      _lastUpdate: 635720659401744550
+      _lastUpdate: 635720786713471710
       _children: 0300000001000000
       _variables: 
       _focused: 0
@@ -328,7 +328,7 @@ MonoBehaviour:
       _type: 4
       _stateIndex: 9
       _parent: 0
-      _lastUpdate: 635720659638678120
+      _lastUpdate: 635720797263601350
       _children: 04000000
       _variables: 
       _focused: 0
