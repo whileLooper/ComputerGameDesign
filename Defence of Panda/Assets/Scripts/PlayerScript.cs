@@ -25,7 +25,7 @@ public class PlayerScript : MonoBehaviour {
 
 	//Box moving variables
 	public int boxCount = 5;
-	public float rayLength = 1.5f;
+	public float rayLength = 1.1f;
 	public GameObject box;
 	public Text boxText;
 	private RaycastHit hit;
@@ -35,7 +35,7 @@ public class PlayerScript : MonoBehaviour {
 	private Vector3 targetDirection;
 	private Vector3 targetDirection2;
 
-	public float moveSpeed = 0.3f;
+	public float moveSpeed = 4f;
 	public float animSpeed = 1.5f;
 	
 	public bool useCurve;
@@ -86,13 +86,13 @@ public class PlayerScript : MonoBehaviour {
 				body.MoveRotation (newRotation);
 			}
 			if (v > 0.1) {
-				transform.Translate (Vector3.forward * moveSpeed);
+				transform.Translate (Vector3.forward * moveSpeed * Time.deltaTime);
 			} else if (v < -0.1) {
-				transform.Translate (Vector3.forward * moveSpeed);
+				transform.Translate (Vector3.forward * moveSpeed * Time.deltaTime);
 			} else if (h > 0.1) {
-				transform.Translate (Vector3.forward * moveSpeed);
+				transform.Translate (Vector3.forward * moveSpeed * Time.deltaTime);
 			} else if (h < -0.1) {
-				transform.Translate (Vector3.forward * moveSpeed);
+				transform.Translate (Vector3.forward * moveSpeed * Time.deltaTime);
 			}
 
 		}
@@ -139,7 +139,7 @@ public class PlayerScript : MonoBehaviour {
 			}
 			if (playerPos != transform.position) {
 				anim.SetBool ("Moving", true);
-				transform.position = Vector3.MoveTowards (transform.position, playerPos, moveSpeed);
+				transform.position = Vector3.MoveTowards (transform.position, playerPos, moveSpeed * Time.deltaTime);
 			}
 			else {
 				anim.SetBool ("Moving", false);

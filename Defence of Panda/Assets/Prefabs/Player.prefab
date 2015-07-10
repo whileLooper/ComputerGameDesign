@@ -609,6 +609,7 @@ GameObject:
   - 82: {fileID: 8203124}
   - 114: {fileID: 11433006}
   - 82: {fileID: 8224516}
+  - 114: {fileID: 11473108}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2236,7 +2237,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 148728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.78999996, y: 0, z: -6.96000004}
+  m_LocalPosition: {x: 0, y: 0, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 475610}
@@ -2570,12 +2571,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ragdoll: {fileID: 143832, guid: 062c98c7db131804087f67a2dba3a939, type: 2}
   deathPos: {fileID: 491354}
-  boxCount: 5
-  rayLength: 1
-  box: {fileID: 0}
-  moveSpeed: .100000001
+  boxCount: 10
+  rayLength: 1.10000002
+  box: {fileID: 169766, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
+  boxText: {fileID: 0}
+  moveSpeed: 5
   animSpeed: 1.5
   useCurve: 0
+  oldMove: 0
 --- !u!114 &11433006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2598,6 +2601,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a4dbcc010672e42baa0a99f142c145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11473108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c80401e174fefa4abd135d5ecf5bef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turret1: {fileID: 116554, guid: 77bd6f78581c848868e3005f99b2484b, type: 2}
+  turret2: {fileID: 182914, guid: 92942aae13d6345d69c87173e957fb85, type: 2}
+  turret3: {fileID: 178122, guid: 4d70eee0be6b4440384946ebc040a521, type: 2}
+  rayLength: 1.10000002
 --- !u!136 &13603418
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -2607,10 +2625,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .600000024
-  m_Height: 2
+  m_Radius: .400000006
+  m_Height: 1.89999998
   m_Direction: 1
-  m_Center: {x: 0, y: .850000024, z: 0}
+  m_Center: {x: 0, y: .949999988, z: 0}
 --- !u!137 &13700802
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

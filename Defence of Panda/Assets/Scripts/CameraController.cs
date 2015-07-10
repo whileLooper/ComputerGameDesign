@@ -18,6 +18,7 @@ public class CameraController : MonoBehaviour
 		// initialising references
 		//standardPos = GameObject.Find ("CamPos").transform;
 		transform.position = GameObject.Find ("CamPos").transform.position;
+		transform.rotation = GameObject.Find ("CamPos").transform.rotation;
 		targetPos = GameObject.Find ("Player").transform;
 		offset = targetPos.position - transform.position;
 	}
