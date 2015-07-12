@@ -87,48 +87,6 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &220888839
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 440666, guid: 6c439e507dec9dd4aae48a18f074cf28, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -2.72729707
-      objectReference: {fileID: 0}
-    - target: {fileID: 440666, guid: 6c439e507dec9dd4aae48a18f074cf28, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: .707532346
-      objectReference: {fileID: 0}
-    - target: {fileID: 440666, guid: 6c439e507dec9dd4aae48a18f074cf28, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -6.7288723
-      objectReference: {fileID: 0}
-    - target: {fileID: 440666, guid: 6c439e507dec9dd4aae48a18f074cf28, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 440666, guid: 6c439e507dec9dd4aae48a18f074cf28, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 440666, guid: 6c439e507dec9dd4aae48a18f074cf28, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 440666, guid: 6c439e507dec9dd4aae48a18f074cf28, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 440666, guid: 6c439e507dec9dd4aae48a18f074cf28, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6c439e507dec9dd4aae48a18f074cf28, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &246051493
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +192,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 407924, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedData
@@ -247,10 +205,10 @@ Prefab:
         /><field type="RAIN.Memory.BasicMemory" reference="1" id="_workingMemory"
         childrenvisible="False" /><field type="RAIN.Minds.BasicMind" reference="2"
         id="_mind" childrenvisible="False" /><field type="RAIN.Motion.MecanimMotor"
-        reference="3" id="_motor" childrenvisible="True" /><field type="RAIN.Animation.MecanimAnimator"
+        reference="3" id="_motor" childrenvisible="False" /><field type="RAIN.Animation.MecanimAnimator"
         reference="4" id="_animator" childrenvisible="False" /><field type="RAIN.Navigation.BasicNavigator"
         reference="5" id="_navigator" childrenvisible="False" /><field type="RAIN.Perception.BasicSenses"
-        reference="6" id="_senses" childrenvisible="False" /><field type="System.Collections.Generic.List"
+        reference="6" id="_senses" childrenvisible="True" /><field type="System.Collections.Generic.List"
         id="_customElements" elementtype="RAIN.Core.CustomAIElement" childrenvisible="False"
         /></reference><reference type="RAIN.Memory.BasicMemory" refcount="1" id="1"><field
         type="System.Collections.Generic.List" id="_memoryItems" elementtype="RAIN.Memory.BasicMemory+MemoryItem"
@@ -316,14 +274,14 @@ Prefab:
         value="0,0,0" type="UnityEngine.Vector3" id="lastPositionVector" /></reference><reference
         type="RAIN.Representation.Expression" refcount="1" id="12" customdata="19"
         /><reference type="RAIN.Perception.Sensors.VisualSensor" refcount="1" id="13"><field
-        value="True" type="System.Boolean" id="_showVisual" /><field value="Visual
-        Sensor" type="System.String" id="_sensorName" /><field value="True" type="System.Boolean"
+        value="True" type="System.Boolean" id="_showVisual" /><field value="Sensor"
+        type="System.String" id="_sensorName" /><field value="True" type="System.Boolean"
         id="_isActive" /><field value="0.6,0,0.6,1" type="UnityEngine.Color" id="_sensorColor"
         /><field type="UnityEngine.Transform" id="_mountPoint" gameobject="2" /><field
         value="0,0,0" type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0"
         type="UnityEngine.Vector3" id="_angleOffset" /><field type="System.Collections.Generic.List"
         id="_filters" elementtype="RAIN.Perception.Sensors.Filters.RAINSensorFilter"
-        /><field value="10" type="System.Single" id="_range" /><field value="False"
+        /><field value="3" type="System.Single" id="_range" /><field value="False"
         type="System.Boolean" id="_canDetectSelf" /><field value="360" type="System.Single"
         id="_horizontalAngle" /><field value="180" type="System.Single" id="_verticalAngle"
         /><field value="False" type="System.Boolean" id="_lineOfSight" /><field value="-5"
@@ -461,6 +419,68 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &586281452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 586281453}
+  - 114: {fileID: 586281454}
+  m_Layer: 0
+  m_Name: Entity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &586281453
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 586281452}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1161265457}
+  m_RootOrder: 15
+--- !u!114 &586281454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 586281452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 220721487, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _serializedData: <component version="1.3" type="RAIN.Entities.EntityRig"><fields><field
+      value="OnWhenSelected" type="RAIN.Core.VisualModeEnum" id="_visualMode" /><field
+      value="True" type="System.Boolean" id="_useUnityMessages" /><field type="RAIN.Entities.Entity"
+      reference="0" id="_entity" /></fields><references><reference type="RAIN.Entities.Entity"
+      refcount="1" id="0"><field value="Player" type="System.String" id="_entityName"
+      /><field value="True" type="System.Boolean" id="_isActive" /><field type="UnityEngine.GameObject"
+      id="_form" gameobject="0" /><field type="System.Collections.Generic.List" id="_aspects"
+      elementtype="RAIN.Entities.Aspects.RAINAspect"><field type="RAIN.Entities.Aspects.VisualAspect"
+      reference="1" id="element0" /></field></reference><reference type="RAIN.Entities.Aspects.VisualAspect"
+      refcount="1" id="1"><field value="True" type="System.Boolean" id="_showVisual"
+      /><field value="PlayerAspect" type="System.String" id="_aspectName" /><field
+      value="True" type="System.Boolean" id="_isActive" /><field value="0.6,0,0,1"
+      type="UnityEngine.Color" id="_aspectColor" /><field value="-0.5" type="System.Single"
+      id="_outlineColorOffset" /><field value="0.4" type="System.Single" id="_selectionColorOffset"
+      /><field value="0.1" type="System.Single" id="_visualSize" /><field type="UnityEngine.Transform"
+      id="_mountPoint" gameobject="1" /><field value="0,0,0" type="UnityEngine.Vector3"
+      id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3" id="_angleOffset"
+      /></reference></references></component>
+    _serializedGameObjects:
+    - {fileID: 1161265456}
+    - {fileID: 1161265457}
+    _serializedCustomData: []
 --- !u!1 &990579253
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +553,15 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
+--- !u!1 &1161265456 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 148728, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
+  m_PrefabInternal: {fileID: 1827136188}
+--- !u!4 &1161265457 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 491354, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
+  m_PrefabInternal: {fileID: 1827136188}
 --- !u!1 &1316048470
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,7 +646,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1 &1438380407 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 144698, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
@@ -686,34 +714,49 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
---- !u!1 &1937494713
-GameObject:
+  m_RootOrder: 2
+--- !u!1001 &1827136188
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 220888839}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1937494714}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1937494714
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 220888839}
-  m_GameObject: {fileID: 1937494713}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 491354, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.33409595
+      objectReference: {fileID: 0}
+    - target: {fileID: 491354, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .707532346
+      objectReference: {fileID: 0}
+    - target: {fileID: 491354, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -3.95671463
+      objectReference: {fileID: 0}
+    - target: {fileID: 491354, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 491354, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 491354, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 491354, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 491354, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &2120742654
 GameObject:
   m_ObjectHideFlags: 0
