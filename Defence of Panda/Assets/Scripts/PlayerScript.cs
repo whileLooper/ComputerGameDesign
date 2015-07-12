@@ -13,6 +13,8 @@ public class PlayerScript : MonoBehaviour {
 	private static Vector3 RIGHT = new Vector3 (1f, 0f, 0f);
 	private Vector3 playerPos;
 
+	private static float healthPoint = 100;
+
 	Vector3 input;
 	Animator anim;
 	private AnimatorStateInfo currentBaseState;			// a reference to the current state of the animator, used for base layer
@@ -184,7 +186,7 @@ public class PlayerScript : MonoBehaviour {
 			}
 		}*/
 
-		boxText.text = "Boxes: " + boxCount;
+//		boxText.text = "Boxes: " + boxCount;
 		// Handles Picking up/Dropping Boxes on pressing E
 		if (Input.GetKeyDown ("e")) {
 			if (Physics.Raycast(transform.position + new Vector3(0f, 0.5f, 0f), transform.forward, out hit, rayLength)) {
@@ -278,5 +280,9 @@ public class PlayerScript : MonoBehaviour {
 		Debug.Log (transform.forward);
 		//transform.forward = new Vector3(0, 0, Mathf.Round (transform.forward.z));
 		currentObject.transform.Translate (transform.forward * 1.0f);
+	}
+
+	void setHealthPoint(float num){
+		healthPoint += num;
 	}
 }

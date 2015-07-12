@@ -21,7 +21,7 @@ MonoBehaviour:
       debugbreak=&quot;False&quot; consistent=&quot;True&quot; aspectvariable=&quot;&quot;
       aspectobjectvariable=&quot;&quot; aspect=&quot;&amp;quot;PlayerAspect&amp;quot;&quot;
       /&gt;&lt;detect sensor=&quot;&amp;quot;CloseSensor&amp;quot;&quot; repeatuntil=&quot;running&quot;
-      name=&quot;detect close&quot; matchtype=&quot;best&quot; entityobjectvariable=&quot;varHeroClose&quot;
+      name=&quot;detect&quot; matchtype=&quot;best&quot; entityobjectvariable=&quot;varHeroClose&quot;
       debugbreak=&quot;False&quot; consistent=&quot;True&quot; aspectvariable=&quot;&quot;
       aspectobjectvariable=&quot;&quot; aspect=&quot;&amp;quot;PlayerAspect&amp;quot;&quot;
       /&gt;&lt;selector usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; name=&quot;selector&quot;
@@ -29,7 +29,7 @@ MonoBehaviour:
       name=&quot;no detect&quot; debugbreak=&quot;False&quot; constraint=&quot;varHeroNearby
       == null&quot;&gt;&lt;parallel tiebreaker=&quot;fail&quot; succeed=&quot;all&quot;
       repeatuntil=&quot;&quot; name=&quot;parallel&quot; fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;waypointpatrol
-      waypointsetvariable=&quot;PatrolNetwork&quot; waypointactiontype=&quot;patrol&quot;
+      waypointsetvariable=&quot;PatrolNetwork2&quot; waypointactiontype=&quot;patrol&quot;
       traversetype=&quot;pingpong&quot; traverseorder=&quot;forward&quot; repeatuntil=&quot;&quot;
       pathtargetvariable=&quot;&quot; name=&quot;Walkpatrol&quot; movetargetvariable=&quot;NextPoint&quot;
       debugbreak=&quot;False&quot;&gt;&lt;move turnspeed=&quot;&quot; repeatuntil=&quot;&quot;
@@ -38,16 +38,18 @@ MonoBehaviour:
       closeenoughangle=&quot;&quot; /&gt;&lt;/waypointpatrol&gt;&lt;animate repeatuntil=&quot;running&quot;
       name=&quot;animate&quot; debugbreak=&quot;False&quot; animationstate=&quot;Base
       Layer.LocalMotion&quot; /&gt;&lt;/parallel&gt;&lt;/constraint&gt;&lt;constraint
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;detected&quot; debugbreak=&quot;False&quot;
-      constraint=&quot;varHeroNearby != null&quot;&gt;&lt;selector usepriorities=&quot;False&quot;
-      repeatuntil=&quot;&quot; name=&quot;selector&quot; debugbreak=&quot;False&quot;&gt;&lt;constraint
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;detected not close&quot;
-      debugbreak=&quot;False&quot; constraint=&quot;varHeroClose == null&quot;&gt;&lt;move
-      turnspeed=&quot;&quot; repeatuntil=&quot;&quot; name=&quot;move&quot; movetarget=&quot;varHeroClose&quot;
-      movespeed=&quot;&quot; facetarget=&quot;&quot; debugbreak=&quot;False&quot;
-      closeenoughdistance=&quot;&quot; closeenoughangle=&quot;&quot; /&gt;&lt;/constraint&gt;&lt;constraint
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;detected close&quot;
-      debugbreak=&quot;False&quot; constraint=&quot;varHeroClose != null&quot; /&gt;&lt;/selector&gt;&lt;/constraint&gt;&lt;/selector&gt;&lt;/parallel&gt;&lt;/behaviortree&gt;"
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;detected and not close&quot;
+      debugbreak=&quot;False&quot; constraint=&quot;varHeroNearby != null &amp;amp;&amp;amp;
+      varHeroClose == null&quot;&gt;&lt;move turnspeed=&quot;&quot; repeatuntil=&quot;&quot;
+      name=&quot;move&quot; movetarget=&quot;varHeroNearby&quot; movespeed=&quot;&quot;
+      facetarget=&quot;&quot; debugbreak=&quot;False&quot; closeenoughdistance=&quot;&quot;
+      closeenoughangle=&quot;&quot; /&gt;&lt;/constraint&gt;&lt;constraint repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;detected and close&quot; debugbreak=&quot;False&quot;
+      constraint=&quot;varHeroNearby != null &amp;amp;&amp;amp; varHeroClose != null&quot;&gt;&lt;parallel
+      tiebreaker=&quot;fail&quot; succeed=&quot;all&quot; repeatuntil=&quot;&quot;
+      name=&quot;parallel&quot; fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;animate
+      repeatuntil=&quot;&quot; name=&quot;animate-dying&quot; debugbreak=&quot;False&quot;
+      animationstate=&quot;Base Layer.Dying&quot; /&gt;&lt;/parallel&gt;&lt;/constraint&gt;&lt;/selector&gt;&lt;/parallel&gt;&lt;/behaviortree&gt;"
       type="System.String" id="treeData" /><field type="System.Array" id="treeBindings"
       elementtype="System.String" /></fields><references /></scriptableobject>
     _serializedGameObjects: []

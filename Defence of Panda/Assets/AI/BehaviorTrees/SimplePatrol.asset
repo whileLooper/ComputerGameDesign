@@ -16,8 +16,12 @@ MonoBehaviour:
       value="&lt;behaviortree version=&quot;1.1&quot; repeatuntil=&quot;&quot; name=&quot;SimplePatrol&quot;
       debugbreak=&quot;False&quot;&gt;&lt;parallel tiebreaker=&quot;fail&quot; succeed=&quot;all&quot;
       repeatuntil=&quot;&quot; name=&quot;root&quot; fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;detect
-      sensor=&quot;&amp;quot;Sensor&amp;quot;&quot; repeatuntil=&quot;running&quot;
-      name=&quot;detect&quot; matchtype=&quot;best&quot; entityobjectvariable=&quot;varHeroNearby&quot;
+      sensor=&quot;&amp;quot;NearbySensor&amp;quot;&quot; repeatuntil=&quot;running&quot;
+      name=&quot;detectNearby&quot; matchtype=&quot;best&quot; entityobjectvariable=&quot;varHeroNearby&quot;
+      debugbreak=&quot;False&quot; consistent=&quot;True&quot; aspectvariable=&quot;&quot;
+      aspectobjectvariable=&quot;&quot; aspect=&quot;&amp;quot;PlayerAspect&amp;quot;&quot;
+      /&gt;&lt;detect sensor=&quot;&amp;quot;CloseSensor&amp;quot;&quot; repeatuntil=&quot;&quot;
+      name=&quot;detectClose&quot; matchtype=&quot;best&quot; entityobjectvariable=&quot;varCloseby&quot;
       debugbreak=&quot;False&quot; consistent=&quot;True&quot; aspectvariable=&quot;&quot;
       aspectobjectvariable=&quot;&quot; aspect=&quot;&amp;quot;PlayerAspect&amp;quot;&quot;
       /&gt;&lt;selector usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; name=&quot;selector&quot;
@@ -34,16 +38,20 @@ MonoBehaviour:
       closeenoughangle=&quot;&quot; /&gt;&lt;/waypointpatrol&gt;&lt;animate repeatuntil=&quot;running&quot;
       name=&quot;animate&quot; debugbreak=&quot;False&quot; animationstate=&quot;Base
       Layer.LocalMotion&quot; /&gt;&lt;/parallel&gt;&lt;/constraint&gt;&lt;constraint
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;detected&quot; debugbreak=&quot;False&quot;
-      constraint=&quot;varHeroNearby != null&quot;&gt;&lt;iterator repeatuntil=&quot;&quot;
-      name=&quot;iterator&quot; debugbreak=&quot;False&quot; count=&quot;1&quot;&gt;&lt;animate
-      repeatuntil=&quot;running&quot; name=&quot;Roaring&quot; debugbreak=&quot;False&quot;
-      animationstate=&quot;Base Layer.mutant_roaring&quot; /&gt;&lt;/iterator&gt;&lt;sequencer
-      usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; name=&quot;sequencer&quot;
-      debugbreak=&quot;False&quot;&gt;&lt;move turnspeed=&quot;&quot; repeatuntil=&quot;&quot;
-      priority=&quot;&quot; name=&quot;move&quot; movetarget=&quot;varHeroNearby&quot;
-      movespeed=&quot;0&quot; facetarget=&quot;&quot; debugbreak=&quot;False&quot;
-      closeenoughdistance=&quot;&quot; closeenoughangle=&quot;&quot; /&gt;&lt;/sequencer&gt;&lt;/constraint&gt;&lt;/selector&gt;&lt;/parallel&gt;&lt;/behaviortree&gt;"
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;detecte&quot; debugbreak=&quot;False&quot;
+      constraint=&quot;varHeroNearby != null&quot;&gt;&lt;selector usepriorities=&quot;False&quot;
+      repeatuntil=&quot;&quot; name=&quot;selector&quot; debugbreak=&quot;False&quot;&gt;&lt;constraint
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;detect nearby&quot;
+      debugbreak=&quot;False&quot; constraint=&quot;(varHeroNearby != null) &amp;amp;&amp;amp;
+      (varCloseby == null)&quot;&gt;&lt;move turnspeed=&quot;&quot; repeatuntil=&quot;&quot;
+      name=&quot;move&quot; movetarget=&quot;varHeroNearby&quot; movespeed=&quot;&quot;
+      facetarget=&quot;varHeroNearby&quot; debugbreak=&quot;False&quot; closeenoughdistance=&quot;&quot;
+      closeenoughangle=&quot;&quot; /&gt;&lt;/constraint&gt;&lt;constraint repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;detect close&quot; debugbreak=&quot;False&quot;
+      constraint=&quot;varCloseby != null &quot;&gt;&lt;mecparam valueexpression=&quot;True&quot;
+      repeatuntil=&quot;&quot; parametertype=&quot;boolean&quot; parametername=&quot;Attack&quot;
+      name=&quot;mecparam&quot; debugbreak=&quot;False&quot; damptime=&quot;0&quot;
+      /&gt;&lt;/constraint&gt;&lt;/selector&gt;&lt;/constraint&gt;&lt;/selector&gt;&lt;/parallel&gt;&lt;/behaviortree&gt;"
       type="System.String" id="treeData" /><field type="System.Array" id="treeBindings"
       elementtype="System.String" /></fields><references /></scriptableobject>
     _serializedGameObjects: []
