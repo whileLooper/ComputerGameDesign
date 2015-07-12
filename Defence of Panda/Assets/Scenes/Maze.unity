@@ -3232,11 +3232,11 @@ Prefab:
         id="_isActive" /><field type="UnityEngine.GameObject" id="_body" gameobject="0"
         /><field type="RAIN.Memory.BasicMemory" reference="1" id="_workingMemory"
         childrenvisible="False" /><field type="RAIN.Minds.BasicMind" reference="2"
-        id="_mind" childrenvisible="True" /><field type="RAIN.Motion.BasicMotor" reference="3"
-        id="_motor" /><field type="RAIN.Animation.MecanimAnimator" reference="4" id="_animator"
-        childrenvisible="False" /><field type="RAIN.Navigation.BasicNavigator" reference="15"
-        id="_navigator" childrenvisible="False" /><field type="RAIN.Perception.BasicSenses"
-        reference="16" id="_senses" childrenvisible="False" /><field type="System.Collections.Generic.List"
+        id="_mind" childrenvisible="False" /><field type="RAIN.Motion.BasicMotor"
+        reference="3" id="_motor" /><field type="RAIN.Animation.MecanimAnimator" reference="4"
+        id="_animator" childrenvisible="False" /><field type="RAIN.Navigation.BasicNavigator"
+        reference="15" id="_navigator" childrenvisible="False" /><field type="RAIN.Perception.BasicSenses"
+        reference="16" id="_senses" childrenvisible="True" /><field type="System.Collections.Generic.List"
         id="_customElements" elementtype="RAIN.Core.CustomAIElement" /></reference><reference
         type="RAIN.Memory.BasicMemory" refcount="1" id="1"><field type="System.Collections.Generic.List"
         id="_memoryItems" elementtype="RAIN.Memory.BasicMemory+MemoryItem" /></reference><reference
@@ -3312,7 +3312,8 @@ Prefab:
         elementtype="System.String" /></reference><reference type="RAIN.Perception.BasicSenses"
         refcount="1" id="16"><field type="System.Collections.Generic.List" id="_sensors"
         elementtype="RAIN.Perception.Sensors.RAINSensor"><field type="RAIN.Perception.Sensors.VisualSensor"
-        reference="17" id="element0" /></field></reference><reference type="RAIN.Perception.Sensors.VisualSensor"
+        reference="17" id="element0" /><field type="RAIN.Perception.Sensors.VisualSensor"
+        reference="18" id="element1" /></field></reference><reference type="RAIN.Perception.Sensors.VisualSensor"
         refcount="1" id="17"><field value="True" type="System.Boolean" id="_showVisual"
         /><field value="Sensor" type="System.String" id="_sensorName" /><field value="True"
         type="System.Boolean" id="_isActive" /><field value="0.6,0,0.6,1" type="UnityEngine.Color"
@@ -3324,11 +3325,24 @@ Prefab:
         type="System.Boolean" id="_canDetectSelf" /><field value="360" type="System.Single"
         id="_horizontalAngle" /><field value="180" type="System.Single" id="_verticalAngle"
         /><field value="False" type="System.Boolean" id="_lineOfSight" /><field value="-5"
-        type="UnityEngine.LayerMask" id="_lineOfSightMask" /></reference></references></component>
+        type="UnityEngine.LayerMask" id="_lineOfSightMask" /></reference><reference
+        type="RAIN.Perception.Sensors.VisualSensor" refcount="1" id="18"><field value="True"
+        type="System.Boolean" id="_showVisual" /><field value="CloseSensor" type="System.String"
+        id="_sensorName" /><field value="True" type="System.Boolean" id="_isActive"
+        /><field value="0.6,0,0.6,1" type="UnityEngine.Color" id="_sensorColor" /><field
+        type="UnityEngine.Transform" id="_mountPoint" gameobject="3" /><field value="0,0,0"
+        type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3"
+        id="_angleOffset" /><field type="System.Collections.Generic.List" id="_filters"
+        elementtype="RAIN.Perception.Sensors.Filters.RAINSensorFilter" /><field value="3"
+        type="System.Single" id="_range" /><field value="False" type="System.Boolean"
+        id="_canDetectSelf" /><field value="360" type="System.Single" id="_horizontalAngle"
+        /><field value="180" type="System.Single" id="_verticalAngle" /><field value="False"
+        type="System.Boolean" id="_lineOfSight" /><field value="-5" type="UnityEngine.LayerMask"
+        id="_lineOfSightMask" /></reference></references></component>
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedGameObjects.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedGameObjects.Array.data[0]
@@ -3343,6 +3357,10 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: 539862ab087469f4cbe8dec5743f4a96,
         type: 2}
+    - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
+      propertyPath: _dataSerializer._serializedGameObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 2010171382}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.size
       value: 2
