@@ -125,7 +125,7 @@ MonoBehaviour:
       type="System.Int32" id="_gridSize" /><field value="0,0,0.6,1" type="UnityEngine.Color"
       id="_meshColor" /><field value="-0.5" type="System.Single" id="_outlineColorOffset"
       /><field value="0.25" type="System.Single" id="_visualHeightOffset" /><field
-      value="True" type="System.Boolean" id="_previewColliders" /><field value="None"
+      value="True" type="System.Boolean" id="_previewColliders" /><field value="NavigationMesh"
       type="RAIN.Navigation.NavMesh.NavMesh+DisplayModeEnum" id="_displayMode" /><field
       value="-1" type="UnityEngine.LayerMask" id="_includedLayers" /><field type="System.Collections.Generic.List"
       id="_ignoredTags" elementtype="System.String" /><field type="System.Collections.Generic.List"
@@ -142,7 +142,7 @@ MonoBehaviour:
     - {fileID: 246051495}
     _serializedCustomData:
     - _data: 
-      _stringData: BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPTmF2aWdhdGlvbiBNZXNoAAAAAG8SgzoAAAAA
+      _stringData: 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AQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAFAAAAAAAAAAEAAAACAAAAAwAAAAQAAAAJAAAAAAAAAAEAAAACAAAABAAAAAAAAAACAAAAAgAAAAMAAAAEAAAABQAAAAEAAAACAAAAAwAAAAQAAAAFAAAAhP0swTMzMz/FhULBzswowTMzMz8AAEDB0MwsQAAAAAAAAIBAAAIAAAAAAAAAAQAAAAIAAAAAAAAACQAAAAEAAAACAAAAAQAAAAIAAAABAAAAAAAAAAcAAAACAAAAAgAAAAMAAAACAAAAAAAAAAYAAAARAAAAAgAAAAMAAAAEAAAAAQAAAAAAAAAfAAAAAgAAAAQAAAAAAAAAAQAAAAAAAAAKAAAAAwAAAAIAAAAFAAAAAwAA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
 --- !u!4 &246051495
 Transform:
   m_ObjectHideFlags: 0
@@ -151,7 +151,7 @@ Transform:
   m_GameObject: {fileID: 246051493}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.72729707, y: .707532346, z: -6.7288723}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.35686588, y: 1, z: 2.59614253}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -203,18 +203,18 @@ Prefab:
         type="RAIN.Core.AI" refcount="1" id="0"><field value="True" type="System.Boolean"
         id="_isActive" /><field type="UnityEngine.GameObject" id="_body" gameobject="0"
         /><field type="RAIN.Memory.BasicMemory" reference="1" id="_workingMemory"
-        childrenvisible="False" /><field type="RAIN.Minds.BasicMind" reference="2"
-        id="_mind" childrenvisible="False" /><field type="RAIN.Motion.MecanimMotor"
-        reference="3" id="_motor" childrenvisible="False" /><field type="RAIN.Animation.MecanimAnimator"
-        reference="4" id="_animator" childrenvisible="False" /><field type="RAIN.Navigation.BasicNavigator"
-        reference="5" id="_navigator" childrenvisible="False" /><field type="RAIN.Perception.BasicSenses"
-        reference="6" id="_senses" childrenvisible="True" /><field type="System.Collections.Generic.List"
-        id="_customElements" elementtype="RAIN.Core.CustomAIElement" childrenvisible="False"
-        /></reference><reference type="RAIN.Memory.BasicMemory" refcount="1" id="1"><field
-        type="System.Collections.Generic.List" id="_memoryItems" elementtype="RAIN.Memory.BasicMemory+MemoryItem"
-        /></reference><reference type="RAIN.Minds.BasicMind" refcount="1" id="2"><field
-        type="RAIN.BehaviorTrees.BTAsset" id="_behaviorTreeAsset" gameobject="1" /><field
-        type="System.Collections.Generic.List" id="_behaviorTreeBindings" elementtype="RAIN.BehaviorTrees.BTAssetBinding"
+        /><field type="RAIN.Minds.BasicMind" reference="2" id="_mind" childrenvisible="False"
+        /><field type="RAIN.Motion.MecanimMotor" reference="3" id="_motor" /><field
+        type="RAIN.Animation.MecanimAnimator" reference="5" id="_animator" childrenvisible="True"
+        /><field type="RAIN.Navigation.BasicNavigator" reference="16" id="_navigator"
+        childrenvisible="False" /><field type="RAIN.Perception.BasicSenses" reference="17"
+        id="_senses" childrenvisible="False" /><field type="System.Collections.Generic.List"
+        id="_customElements" elementtype="RAIN.Core.CustomAIElement" /></reference><reference
+        type="RAIN.Memory.BasicMemory" refcount="1" id="1"><field type="System.Collections.Generic.List"
+        id="_memoryItems" elementtype="RAIN.Memory.BasicMemory+MemoryItem" /></reference><reference
+        type="RAIN.Minds.BasicMind" refcount="1" id="2"><field type="RAIN.BehaviorTrees.BTAsset"
+        id="_behaviorTreeAsset" gameobject="2" /><field type="System.Collections.Generic.List"
+        id="_behaviorTreeBindings" elementtype="RAIN.BehaviorTrees.BTAssetBinding"
         /></reference><reference type="RAIN.Motion.MecanimMotor" refcount="1" id="3"><field
         value="1" type="System.Single" id="_speed" /><field value="360" type="System.Single"
         id="_rotationSpeed" /><field value="0.1" type="System.Single" id="_closeEnoughDistance"
@@ -226,45 +226,41 @@ Prefab:
         value="False" type="System.Boolean" id="_useRootMotion" /><field value="True"
         type="System.Boolean" id="_overrideRootRotation" /><field type="System.Collections.Generic.List"
         id="_forwardedParameters" elementtype="RAIN.Motion.MecanimMotor+MotorParameter"><field
-        type="RAIN.Motion.MecanimMotor+MotorParameter" reference="14" id="element0"
-        /></field></reference><reference type="RAIN.Animation.MecanimAnimator" refcount="1"
-        id="4"><field type="RAIN.Animation.MecanimAnimator+IKTarget" reference="7"
-        id="_rightFoot" /><field type="RAIN.Animation.MecanimAnimator+IKTarget" reference="8"
-        id="_leftFoot" /><field type="RAIN.Animation.MecanimAnimator+IKTarget" reference="9"
-        id="_rightHand" /><field type="RAIN.Animation.MecanimAnimator+IKTarget" reference="10"
-        id="_leftHand" /><field type="RAIN.Animation.MecanimAnimator+IKLookAt" reference="11"
-        id="_lookAt" /><field type="System.Collections.Generic.List" id="_animationStates"
-        elementtype="RAIN.Animation.MecanimAnimator+MecanimAnimatorState"><field type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState"
-        reference="17" id="element0" /></field></reference><reference type="RAIN.Navigation.BasicNavigator"
-        refcount="1" id="5"><field value="False" type="System.Boolean" id="_drawPaths"
-        /><field value="0,1,0,1" type="UnityEngine.Color" id="_pathColor" /><field
-        value="-0.5" type="System.Single" id="_outlineColorOffset" /><field value="100"
-        type="System.Int32" id="_maxPathfindingSteps" /><field value="0" type="System.Single"
-        id="_maxPathLength" /><field type="System.Collections.Generic.List" id="_graphTags"
-        elementtype="System.String" /></reference><reference type="RAIN.Perception.BasicSenses"
-        refcount="1" id="6"><field type="System.Collections.Generic.List" id="_sensors"
-        elementtype="RAIN.Perception.Sensors.RAINSensor"><field type="RAIN.Perception.Sensors.VisualSensor"
-        reference="13" id="element0" /></field></reference><reference type="RAIN.Animation.MecanimAnimator+IKTarget"
-        refcount="1" id="7"><field value="False" type="System.Boolean" id="isActive"
+        type="RAIN.Motion.MecanimMotor+MotorParameter" reference="4" id="element0"
+        /></field></reference><reference type="RAIN.Motion.MecanimMotor+MotorParameter"
+        refcount="1" id="4"><field value="RotationSpeed" type="System.String" id="parameterName"
+        /><field value="RotationSpeed" type="RAIN.Motion.MecanimMotor+MotorField"
+        id="motorField" /><field value="0" type="System.Single" id="dampTime" /></reference><reference
+        type="RAIN.Animation.MecanimAnimator" refcount="1" id="5"><field type="RAIN.Animation.MecanimAnimator+IKTarget"
+        reference="6" id="_rightFoot" /><field type="RAIN.Animation.MecanimAnimator+IKTarget"
+        reference="7" id="_leftFoot" /><field type="RAIN.Animation.MecanimAnimator+IKTarget"
+        reference="8" id="_rightHand" /><field type="RAIN.Animation.MecanimAnimator+IKTarget"
+        reference="9" id="_leftHand" /><field type="RAIN.Animation.MecanimAnimator+IKLookAt"
+        reference="10" id="_lookAt" /><field type="System.Collections.Generic.List"
+        id="_animationStates" elementtype="RAIN.Animation.MecanimAnimator+MecanimAnimatorState"><field
+        type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState" reference="11"
+        id="element0" /><field type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState"
+        reference="19" id="element1" /></field></reference><reference type="RAIN.Animation.MecanimAnimator+IKTarget"
+        refcount="1" id="6"><field value="False" type="System.Boolean" id="isActive"
         /><field value="0" type="System.Single" id="positionWeight" /><field value="0"
         type="System.Single" id="rotationWeight" /><field value="0,0,0" type="UnityEngine.Vector3"
         id="positionVector" /><field value="0,0,0" type="UnityEngine.Vector3" id="rotationVector"
         /></reference><reference type="RAIN.Animation.MecanimAnimator+IKTarget" refcount="1"
-        id="8"><field value="False" type="System.Boolean" id="isActive" /><field value="0"
+        id="7"><field value="False" type="System.Boolean" id="isActive" /><field value="0"
         type="System.Single" id="positionWeight" /><field value="0" type="System.Single"
         id="rotationWeight" /><field value="0,0,0" type="UnityEngine.Vector3" id="positionVector"
         /><field value="0,0,0" type="UnityEngine.Vector3" id="rotationVector" /></reference><reference
+        type="RAIN.Animation.MecanimAnimator+IKTarget" refcount="1" id="8"><field
+        value="False" type="System.Boolean" id="isActive" /><field value="0" type="System.Single"
+        id="positionWeight" /><field value="0" type="System.Single" id="rotationWeight"
+        /><field value="0,0,0" type="UnityEngine.Vector3" id="positionVector" /><field
+        value="0,0,0" type="UnityEngine.Vector3" id="rotationVector" /></reference><reference
         type="RAIN.Animation.MecanimAnimator+IKTarget" refcount="1" id="9"><field
         value="False" type="System.Boolean" id="isActive" /><field value="0" type="System.Single"
         id="positionWeight" /><field value="0" type="System.Single" id="rotationWeight"
         /><field value="0,0,0" type="UnityEngine.Vector3" id="positionVector" /><field
         value="0,0,0" type="UnityEngine.Vector3" id="rotationVector" /></reference><reference
-        type="RAIN.Animation.MecanimAnimator+IKTarget" refcount="1" id="10"><field
-        value="False" type="System.Boolean" id="isActive" /><field value="0" type="System.Single"
-        id="positionWeight" /><field value="0" type="System.Single" id="rotationWeight"
-        /><field value="0,0,0" type="UnityEngine.Vector3" id="positionVector" /><field
-        value="0,0,0" type="UnityEngine.Vector3" id="rotationVector" /></reference><reference
-        type="RAIN.Animation.MecanimAnimator+IKLookAt" refcount="1" id="11"><field
+        type="RAIN.Animation.MecanimAnimator+IKLookAt" refcount="1" id="10"><field
         value="False" type="System.Boolean" id="isActive" /><field value="0" type="System.Single"
         id="lookAtWeight" /><field value="0" type="System.Single" id="lookAtBodyWeight"
         /><field value="0" type="System.Single" id="lookAtHeadWeight" /><field value="0"
@@ -272,48 +268,61 @@ Prefab:
         id="lookAtClampWeight" /><field value="90" type="System.Single" id="maxTurnRate"
         /><field value="0,0,0" type="UnityEngine.Vector3" id="positionVector" /><field
         value="0,0,0" type="UnityEngine.Vector3" id="lastPositionVector" /></reference><reference
-        type="RAIN.Representation.Expression" refcount="1" id="12" customdata="19"
-        /><reference type="RAIN.Perception.Sensors.VisualSensor" refcount="1" id="13"><field
-        value="True" type="System.Boolean" id="_showVisual" /><field value="Sensor"
-        type="System.String" id="_sensorName" /><field value="True" type="System.Boolean"
-        id="_isActive" /><field value="0.6,0,0.6,1" type="UnityEngine.Color" id="_sensorColor"
-        /><field type="UnityEngine.Transform" id="_mountPoint" gameobject="2" /><field
-        value="0,0,0" type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0"
-        type="UnityEngine.Vector3" id="_angleOffset" /><field type="System.Collections.Generic.List"
+        type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState" refcount="1" id="11"><field
+        value="Base Layer.LocalMotion" type="System.String" id="mecanimState" /><field
+        value="0" type="System.Int32" id="layer" /><field type="RAIN.Animation.MecanimParameterValue"
+        reference="12" id="startParameter" childrenvisible="False" /><field type="RAIN.Animation.MecanimParameterValue"
+        reference="14" id="stopParameter" /></reference><reference type="RAIN.Animation.MecanimParameterValue"
+        refcount="1" id="12"><field value="Speed" type="System.String" id="parameterName"
+        /><field value="Float" type="RAIN.Animation.MecanimParameterValue+SupportedMecanimType"
+        id="parameterType" /><field type="RAIN.Representation.Expression" reference="13"
+        id="parameterValue" /><field value="0" type="System.Single" id="dampTime"
+        /></reference><reference type="RAIN.Representation.Expression" refcount="1"
+        id="13" customdata="0" /><reference type="RAIN.Animation.MecanimParameterValue"
+        refcount="1" id="14"><field value="" type="System.String" id="parameterName"
+        /><field value="Float" type="RAIN.Animation.MecanimParameterValue+SupportedMecanimType"
+        id="parameterType" /><field type="RAIN.Representation.Expression" reference="15"
+        id="parameterValue" /><field value="0" type="System.Single" id="dampTime"
+        /></reference><reference type="RAIN.Representation.Expression" refcount="1"
+        id="15" customdata="1" /><reference type="RAIN.Navigation.BasicNavigator"
+        refcount="1" id="16"><field value="False" type="System.Boolean" id="_drawPaths"
+        /><field value="0,1,0,1" type="UnityEngine.Color" id="_pathColor" /><field
+        value="-0.5" type="System.Single" id="_outlineColorOffset" /><field value="100"
+        type="System.Int32" id="_maxPathfindingSteps" /><field value="0" type="System.Single"
+        id="_maxPathLength" /><field type="System.Collections.Generic.List" id="_graphTags"
+        elementtype="System.String" /></reference><reference type="RAIN.Perception.BasicSenses"
+        refcount="1" id="17"><field type="System.Collections.Generic.List" id="_sensors"
+        elementtype="RAIN.Perception.Sensors.RAINSensor"><field type="RAIN.Perception.Sensors.VisualSensor"
+        reference="18" id="element0" /></field></reference><reference type="RAIN.Perception.Sensors.VisualSensor"
+        refcount="1" id="18"><field value="True" type="System.Boolean" id="_showVisual"
+        /><field value="Sensor" type="System.String" id="_sensorName" /><field value="True"
+        type="System.Boolean" id="_isActive" /><field value="0.6,0,0.6,1" type="UnityEngine.Color"
+        id="_sensorColor" /><field type="UnityEngine.Transform" id="_mountPoint" gameobject="1"
+        /><field value="0,0,0" type="UnityEngine.Vector3" id="_positionOffset" /><field
+        value="0,0,0" type="UnityEngine.Vector3" id="_angleOffset" /><field type="System.Collections.Generic.List"
         id="_filters" elementtype="RAIN.Perception.Sensors.Filters.RAINSensorFilter"
-        /><field value="3" type="System.Single" id="_range" /><field value="False"
+        /><field value="5" type="System.Single" id="_range" /><field value="False"
         type="System.Boolean" id="_canDetectSelf" /><field value="360" type="System.Single"
         id="_horizontalAngle" /><field value="180" type="System.Single" id="_verticalAngle"
         /><field value="False" type="System.Boolean" id="_lineOfSight" /><field value="-5"
         type="UnityEngine.LayerMask" id="_lineOfSightMask" /></reference><reference
-        type="RAIN.Motion.MecanimMotor+MotorParameter" refcount="1" id="14"><field
-        value="RotationSpeed" type="System.String" id="parameterName" /><field value="RotationSpeed"
-        type="RAIN.Motion.MecanimMotor+MotorField" id="motorField" /><field value="0"
-        type="System.Single" id="dampTime" /></reference><reference type="RAIN.Motion.MecanimMotor+MotorParameter"
-        refcount="0" id="15" /><reference type="RAIN.Representation.Expression" refcount="0"
-        id="16" customdata="14" /><reference type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState"
-        refcount="1" id="17"><field value="Base Layer.LocalMotion" type="System.String"
-        id="mecanimState" /><field value="0" type="System.Int32" id="layer" /><field
-        type="RAIN.Animation.MecanimParameterValue" reference="18" id="startParameter"
-        childrenvisible="True" /><field type="RAIN.Animation.MecanimParameterValue"
-        reference="20" id="stopParameter" /></reference><reference type="RAIN.Animation.MecanimParameterValue"
-        refcount="1" id="18"><field value="Speed" type="System.String" id="parameterName"
-        /><field value="Float" type="RAIN.Animation.MecanimParameterValue+SupportedMecanimType"
-        id="parameterType" /><field type="RAIN.Representation.Expression" reference="12"
-        id="parameterValue" /><field value="0" type="System.Single" id="dampTime"
-        /></reference><reference type="RAIN.Representation.Expression" refcount="0"
-        id="19" customdata="15" /><reference type="RAIN.Animation.MecanimParameterValue"
-        refcount="1" id="20"><field value="" type="System.String" id="parameterName"
-        /><field value="Float" type="RAIN.Animation.MecanimParameterValue+SupportedMecanimType"
+        type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState" refcount="1" id="19"><field
+        value="Base Layer.mutant_roaring" type="System.String" id="mecanimState" /><field
+        value="0" type="System.Int32" id="layer" /><field type="RAIN.Animation.MecanimParameterValue"
+        reference="20" id="startParameter" childrenvisible="True" /><field type="RAIN.Animation.MecanimParameterValue"
+        reference="22" id="stopParameter" childrenvisible="False" /></reference><reference
+        type="RAIN.Animation.MecanimParameterValue" refcount="1" id="20"><field value="Roaring"
+        type="System.String" id="parameterName" /><field value="Trigger" type="RAIN.Animation.MecanimParameterValue+SupportedMecanimType"
         id="parameterType" /><field type="RAIN.Representation.Expression" reference="21"
         id="parameterValue" /><field value="0" type="System.Single" id="dampTime"
         /></reference><reference type="RAIN.Representation.Expression" refcount="1"
-        id="21" customdata="16" /><reference type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState"
-        refcount="0" id="22" /><reference type="RAIN.Animation.MecanimParameterValue"
-        refcount="0" id="23" /><reference type="RAIN.Representation.Expression" refcount="0"
-        id="24" customdata="4" /><reference type="RAIN.Animation.MecanimParameterValue"
-        refcount="0" id="25" /><reference type="RAIN.Representation.Expression" refcount="0"
-        id="26" customdata="5" /></references></component>
+        id="21" customdata="17" /><reference type="RAIN.Animation.MecanimParameterValue"
+        refcount="1" id="22"><field value="" type="System.String" id="parameterName"
+        /><field value="Boolean" type="RAIN.Animation.MecanimParameterValue+SupportedMecanimType"
+        id="parameterType" /><field type="RAIN.Representation.Expression" reference="23"
+        id="parameterValue" /><field value="0" type="System.Single" id="dampTime"
+        /></reference><reference type="RAIN.Representation.Expression" refcount="1"
+        id="23" customdata="27" /></references></component>
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedGameObjects.Array.size
@@ -326,19 +335,19 @@ Prefab:
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedGameObjects.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: f7409985677424ced856421e1ca34ead,
-        type: 2}
+      objectReference: {fileID: 1438380408}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedGameObjects.Array.data[2]
       value: 
-      objectReference: {fileID: 1438380408}
+      objectReference: {fileID: 11400000, guid: f7409985677424ced856421e1ca34ead,
+        type: 2}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.size
-      value: 20
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[0]._stringData
-      value: Cg==
+      value: MC41Cg==
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[1]._stringData
@@ -354,67 +363,99 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[4]._stringData
-      value: Cg==
+      value: dAo=
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[5]._stringData
-      value: Cg==
+      value: dHIK
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[6]._stringData
-      value: Cg==
+      value: dHJ1Cg==
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[7]._stringData
-      value: Cg==
+      value: dHJ1ZQo=
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[8]._stringData
-      value: MAo=
+      value: VAo=
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[9]._stringData
-      value: MC4K
+      value: VHIK
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[10]._stringData
-      value: MC41Cg==
+      value: VHJ5Cg==
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[11]._stringData
-      value: MAo=
+      value: VHJ5ZQo=
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[12]._stringData
-      value: MC4K
+      value: VHJ5ZVwK
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[13]._stringData
-      value: MC4wCg==
+      value: VHJ5ZQo=
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[14]._stringData
-      value: Cg==
+      value: VHJ5Cg==
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[15]._stringData
-      value: Cg==
+      value: VHIK
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[16]._stringData
-      value: Cg==
+      value: VHJ1Cg==
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[17]._stringData
-      value: MAo=
+      value: VHJ1ZQo=
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[18]._stringData
-      value: MC4K
+      value: VAo=
       objectReference: {fileID: 0}
     - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[19]._stringData
-      value: MC41Cg==
+      value: VHIK
+      objectReference: {fileID: 0}
+    - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
+      propertyPath: _dataSerializer._serializedCustomData.Array.data[20]._stringData
+      value: VHJ1Cg==
+      objectReference: {fileID: 0}
+    - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
+      propertyPath: _dataSerializer._serializedCustomData.Array.data[21]._stringData
+      value: VHJ1ZQo=
+      objectReference: {fileID: 0}
+    - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
+      propertyPath: _dataSerializer._serializedCustomData.Array.data[22]._stringData
+      value: Rgo=
+      objectReference: {fileID: 0}
+    - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
+      propertyPath: _dataSerializer._serializedCustomData.Array.data[23]._stringData
+      value: RmEK
+      objectReference: {fileID: 0}
+    - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
+      propertyPath: _dataSerializer._serializedCustomData.Array.data[24]._stringData
+      value: RmFsCg==
+      objectReference: {fileID: 0}
+    - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
+      propertyPath: _dataSerializer._serializedCustomData.Array.data[25]._stringData
+      value: RmFscwo=
+      objectReference: {fileID: 0}
+    - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
+      propertyPath: _dataSerializer._serializedCustomData.Array.data[26]._stringData
+      value: RmFsc2UK
+      objectReference: {fileID: 0}
+    - target: {fileID: 11496270, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
+      propertyPath: _dataSerializer._serializedCustomData.Array.data[27]._stringData
+      value: Cg==
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9ccb8b2317bdc6b4b8ef8b9827e21edf, type: 2}
@@ -481,6 +522,79 @@ MonoBehaviour:
     - {fileID: 1161265456}
     - {fileID: 1161265457}
     _serializedCustomData: []
+--- !u!1 &884338473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 884338474}
+  - 33: {fileID: 884338477}
+  - 65: {fileID: 884338476}
+  - 23: {fileID: 884338475}
+  m_Layer: 0
+  m_Name: Cube (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &884338474
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884338473}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.61999989, y: 0, z: 5.28821611}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2088550365}
+  m_RootOrder: 1
+--- !u!23 &884338475
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884338473}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &884338476
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884338473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &884338477
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884338473}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &990579253
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,7 +664,7 @@ Transform:
   m_GameObject: {fileID: 990579253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.49510884, y: .707532346, z: -4.57458973}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -562,6 +676,79 @@ GameObject:
 Transform:
   m_PrefabParentObject: {fileID: 491354, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
   m_PrefabInternal: {fileID: 1827136188}
+--- !u!1 &1268830720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1268830721}
+  - 33: {fileID: 1268830724}
+  - 65: {fileID: 1268830723}
+  - 23: {fileID: 1268830722}
+  m_Layer: 0
+  m_Name: Cube (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1268830721
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268830720}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.455000043, y: 0, z: 5.28821611}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2088550365}
+  m_RootOrder: 0
+--- !u!23 &1268830722
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268830720}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &1268830723
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268830720}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1268830724
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268830720}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1316048470
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,7 +829,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1316048470}
   m_LocalRotation: {x: .412608117, y: 0, z: 0, w: .910908639}
-  m_LocalPosition: {x: -2.74000001, y: 6.13999987, z: -11.0799999}
+  m_LocalPosition: {x: -2.74000001, y: 13.9799995, z: -17.9599991}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -724,7 +911,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 491354, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.33409595
+      value: -4.8499999
       objectReference: {fileID: 0}
     - target: {fileID: 491354, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
       propertyPath: m_LocalPosition.y
@@ -732,7 +919,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 491354, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -3.95671463
+      value: -6.63999987
       objectReference: {fileID: 0}
     - target: {fileID: 491354, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
       propertyPath: m_LocalRotation.x
@@ -754,9 +941,162 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 148728, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2088550364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2088550365}
+  - 33: {fileID: 2088550368}
+  - 65: {fileID: 2088550367}
+  - 23: {fileID: 2088550366}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2088550365
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2088550364}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.48000002, y: 1.63, z: -9.37643242}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children:
+  - {fileID: 1268830721}
+  - {fileID: 884338474}
+  - {fileID: 2090538631}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+--- !u!23 &2088550366
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2088550364}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &2088550367
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2088550364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &2088550368
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2088550364}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2090538627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2090538631}
+  - 33: {fileID: 2090538630}
+  - 65: {fileID: 2090538629}
+  - 23: {fileID: 2090538628}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &2090538628
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2090538627}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &2090538629
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2090538627}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &2090538630
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2090538627}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2090538631
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2090538627}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.61999989, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2088550365}
+  m_RootOrder: 2
 --- !u!1 &2120742654
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,7 +1107,7 @@ GameObject:
   - 4: {fileID: 2120742656}
   - 114: {fileID: 2120742655}
   m_Layer: 0
-  m_Name: WayRoute
+  m_Name: PatrolRoute
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -789,12 +1129,12 @@ MonoBehaviour:
       value="AlwaysOn" type="RAIN.Core.VisualModeEnum" id="_visualMode" /><field type="RAIN.Navigation.Waypoints.WaypointSet"
       reference="0" id="_waypointSet" /></fields><references><reference type="RAIN.Navigation.Waypoints.WaypointSet"
       refcount="6" id="0"><field type="UnityEngine.Transform" id="_mountPoint" gameobject="0"
-      /><field value="Waypoint Route" type="System.String" id="_setName" /><field
-      value="Route" type="RAIN.Navigation.Waypoints.WaypointSet+WaypointSetType" id="_setType"
-      /><field value="0.6,0,0.6,1" type="UnityEngine.Color" id="_networkColor" /><field
-      value="-0.5" type="System.Single" id="_outlineColorOffset" /><field value="0.4"
-      type="System.Single" id="_selectionColorOffset" /><field type="System.Collections.Generic.List"
-      id="_waypoints" elementtype="RAIN.Navigation.Waypoints.Waypoint"><field type="RAIN.Navigation.Waypoints.Waypoint"
+      /><field value="WayRoute" type="System.String" id="_setName" /><field value="Route"
+      type="RAIN.Navigation.Waypoints.WaypointSet+WaypointSetType" id="_setType" /><field
+      value="0.6,0,0.6,1" type="UnityEngine.Color" id="_networkColor" /><field value="-0.5"
+      type="System.Single" id="_outlineColorOffset" /><field value="0.4" type="System.Single"
+      id="_selectionColorOffset" /><field type="System.Collections.Generic.List" id="_waypoints"
+      elementtype="RAIN.Navigation.Waypoints.Waypoint"><field type="RAIN.Navigation.Waypoints.Waypoint"
       reference="1" id="element0" /><field type="RAIN.Navigation.Waypoints.Waypoint"
       reference="2" id="element1" /><field type="RAIN.Navigation.Waypoints.Waypoint"
       reference="3" id="element2" /><field type="RAIN.Navigation.Waypoints.Waypoint"
@@ -803,24 +1143,24 @@ MonoBehaviour:
       id="_connections" elementtype="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection"
       /></reference><reference type="RAIN.Navigation.Waypoints.Waypoint" refcount="1"
       id="1"><field type="RAIN.Navigation.Waypoints.WaypointSet" reference="0" id="_waypointSet"
-      /><field value="" type="System.String" id="_waypointName" /><field value="4.091617,0,0"
+      /><field value="" type="System.String" id="_waypointName" /><field value="7.042893,0,5.923553"
       type="UnityEngine.Vector3" id="_position" /><field value="0.5" type="System.Single"
       id="_range" /></reference><reference type="RAIN.Navigation.Waypoints.Waypoint"
       refcount="1" id="2"><field type="RAIN.Navigation.Waypoints.WaypointSet" reference="0"
       id="_waypointSet" /><field value="" type="System.String" id="_waypointName"
-      /><field value="2.441615,0,-5.223042" type="UnityEngine.Vector3" id="_position"
+      /><field value="7.475835,0,-8.669739" type="UnityEngine.Vector3" id="_position"
       /><field value="0.5" type="System.Single" id="_range" /></reference><reference
       type="RAIN.Navigation.Waypoints.Waypoint" refcount="1" id="3"><field type="RAIN.Navigation.Waypoints.WaypointSet"
       reference="0" id="_waypointSet" /><field value="" type="System.String" id="_waypointName"
-      /><field value="-3.437086,0,-4.418564" type="UnityEngine.Vector3" id="_position"
+      /><field value="-6.610647,0,-8.622974" type="UnityEngine.Vector3" id="_position"
       /><field value="0.5" type="System.Single" id="_range" /></reference><reference
       type="RAIN.Navigation.Waypoints.Waypoint" refcount="1" id="4"><field type="RAIN.Navigation.Waypoints.WaypointSet"
       reference="0" id="_waypointSet" /><field value="" type="System.String" id="_waypointName"
-      /><field value="-3.377439,0,0" type="UnityEngine.Vector3" id="_position" /><field
-      value="0.5" type="System.Single" id="_range" /></reference><reference type="RAIN.Navigation.Waypoints.Waypoint"
-      refcount="1" id="5"><field type="RAIN.Navigation.Waypoints.WaypointSet" reference="0"
-      id="_waypointSet" /><field value="" type="System.String" id="_waypointName"
-      /><field value="0,0,2.259789" type="UnityEngine.Vector3" id="_position" /><field
+      /><field value="-6.747229,0,6.385902" type="UnityEngine.Vector3" id="_position"
+      /><field value="0.5" type="System.Single" id="_range" /></reference><reference
+      type="RAIN.Navigation.Waypoints.Waypoint" refcount="1" id="5"><field type="RAIN.Navigation.Waypoints.WaypointSet"
+      reference="0" id="_waypointSet" /><field value="" type="System.String" id="_waypointName"
+      /><field value="0,0,-0.2067065" type="UnityEngine.Vector3" id="_position" /><field
       value="0.5" type="System.Single" id="_range" /></reference></references></component>
     _serializedGameObjects:
     - {fileID: 2120742656}

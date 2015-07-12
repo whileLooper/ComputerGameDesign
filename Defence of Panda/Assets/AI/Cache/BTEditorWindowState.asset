@@ -15,10 +15,17 @@ MonoBehaviour:
   HolderNodes:
   - AssetPath: .currentai
     BehaviorTreeName: (No AI Selected)
+<<<<<<< Updated upstream
     BehaviorTreeID: 17
     BehaviorTreeBindings: []
     LastUpdate: 635722622660873218
     LastModified: 635722617378167050
+=======
+    BehaviorTreeID: 0
+    BehaviorTreeBindings: []
+    LastUpdate: 0
+    LastModified: 0
+>>>>>>> Stashed changes
     Errored: 0
   - AssetPath: .createxml
     BehaviorTreeName: Create New Behavior Tree
@@ -36,44 +43,24 @@ MonoBehaviour:
     Errored: 0
   - AssetPath: Assets/AI/BehaviorTrees/SimpleNetwork.asset
     BehaviorTreeName: SimpleNetwork
+<<<<<<< Updated upstream
     BehaviorTreeID: 17
+=======
+    BehaviorTreeID: 0
+>>>>>>> Stashed changes
     BehaviorTreeBindings: []
     LastUpdate: 635722622660873218
     LastModified: 635722617378167050
     Errored: 0
   - AssetPath: Assets/AI/BehaviorTrees/SimplePatrol.asset
     BehaviorTreeName: SimplePatrol
-    BehaviorTreeID: 0
+    BehaviorTreeID: 24
     BehaviorTreeBindings: []
-    LastUpdate: 635722597731275234
-    LastModified: 635722578942296002
+    LastUpdate: 635722623747129970
+    LastModified: 635722613080000000
     Errored: 0
   TreeState:
     _branchRepo:
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
     - _fields: []
       _type: 0
       _stateIndex: 0
@@ -184,15 +171,19 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       _type: 14
+<<<<<<< Updated upstream
       _stateIndex: 6
       _parent: 7
+=======
+      _stateIndex: 2
+      _parent: 3
       _lastUpdate: 0
       _children: 
       _variables: 
       _focused: 0
     - _fields:
       - _field: name
-        _currentValue: Walkpatrol
+        _currentValue: sequencer
         _recordChange: 1
         _changed: 0
       - _field: open
@@ -223,8 +214,166 @@ MonoBehaviour:
         _currentValue: 
         _recordChange: 1
         _changed: 0
+      - _field: usepriorities
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      _type: 19
+      _stateIndex: 3
+      _parent: 6
+      _lastUpdate: 635722623747129550
+      _children: 02000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: Roaring
+        _recordChange: 1
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: running
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: animationstate
+        _currentValue: Base Layer.mutant_roaring
+        _recordChange: 1
+        _changed: 0
+      _type: 2
+      _stateIndex: 4
+      _parent: 5
+>>>>>>> Stashed changes
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+<<<<<<< Updated upstream
+        _currentValue: Walkpatrol
+=======
+        _currentValue: iterator
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: count
+        _currentValue: 1
+        _recordChange: 1
+        _changed: 0
+      _type: 10
+      _stateIndex: 5
+      _parent: 6
+      _lastUpdate: 635722623747129070
+      _children: 04000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: detected
+>>>>>>> Stashed changes
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+<<<<<<< Updated upstream
       - _field: waypointactiontype
         _currentValue: patrol
+=======
+      - _field: constraint
+        _currentValue: varHeroNearby != null
+        _recordChange: 1
+        _changed: 0
+      _type: 5
+      _stateIndex: 6
+      _parent: 12
+      _lastUpdate: 635722623747129250
+      _children: 0500000003000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: animate
+        _recordChange: 1
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: running
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+>>>>>>> Stashed changes
         _recordChange: 1
         _changed: 0
       - _field: traversetype
@@ -301,6 +450,7 @@ MonoBehaviour:
         _changed: 0
       _type: 15
       _stateIndex: 8
+<<<<<<< Updated upstream
       _parent: 10
       _lastUpdate: 635722617382499940
       _children: 0700000005000000
@@ -312,6 +462,75 @@ MonoBehaviour:
       _parent: 0
       _lastUpdate: 0
       _children: 
+=======
+      _parent: 9
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: Walkpatrol
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: waypointactiontype
+        _currentValue: patrol
+        _recordChange: 1
+        _changed: 0
+      - _field: traversetype
+        _currentValue: pingpong
+        _recordChange: 1
+        _changed: 0
+      - _field: traverseorder
+        _currentValue: forward
+        _recordChange: 1
+        _changed: 0
+      - _field: waypointsetvariable
+        _currentValue: PatrolRoute
+        _recordChange: 1
+        _changed: 0
+      - _field: pathtargetvariable
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: movetargetvariable
+        _currentValue: NextPoint
+        _recordChange: 1
+        _changed: 0
+      _type: 22
+      _stateIndex: 9
+      _parent: 10
+      _lastUpdate: 635722623747128490
+      _children: 08000000
+>>>>>>> Stashed changes
       _variables: 
       _focused: 0
     - _fields:
@@ -354,8 +573,13 @@ MonoBehaviour:
       _type: 5
       _stateIndex: 10
       _parent: 11
+<<<<<<< Updated upstream
       _lastUpdate: 635722617382499940
       _children: 08000000
+=======
+      _lastUpdate: 635722623747128640
+      _children: 0900000007000000
+>>>>>>> Stashed changes
       _variables: 
       _focused: 0
     - _fields:
@@ -397,9 +621,15 @@ MonoBehaviour:
         _changed: 0
       _type: 18
       _stateIndex: 11
+<<<<<<< Updated upstream
       _parent: 16
       _lastUpdate: 635722617382499940
       _children: 0a00000017000000
+=======
+      _parent: 12
+      _lastUpdate: 635722623747127670
+      _children: 0a000000
+>>>>>>> Stashed changes
       _variables: 
       _focused: 0
     - _fields:
@@ -462,8 +692,13 @@ MonoBehaviour:
       _type: 7
       _stateIndex: 12
       _parent: 16
+<<<<<<< Updated upstream
       _lastUpdate: 635722618810172298
       _children: 
+=======
+      _lastUpdate: 635722623747128780
+      _children: 0b00000006000000
+>>>>>>> Stashed changes
       _variables: 
       _focused: 0
     - _fields: []
@@ -593,6 +828,7 @@ MonoBehaviour:
         _changed: 0
       _type: 15
       _stateIndex: 16
+<<<<<<< Updated upstream
       _parent: 17
       _lastUpdate: 635722617382499940
       _children: 0f0000000c0000000b000000
@@ -636,6 +872,19 @@ MonoBehaviour:
       _parent: 0
       _lastUpdate: 635722622660873218
       _children: 10000000
+=======
+      _parent: 24
+      _lastUpdate: 635722623747127280
+      _children: 0f0000000c000000
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+>>>>>>> Stashed changes
       _variables: 
       _focused: 0
     - _fields: []
@@ -678,6 +927,7 @@ MonoBehaviour:
       _children: 
       _variables: 
       _focused: 0
+<<<<<<< Updated upstream
     - _fields:
       - _field: name
         _currentValue: detected
@@ -720,10 +970,19 @@ MonoBehaviour:
       _parent: 11
       _lastUpdate: 635722618305699056
       _children: 19000000
+=======
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+>>>>>>> Stashed changes
       _variables: 
       _focused: 0
     - _fields:
       - _field: name
+<<<<<<< Updated upstream
         _currentValue: move
         _recordChange: 1
         _changed: 0
@@ -785,6 +1044,9 @@ MonoBehaviour:
     - _fields:
       - _field: name
         _currentValue: selector
+=======
+        _currentValue: SimplePatrol
+>>>>>>> Stashed changes
         _recordChange: 1
         _changed: 0
       - _field: open
@@ -815,6 +1077,7 @@ MonoBehaviour:
         _currentValue: 
         _recordChange: 1
         _changed: 0
+<<<<<<< Updated upstream
       - _field: usepriorities
         _currentValue: False
         _recordChange: 1
@@ -915,3 +1178,13 @@ MonoBehaviour:
       _variables: 
       _focused: 1
     _freeList: 01000000020000000300000004000000090000000d0000000e0000001200000013000000140000001500000016000000
+=======
+      _type: 4
+      _stateIndex: 24
+      _parent: 0
+      _lastUpdate: 635722623747125560
+      _children: 10000000
+      _variables: 
+      _focused: 0
+    _freeList: 010000000d0000000e00000011000000120000001300000014000000150000001600000017000000
+>>>>>>> Stashed changes
