@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1227330239, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
-  m_Name: SimplePatrol
+  m_Name: BoChenBehaviorTree
   m_EditorClassIdentifier: 
   _dataSerializer:
     _serializedData: <scriptableobject version="1.3" type="RAIN.BehaviorTrees.BTAsset"><fields><field
@@ -26,8 +26,18 @@ MonoBehaviour:
       aspectobjectvariable=&quot;&quot; aspect=&quot;&amp;quot;PlayerAspect&amp;quot;&quot;
       /&gt;&lt;selector usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; name=&quot;selector&quot;
       debugbreak=&quot;False&quot;&gt;&lt;constraint repeatuntil=&quot;&quot; priority=&quot;&quot;
-      name=&quot;no detect&quot; debugbreak=&quot;False&quot; constraint=&quot;varHeroNearby
-      == null&quot;&gt;&lt;parallel tiebreaker=&quot;fail&quot; succeed=&quot;all&quot;
+      name=&quot;health zero&quot; debugbreak=&quot;False&quot; constraint=&quot;myHealth
+      &amp;lt;= 0&quot;&gt;&lt;mecparam valueexpression=&quot;True&quot; repeatuntil=&quot;&quot;
+      parametertype=&quot;boolean&quot; parametername=&quot;Death&quot; name=&quot;mecparam&quot;
+      debugbreak=&quot;False&quot; damptime=&quot;0&quot; /&gt;&lt;animate repeatuntil=&quot;&quot;
+      name=&quot;animate-death&quot; debugbreak=&quot;False&quot; animationstate=&quot;animate-death&quot;
+      /&gt;&lt;timer waitforsec=&quot;3.5&quot; returnvalue=&quot;success&quot; name=&quot;timer&quot;
+      debugbreak=&quot;False&quot; /&gt;&lt;action repeatuntil=&quot;&quot; parametervalues=&quot;&quot;
+      parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;action&quot; debugbreak=&quot;False&quot;
+      classname=&quot;EnemyDeath&quot; /&gt;&lt;/constraint&gt;&lt;constraint repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;no detect&quot; debugbreak=&quot;False&quot;
+      constraint=&quot;varHeroNearby == null &amp;amp;&amp;amp; myHealth &amp;gt;
+      0&quot;&gt;&lt;parallel tiebreaker=&quot;fail&quot; succeed=&quot;all&quot;
       repeatuntil=&quot;&quot; name=&quot;parallel&quot; fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;waypointpatrol
       waypointsetvariable=&quot;PatrolRoute&quot; waypointactiontype=&quot;patrol&quot;
       traversetype=&quot;pingpong&quot; traverseorder=&quot;forward&quot; repeatuntil=&quot;&quot;
@@ -39,18 +49,20 @@ MonoBehaviour:
       name=&quot;animate&quot; debugbreak=&quot;False&quot; animationstate=&quot;Base
       Layer.LocalMotion&quot; /&gt;&lt;/parallel&gt;&lt;/constraint&gt;&lt;constraint
       repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;detecte&quot; debugbreak=&quot;False&quot;
-      constraint=&quot;varHeroNearby != null&quot;&gt;&lt;selector usepriorities=&quot;False&quot;
-      repeatuntil=&quot;&quot; name=&quot;selector&quot; debugbreak=&quot;False&quot;&gt;&lt;constraint
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;detect nearby&quot;
-      debugbreak=&quot;False&quot; constraint=&quot;(varHeroNearby != null) &amp;amp;&amp;amp;
-      (varCloseby == null)&quot;&gt;&lt;move turnspeed=&quot;&quot; repeatuntil=&quot;&quot;
-      name=&quot;move&quot; movetarget=&quot;varHeroNearby&quot; movespeed=&quot;&quot;
-      facetarget=&quot;varHeroNearby&quot; debugbreak=&quot;False&quot; closeenoughdistance=&quot;&quot;
-      closeenoughangle=&quot;&quot; /&gt;&lt;/constraint&gt;&lt;constraint repeatuntil=&quot;&quot;
-      priority=&quot;&quot; name=&quot;detect close&quot; debugbreak=&quot;False&quot;
-      constraint=&quot;varCloseby != null &quot;&gt;&lt;mecparam valueexpression=&quot;True&quot;
-      repeatuntil=&quot;&quot; parametertype=&quot;boolean&quot; parametername=&quot;Attack&quot;
-      name=&quot;mecparam&quot; debugbreak=&quot;False&quot; damptime=&quot;0&quot;
+      constraint=&quot;varHeroNearby != null &amp;amp;&amp;amp; myHealth &amp;gt;
+      0&quot;&gt;&lt;selector usepriorities=&quot;False&quot; repeatuntil=&quot;&quot;
+      name=&quot;selector&quot; debugbreak=&quot;False&quot;&gt;&lt;constraint repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;detect nearby&quot; debugbreak=&quot;False&quot;
+      constraint=&quot;varCloseby == null&quot;&gt;&lt;move turnspeed=&quot;&quot;
+      repeatuntil=&quot;&quot; name=&quot;move&quot; movetarget=&quot;varHeroNearby&quot;
+      movespeed=&quot;&quot; facetarget=&quot;varHeroNearby&quot; debugbreak=&quot;False&quot;
+      closeenoughdistance=&quot;&quot; closeenoughangle=&quot;&quot; /&gt;&lt;/constraint&gt;&lt;constraint
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;detect close&quot;
+      debugbreak=&quot;False&quot; constraint=&quot;varCloseby != null &quot;&gt;&lt;mecparam
+      valueexpression=&quot;True&quot; repeatuntil=&quot;&quot; parametertype=&quot;boolean&quot;
+      parametername=&quot;Attack&quot; name=&quot;mecparam&quot; debugbreak=&quot;False&quot;
+      damptime=&quot;0&quot; /&gt;&lt;animate repeatuntil=&quot;&quot; name=&quot;animate-attack&quot;
+      debugbreak=&quot;False&quot; animationstate=&quot;Base Layer.Swiping_Attack&quot;
       /&gt;&lt;/constraint&gt;&lt;/selector&gt;&lt;/constraint&gt;&lt;/selector&gt;&lt;/parallel&gt;&lt;/behaviortree&gt;"
       type="System.String" id="treeData" /><field type="System.Array" id="treeBindings"
       elementtype="System.String" /></fields><references /></scriptableobject>
