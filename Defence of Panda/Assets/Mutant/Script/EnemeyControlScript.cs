@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿// PandaDev
+// Shen Yang, YuanZheng Zhu, Ryan Diaz, Bo Chen
+
+
+using UnityEngine;
 using System.Collections;
 
 public class EnemeyControlScript : MonoBehaviour {

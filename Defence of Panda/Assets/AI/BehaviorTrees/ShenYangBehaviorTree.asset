@@ -31,7 +31,7 @@ MonoBehaviour:
       priority=&quot;&quot; name=&quot;constraint&quot; debugbreak=&quot;False&quot;
       constraint=&quot;varHeroNearby == null&quot;&gt;&lt;parallel tiebreaker=&quot;fail&quot;
       succeed=&quot;all&quot; repeatuntil=&quot;&quot; name=&quot;parallel&quot; fail=&quot;any&quot;
-      debugbreak=&quot;False&quot;&gt;&lt;waypointpatrol waypointsetvariable=&quot;PatrolRoute2&quot;
+      debugbreak=&quot;False&quot;&gt;&lt;waypointpatrol waypointsetvariable=&quot;PatrolNetwork&quot;
       waypointactiontype=&quot;patrol&quot; traversetype=&quot;pingpong&quot; traverseorder=&quot;forward&quot;
       repeatuntil=&quot;&quot; pathtargetvariable=&quot;&quot; name=&quot;Walkpatrol&quot;
       movetargetvariable=&quot;NextPoint&quot; debugbreak=&quot;False&quot;&gt;&lt;move

@@ -1,4 +1,6 @@
-﻿//yzhu319, 07/04/2015
+﻿// PandaDev
+// Shen Yang, YuanZheng Zhu, Ryan Diaz, Bo Chen
+
 using UnityEngine;
 using System.Collections;
 
