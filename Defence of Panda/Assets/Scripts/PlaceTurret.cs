@@ -13,7 +13,7 @@ public class PlaceTurret : MonoBehaviour {
 	private Vector3 turretPos;
 	// Use this for initialization
 	void Start () {
-		currentTurret = turret1;
+		currentTurret = turret2;
 	}
 	
 	// Update is called once per frame
@@ -25,6 +25,7 @@ public class PlaceTurret : MonoBehaviour {
 					turretPos = new Vector3(transform.position.x, 0.5f, transform.position.z) + (transform.forward * 1.1f);
 					turretPos.x = Mathf.Round(turretPos.x);
 					turretPos.z = Mathf.Round(turretPos.z);
+					turretPos.y += 1.0f;
 					Instantiate(currentTurret, turretPos, new Quaternion());
 
 				}

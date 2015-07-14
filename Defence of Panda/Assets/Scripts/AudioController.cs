@@ -36,7 +36,7 @@ public class AudioController : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision other){
-		if(other.gameObject.name != "Floor"){
+		if(other.gameObject.name != "Floor" && other.gameObject.CompareTag("Enemy") != true){
 			doorSoundClip.Play ();
 		}
 	}

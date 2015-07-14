@@ -4,7 +4,9 @@ using System.Collections;
 public class cannonShoot : MonoBehaviour {
 
 	public float timeBetweenBullets = 1.5f;
-	public Transform enemyTransform;
+
+	GameObject[] enemies;
+
 	float timer;
 	LineRenderer laser;
 	Vector3 laserStartPos;
@@ -16,6 +18,9 @@ public class cannonShoot : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
 		laser = GetComponent<LineRenderer>();
 		laser.enabled = false;
 		hitParticle = GetComponentInChildren<ParticleSystem>();
@@ -36,7 +41,7 @@ public class cannonShoot : MonoBehaviour {
 		hitParticle.Stop ();
 
 		laserStartPos = transform.position;
-		laserTargetPos = enemyTransform.position + new Vector3(0,1.5f,0);
+		laserTargetPos = enemies[0].transform.position + new Vector3(0,1.5f,0);
 		laser.SetPosition(0, laserStartPos);
 		laser.SetPosition(1, laserTargetPos);
 
@@ -46,7 +51,7 @@ public class cannonShoot : MonoBehaviour {
 		transform.rotation = laserArmRotation;
 		transform.eulerAngles += new Vector3(0,-90f,-22f); 
 
-		hitParticle.transform.position = enemyTransform.position + new Vector3(0,1.5f,0);
+		hitParticle.transform.position = enemies[0].transform.position + new Vector3(0,1.5f,0);
 
 		//within a certain range, attack the enemy
 		if(laserDirection.magnitude < 5.0f){ 

@@ -7,6 +7,8 @@ TagManager:
   - Box
   - Boxes
   - Earthquake
+  - Enemy
+  - Base
   layers:
   - Default
   - TransparentFX
