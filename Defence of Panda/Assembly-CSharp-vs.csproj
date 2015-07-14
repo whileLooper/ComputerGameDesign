@@ -50,6 +50,7 @@
      <Compile Include="Assets\AI\Actions\returnDamage.cs" />
      <Compile Include="Assets\CameraShakeController.cs" />
      <Compile Include="Assets\EnemyNavigation.cs" />
+     <Compile Include="Assets\EnemySpawn.cs" />
      <Compile Include="Assets\Mutant\Script\BotControlScript.cs" />
      <Compile Include="Assets\Mutant\Script\EnemeyControlScript.cs" />
      <Compile Include="Assets\Mutant\Script\EnemySprayController.cs" />

@@ -88,8 +88,8 @@ GameObject:
   - 136: {fileID: 13626242}
   - 135: {fileID: 13529088}
   - 114: {fileID: 11473664}
-  - 195: {fileID: 19511002}
-  - 114: {fileID: 11486806}
+  - 195: {fileID: 19593386}
+  - 114: {fileID: 11451906}
   m_Layer: 0
   m_Name: EnemyAlpha
   m_TagString: Untagged
@@ -1915,6 +1915,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11451906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e609c9b115c2642ebb50a74191a56def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11473664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1930,17 +1941,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a52a63f9a686b4379bc2d84769f30ea5, type: 3}
   - {fileID: 8300000, guid: 0a0bc14bfaaa349f5a189fe20e7ee4b9, type: 3}
   - {fileID: 8300000, guid: 27c00f67578be443ca1a05f98e2dbc34, type: 3}
---- !u!114 &11486806
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e609c9b115c2642ebb50a74191a56def, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &13529088
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -1949,7 +1949,7 @@ SphereCollider:
   m_GameObject: {fileID: 112020}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: .600000024
   m_Center: {x: 0, y: 1, z: 0}
@@ -2066,14 +2066,14 @@ SkinnedMeshRenderer:
     m_Center: {x: .117019027, y: -.0236892551, z: -.0010676384}
     m_Extent: {x: .988318086, y: .267665207, z: .979925215}
   m_DirtyAABB: 0
---- !u!195 &19511002
+--- !u!195 &19593386
 NavMeshAgent:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112020}
   m_Enabled: 1
-  m_Radius: .5
+  m_Radius: .400000006
   m_Speed: .100000001
   m_Acceleration: 8
   avoidancePriority: 50
