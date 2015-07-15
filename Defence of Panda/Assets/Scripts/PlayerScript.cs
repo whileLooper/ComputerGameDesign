@@ -26,7 +26,7 @@ public class PlayerScript : MonoBehaviour {
 	private Rigidbody body;
 
 	//Box moving variables
-	public int boxCount = 5;
+	public int boxCount = 10;
 	public float rayLength = 1.1f;
 	public GameObject box;
 	public Text boxText;
@@ -194,6 +194,7 @@ public class PlayerScript : MonoBehaviour {
 				if (hit.collider.gameObject.CompareTag("Boxes")) {
 					Destroy(hit.transform.gameObject);
 					boxCount++;
+					boxText.text = "Boxes: " + boxCount;
 				}
 			}
 			else {
@@ -203,6 +204,7 @@ public class PlayerScript : MonoBehaviour {
 					boxPos.z = Mathf.Round(boxPos.z);
 					Instantiate(box, boxPos, new Quaternion());
 					boxCount--;
+					boxText.text = "Boxes: " + boxCount;
 				}
 			}
 		}
