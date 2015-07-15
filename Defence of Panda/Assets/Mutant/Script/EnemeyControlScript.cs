@@ -3,6 +3,7 @@
 
 
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class EnemeyControlScript : MonoBehaviour {
@@ -14,11 +15,16 @@ public class EnemeyControlScript : MonoBehaviour {
 	float attackRate = 2.5f;
 	float nextAttack = 2.5f;
 
+	GameObject shackBase;
+	 
 	// Use this for initialization
 	void Start () {
 		source = gameObject.AddComponent<AudioSource> ();
 		anim = GetComponent<Animator> ();
 		source.clip = clips[0];
+
+		shackBase = GameObject.FindGameObjectWithTag("Base");
+		 
 	}
 	
 	// Update is called once per frame
@@ -37,6 +43,10 @@ public class EnemeyControlScript : MonoBehaviour {
 			nextAttack = Time.time + attackRate;
 			StartCoroutine(attackSound());
 			isAttack = !isAttack;
+
+			//take damage of Base (shack)
+			shackBase.GetComponent<BaseHealth>().baseHealth -= 5;
+			Debug.Log("Hey, I took 5 damage!");
 		}
 	}
 

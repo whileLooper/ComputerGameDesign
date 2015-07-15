@@ -13,6 +13,7 @@ public class EnemyHealth : MonoBehaviour {
 	Vector3 healthBarZeroPoint; //left point of healthbar base
 	float barLengthInit;
 	float barLength;
+	NavMeshAgent navAgent;
 
 
 	// Use this for initialization
@@ -21,6 +22,7 @@ public class EnemyHealth : MonoBehaviour {
 		anim = GetComponent<Animator>();
 		barLengthInit = healthBar.GetComponent<Renderer>().bounds.extents.x; //this is half-length of inital healthbar
 		barLength = barLengthInit;
+		navAgent = GetComponent<NavMeshAgent>();
 	}
 	
 	// Update is called once per frame
@@ -43,6 +45,10 @@ public class EnemyHealth : MonoBehaviour {
 		if(enemyHealth <= 0){
 			anim.SetTrigger ("Death");
 			//object destroyed in enemy manager script
+
+			//disable enemy navigation
+			navAgent.speed = 0;
+
 		}
 	}
 
