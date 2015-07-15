@@ -394,6 +394,18 @@ Prefab:
       propertyPath: m_PixelPerfect
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11464666, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
+      propertyPath: m_Color.r
+      value: .098940298
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464666, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
+      propertyPath: m_Color.g
+      value: .864033163
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464666, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
+      propertyPath: m_Color.b
+      value: .897058845
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
   m_IsPrefabParent: 0
