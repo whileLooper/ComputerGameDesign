@@ -2525,7 +2525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 112020, guid: 1c4704734d5724176b650fcaeccbc3f6, type: 2}
-  spawnTime: 5
+  spawnTime: 4
 --- !u!4 &769461401
 Transform:
   m_ObjectHideFlags: 0
