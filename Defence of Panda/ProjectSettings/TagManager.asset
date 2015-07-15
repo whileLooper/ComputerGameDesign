@@ -9,6 +9,7 @@ TagManager:
   - Earthquake
   - Enemy
   - Base
+  - HealthBar
   layers:
   - Default
   - TransparentFX
