@@ -275,6 +275,9 @@ public class PlayerScript : MonoBehaviour {
 		print ("collision exited");
 		collision = false;
 	}
+	IEnumerator Step() {
+		yield return new WaitForSeconds (1);
+	}
 
 	IEnumerator WaitTwoSeconds() {
 		yield return new WaitForSeconds(1);
