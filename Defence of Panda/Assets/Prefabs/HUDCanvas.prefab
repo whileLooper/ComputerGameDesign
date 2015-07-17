@@ -61,7 +61,7 @@ GameObject:
   - 114: {fileID: 11437884}
   m_Layer: 5
   m_Name: MoneyCount
-  m_TagString: Untagged
+  m_TagString: Money
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -386,7 +386,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Boxes: 10'
+  m_Text: 'Boxes: 8'
 --- !u!222 &22208480
 CanvasRenderer:
   m_ObjectHideFlags: 1

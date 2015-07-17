@@ -384,15 +384,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22402570, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22402570, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 138048, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
-      propertyPath: m_TagString
-      value: Money
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
@@ -1024,6 +1020,7 @@ GameObject:
   - 33: {fileID: 234802298}
   - 65: {fileID: 234802297}
   - 23: {fileID: 234802296}
+  - 54: {fileID: 234802300}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1086,6 +1083,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1980032859}
   m_RootOrder: 8
+--- !u!54 &234802300
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 234802295}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &278529057
 Prefab:
   m_ObjectHideFlags: 0
@@ -1317,6 +1329,7 @@ GameObject:
   - 33: {fileID: 345262952}
   - 65: {fileID: 345262951}
   - 23: {fileID: 345262950}
+  - 54: {fileID: 345262954}
   m_Layer: 0
   m_Name: Cube 3
   m_TagString: Untagged
@@ -1379,6 +1392,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1980032859}
   m_RootOrder: 5
+--- !u!54 &345262954
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 345262949}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &349753860
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,6 +1964,7 @@ GameObject:
   - 33: {fileID: 526203227}
   - 65: {fileID: 526203226}
   - 23: {fileID: 526203225}
+  - 54: {fileID: 526203229}
   m_Layer: 0
   m_Name: Cube 2
   m_TagString: Untagged
@@ -1998,6 +2027,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1980032859}
   m_RootOrder: 7
+--- !u!54 &526203229
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 526203224}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &549078953 stripped
 Transform:
   m_PrefabParentObject: {fileID: 496422, guid: 952b22f6234c405449196c0bd2d01682, type: 2}
@@ -2803,6 +2847,7 @@ GameObject:
   - 33: {fileID: 862814313}
   - 65: {fileID: 862814312}
   - 23: {fileID: 862814311}
+  - 54: {fileID: 862814315}
   m_Layer: 0
   m_Name: Cube 6
   m_TagString: Untagged
@@ -2865,6 +2910,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1980032859}
   m_RootOrder: 0
+--- !u!54 &862814315
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 862814310}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &878323365
 Prefab:
   m_ObjectHideFlags: 0
@@ -3302,6 +3362,7 @@ GameObject:
   - 33: {fileID: 1007121128}
   - 65: {fileID: 1007121127}
   - 23: {fileID: 1007121126}
+  - 54: {fileID: 1007121130}
   m_Layer: 0
   m_Name: Cube 7
   m_TagString: Untagged
@@ -3364,6 +3425,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1980032859}
   m_RootOrder: 4
+--- !u!54 &1007121130
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1007121125}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1024740636
 Prefab:
   m_ObjectHideFlags: 0
@@ -4289,6 +4365,7 @@ GameObject:
   - 33: {fileID: 1404516280}
   - 65: {fileID: 1404516279}
   - 23: {fileID: 1404516278}
+  - 54: {fileID: 1404516282}
   m_Layer: 0
   m_Name: Cube 5
   m_TagString: Untagged
@@ -4351,6 +4428,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1980032859}
   m_RootOrder: 2
+--- !u!54 &1404516282
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404516277}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1435605497
 Prefab:
   m_ObjectHideFlags: 0
@@ -4913,6 +5005,7 @@ GameObject:
   - 33: {fileID: 1617477019}
   - 65: {fileID: 1617477018}
   - 23: {fileID: 1617477017}
+  - 54: {fileID: 1617477021}
   m_Layer: 0
   m_Name: Cube 4
   m_TagString: Untagged
@@ -4975,6 +5068,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1980032859}
   m_RootOrder: 3
+--- !u!54 &1617477021
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1617477016}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1626326604
 Prefab:
   m_ObjectHideFlags: 0
@@ -5194,6 +5302,7 @@ GameObject:
   - 33: {fileID: 1704542777}
   - 65: {fileID: 1704542776}
   - 23: {fileID: 1704542775}
+  - 54: {fileID: 1704542779}
   m_Layer: 0
   m_Name: Cube 8
   m_TagString: Untagged
@@ -5256,6 +5365,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1980032859}
   m_RootOrder: 1
+--- !u!54 &1704542779
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1704542774}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &1717902772 stripped
 Transform:
   m_PrefabParentObject: {fileID: 496422, guid: 952b22f6234c405449196c0bd2d01682, type: 2}
@@ -5311,6 +5435,10 @@ Prefab:
       propertyPath: boxText
       value: 
       objectReference: {fileID: 150240344}
+    - target: {fileID: 11411876, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
+      propertyPath: boxCount
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
   m_IsPrefabParent: 0
@@ -5711,6 +5839,7 @@ GameObject:
   - 33: {fileID: 1817176508}
   - 65: {fileID: 1817176507}
   - 23: {fileID: 1817176506}
+  - 54: {fileID: 1817176510}
   m_Layer: 0
   m_Name: Cube 1
   m_TagString: Untagged
@@ -5773,6 +5902,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1980032859}
   m_RootOrder: 6
+--- !u!54 &1817176510
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1817176505}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1829114348
 Prefab:
   m_ObjectHideFlags: 0
@@ -6940,46 +7084,4 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 952b22f6234c405449196c0bd2d01682, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &2131412268
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 414798, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -7.40999985
-      objectReference: {fileID: 0}
-    - target: {fileID: 414798, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 414798, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -12.4099998
-      objectReference: {fileID: 0}
-    - target: {fileID: 414798, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 414798, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 414798, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 414798, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 414798, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6495c7cbb74dbb74bbc321236e4b5319, type: 2}
   m_IsPrefabParent: 0

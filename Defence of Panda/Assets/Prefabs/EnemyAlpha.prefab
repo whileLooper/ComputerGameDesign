@@ -2104,7 +2104,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .5
+  m_Radius: .400000006
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
@@ -2241,7 +2241,7 @@ NavMeshAgent:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112020}
   m_Enabled: 1
-  m_Radius: .49000001
+  m_Radius: .400000006
   m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
