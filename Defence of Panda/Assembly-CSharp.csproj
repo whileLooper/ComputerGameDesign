@@ -48,17 +48,17 @@
   <ItemGroup>
      <Compile Include="Assets\AI\Actions\EnemyDeath.cs" />
      <Compile Include="Assets\AI\Actions\returnDamage.cs" />
-     <Compile Include="Assets\BaseHealth.cs" />
-     <Compile Include="Assets\CameraShakeController.cs" />
-     <Compile Include="Assets\EnemyHealth.cs" />
-     <Compile Include="Assets\EnemyNavigation.cs" />
-     <Compile Include="Assets\EnemySpawn.cs" />
      <Compile Include="Assets\Mutant\Script\BotControlScript.cs" />
      <Compile Include="Assets\Mutant\Script\EnemeyControlScript.cs" />
      <Compile Include="Assets\Mutant\Script\EnemySprayController.cs" />
      <Compile Include="Assets\Scripts\AudioController.cs" />
+     <Compile Include="Assets\Scripts\BaseHealth.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\CameraShakeController.cs" />
      <Compile Include="Assets\Scripts\DoorSound.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyNavigation.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemySpawn.cs" />
      <Compile Include="Assets\Scripts\EnemyScript.cs" />
      <Compile Include="Assets\Scripts\Menu Scripts\PlayButton.cs" />
      <Compile Include="Assets\Scripts\Menu Scripts\RollCredits.cs" />
@@ -66,7 +66,7 @@
      <Compile Include="Assets\Scripts\ParticleEffect.cs" />
      <Compile Include="Assets\Scripts\PlaceTurret.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
-     <Compile Include="Assets\SprayController.cs" />
+     <Compile Include="Assets\WeaponSystem\SprayController.cs" />
      <Compile Include="Assets\WeaponSystem\cannonShoot.cs" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectSphereShader.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\VisualSensorLineShader.shader" />

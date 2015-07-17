@@ -440,7 +440,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 1.29999971, z: 0}
+  m_ConnectedAnchor: {x: 0, y: 1, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -455,8 +455,8 @@ HingeJoint:
   m_Limits:
     min: 0
     max: 0
-    bounciness: 0
-    bounceMinVelocity: .200000003
+    minBounce: 0
+    maxBounce: 0
     contactDistance: 0
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -474,6 +474,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBetweenBullets: .00999999978
+  laserRadius: 5
+  laserDamage: .200000003
 --- !u!120 &12004064
 LineRenderer:
   m_ObjectHideFlags: 1
