@@ -21,6 +21,7 @@ public class PlaceTurret : MonoBehaviour {
 	private GameObject hittedBox;
 
 	public int money = 100;
+	public Text moneyText;
 
 	// Use this for initialization
 	void Start () {
@@ -60,15 +61,15 @@ public class PlaceTurret : MonoBehaviour {
 							//instantiate turret as child object of the corresponding (ray hitted) box
 							turretClone = Instantiate(currentTurret, turretPos, new Quaternion()) as GameObject;
 							turretClone.transform.parent = hittedBox.transform;
+
+							money -= 50;
+
 						}
-						
 					}
 				}
-				money -= 50;
+
 			}
-
-
-
 		}
+		moneyText.text = "Money: " + money;
 	}
 }

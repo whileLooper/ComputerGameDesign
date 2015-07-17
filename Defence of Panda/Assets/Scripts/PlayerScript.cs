@@ -160,11 +160,11 @@ public class PlayerScript : MonoBehaviour {
 
 
 
-		if (Input.GetKeyDown ("space")) {
-			Debug.Log ("space key was pressed");
-			anim.SetBool("Jump", true);
-
-		}
+//		if (Input.GetKeyDown ("space")) {
+//			Debug.Log ("space key was pressed");
+//			anim.SetBool("Jump", true);
+//
+//		}
 
 		if (Input.GetKeyDown(KeyCode.F1)) {
 			Application.LoadLevel(0);
@@ -197,9 +197,18 @@ public class PlayerScript : MonoBehaviour {
 			if (Physics.Raycast(transform.position + new Vector3(0f, 0.5f, 0f), transform.forward, out hit, rayLength)) {
 				print (hit.transform.gameObject.tag);
 				if (hit.collider.gameObject.CompareTag("Boxes")) {
+
+					/*Money System*/
+					//return some money to  the player, if the box has turret on it.
+					if(hit.transform.childCount > 0){
+						GetComponent<PlaceTurret>().money += 40;
+					}
+
 					Destroy(hit.transform.gameObject);
 					boxCount++;
 					boxText.text = "Boxes: " + boxCount;
+
+
 				}
 			}
 			else {
@@ -210,6 +219,8 @@ public class PlayerScript : MonoBehaviour {
 					Instantiate(box, boxPos, new Quaternion());
 					boxCount--;
 					boxText.text = "Boxes: " + boxCount;
+
+
 				}
 			}
 		}
@@ -223,20 +234,20 @@ public class PlayerScript : MonoBehaviour {
 			}
 		}
 		
-		// if we are in the jumping state... 
-		else if (currentBaseState.nameHash == jumpState) {
-			Debug.Log("in jump state");
-			//  ..and not still in transition..
-			if (!anim.IsInTransition (0)) {
-				
-				if (useCurve)
-					// ..set the collider height to a float curve in the clip called ColliderHeight
-					col.height = anim.GetFloat ("ColliderHeight");
-				
-				// reset the Jump bool so we can jump again, and so that the state does not loop 
-				anim.SetBool ("Jump", false);
-			}
-		}
+//		// if we are in the jumping state... 
+//		else if (currentBaseState.nameHash == jumpState) {
+//			Debug.Log("in jump state");
+//			//  ..and not still in transition..
+//			if (!anim.IsInTransition (0)) {
+//				
+//				if (useCurve)
+//					// ..set the collider height to a float curve in the clip called ColliderHeight
+//					col.height = anim.GetFloat ("ColliderHeight");
+//				
+//				// reset the Jump bool so we can jump again, and so that the state does not loop 
+//				anim.SetBool ("Jump", false);
+//			}
+//		}
 
 
 		// Character drops dead on G key

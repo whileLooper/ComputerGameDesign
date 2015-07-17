@@ -15,13 +15,16 @@ public class EnemeyControlScript : MonoBehaviour {
 	float attackRate = 2.5f;
 	float nextAttack = 2.5f;
 
+	public int enemyWorthEach = 10;
 	GameObject shackBase;
+	GameObject myplayer;
 	 
 	// Use this for initialization
 	void Start () {
 		source = gameObject.AddComponent<AudioSource> ();
 		anim = GetComponent<Animator> ();
 		source.clip = clips[0];
+		myplayer = GameObject.FindGameObjectWithTag("Player");
 
 		shackBase = GameObject.FindGameObjectWithTag("Base");
 		 
@@ -55,6 +58,9 @@ public class EnemeyControlScript : MonoBehaviour {
 			source.PlayOneShot(clips[1], 0.2f);
 			new WaitForSeconds(2.0f);
 			StartCoroutine(DestroyEnemy());
+
+
+
 		}
 	}
 
@@ -72,6 +78,11 @@ public class EnemeyControlScript : MonoBehaviour {
 	IEnumerator DestroyEnemy() {
 		yield return new WaitForSeconds (3.0f);
 		Destroy (gameObject);
+
+		//add money when enemy died
+		if(myplayer != null){
+			myplayer.GetComponent<PlaceTurret>().money += enemyWorthEach;
+		}
 	}
 
 
