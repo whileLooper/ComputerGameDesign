@@ -60,9 +60,6 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\DoorSound.cs" />
      <Compile Include="Assets\Scripts\EnemyScript.cs" />
-     <Compile Include="Assets\Scripts\Menu Scripts\PlayButton.cs" />
-     <Compile Include="Assets\Scripts\Menu Scripts\RollCredits.cs" />
-     <Compile Include="Assets\Scripts\Menu Scripts\ScreenManager.cs" />
      <Compile Include="Assets\Scripts\ParticleEffect.cs" />
      <Compile Include="Assets\Scripts\PlaceTurret.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />

@@ -57,7 +57,7 @@ public class PlayerScript : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 		col = GetComponent<CapsuleCollider> ();
 		playerPos = transform.position;
-		oldMove = true;
+		oldMove = false;
 		body = GetComponent<Rigidbody> ();
 	}
 
@@ -80,12 +80,7 @@ public class PlayerScript : MonoBehaviour {
 			float v = Input.GetAxis ("Vertical");				// setup v variables as our vertical input axis
 			anim.SetFloat ("Speed", v);							// set our animator's float parameter 'Speed' equal to the vertical input axis				
 			anim.SetFloat ("Direction", h);
-			if (v != 0 || h != 0) {
-				anim.SetBool("Moving", true);
-			}
-			else {
-				anim.SetBool("Moving", false);
-			}
+
 			if (h != 0f || v != 0f) {
 				targetDirection = new Vector3 (h, 0f, v);
 				Quaternion targetRotation = Quaternion.LookRotation (targetDirection, Vector3.up);
