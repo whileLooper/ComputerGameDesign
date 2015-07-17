@@ -2579,7 +2579,7 @@ Animator:
   m_GameObject: {fileID: 148728}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 3d328c9f601b6d1418f04e5a06881ae3, type: 3}
-  m_Controller: {fileID: 9100000, guid: 565339ec46bf5054cac1fc8c40d1adaf, type: 2}
+  m_Controller: {fileID: 9100000, guid: 30c77a0b6a03ce44c8b3a3bb04451fd5, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
@@ -2642,9 +2642,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turret1: {fileID: 182914, guid: 92942aae13d6345d69c87173e957fb85, type: 2}
+  turretSprite1: {fileID: 0}
   turret2: {fileID: 178122, guid: 4d70eee0be6b4440384946ebc040a521, type: 2}
+  turretSprite2: {fileID: 0}
   turret3: {fileID: 116554, guid: 77bd6f78581c848868e3005f99b2484b, type: 2}
+  turretSprite3: {fileID: 0}
+  image: {fileID: 0}
   rayLength: 1.10000002
+  money: 100
 --- !u!114 &11493888
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4374,7 +4379,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 565339ec46bf5054cac1fc8c40d1adaf, type: 2}
+      objectReference: {fileID: 9100000, guid: 30c77a0b6a03ce44c8b3a3bb04451fd5, type: 2}
     - target: {fileID: 0}
       propertyPath: m_Mass
       value: 50
