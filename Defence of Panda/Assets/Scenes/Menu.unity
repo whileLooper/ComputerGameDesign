@@ -205,6 +205,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &169575254
 Transform:
   m_ObjectHideFlags: 0
@@ -842,7 +843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
-    m_SelectOnUp: {fileID: 0}
+    m_SelectOnUp: {fileID: 1425780169}
     m_SelectOnDown: {fileID: 1352167341}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
@@ -1161,10 +1162,14 @@ MonoBehaviour:
 
     -Enemy AI
 
+    -Enemy Animation
+
 
     Shen Yang
 
     -Enemy AI
+
+    -Player Animation
 
 
     Yuanzheng Zhu
@@ -1195,7 +1200,10 @@ MonoBehaviour:
 
     -Mixamo Models and Animations
 
-    -CRYSTAL Font'
+    -CRYSTAL Font
+
+
+    And thanks to all those who helped on contributing feedbacks/ideas Y_x_Y'
 --- !u!222 &1041419778
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1701,7 +1709,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_SelectOnUp: {fileID: 1352167341}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnDown: {fileID: 791935246}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -2345,6 +2353,7 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
+  m_RepeatDelay: .5
   m_AllowActivationOnMobileDevice: 0
 --- !u!114 &2083748180
 MonoBehaviour:
