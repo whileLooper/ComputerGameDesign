@@ -166,17 +166,8 @@ public class PlayerScript : MonoBehaviour {
 //
 //		}
 
-		if (Input.GetKeyDown(KeyCode.F1)) {
+		if (Input.GetKeyDown(KeyCode.Escape)) {
 			Application.LoadLevel(0);
-		}
-		if (Input.GetKeyDown(KeyCode.F2)) {
-			Application.LoadLevel(1);
-		}
-		if (Input.GetKeyDown(KeyCode.F3)) {
-			Application.LoadLevel(2);
-		}
-		if (Input.GetKeyDown(KeyCode.F4)) {
-			Application.LoadLevel(3);
 		}
 
 		// Check for collision with the block and press e to do animation when collided.
@@ -223,6 +214,12 @@ public class PlayerScript : MonoBehaviour {
 
 				}
 			}
+		}
+
+		if (Input.GetKeyDown ("b")) {
+			boxCount++;
+			boxText.text = "Boxes: " + boxCount;
+			GetComponent<PlaceTurret>().money -= 100;
 		}
 
 

@@ -638,7 +638,9 @@ MonoBehaviour:
 
     Place Turret (on box): T
 
-    Change Turret: 1 - 3'
+    Change Turret: 1 - 3
+
+    Reset Game: ESC'
 --- !u!222 &560028025
 CanvasRenderer:
   m_ObjectHideFlags: 0

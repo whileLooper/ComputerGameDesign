@@ -5,6 +5,7 @@ public class EnemySpawn : MonoBehaviour {
 	
 	public GameObject enemy;
 	public float spawnTime = 5f;
+	public float beginTime = 15f;
 
 
 	void Start ()
@@ -19,8 +20,10 @@ public class EnemySpawn : MonoBehaviour {
 //		{
 //			return;
 //		}
-
-		Instantiate (enemy, this.transform.position, this.transform.rotation);
+		if (Time.time >= beginTime) {
+			print ("This should spawn");
+			Instantiate (enemy, this.transform.position, this.transform.rotation);
+		}
 	}
 
 

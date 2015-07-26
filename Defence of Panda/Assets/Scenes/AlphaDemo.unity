@@ -384,11 +384,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22402570, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22402570, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22468350, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
       propertyPath: m_AnchoredPosition.y

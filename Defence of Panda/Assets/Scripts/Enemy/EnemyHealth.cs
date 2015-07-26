@@ -32,9 +32,7 @@ public class EnemyHealth : MonoBehaviour {
 		healthBar.transform.eulerAngles = new Vector3(90f, 90f, 0);
 		healthBarBase.transform.eulerAngles = new Vector3(90f, 90f, 0);
 
-
-
-		Debug.Log(enemyHealth/startingHealth);
+		
 
 		//shrink health bar length based on currentHealth/startingHealth ratio
 		healthBar.transform.localScale = new Vector3(0.1f,0.5f * Mathf.Clamp(enemyHealth/startingHealth, 0, 1.0f),0.1f);
@@ -54,7 +52,6 @@ public class EnemyHealth : MonoBehaviour {
 
 	void OnParticleCollision()
 	{
-		Debug.Log("My Enemy's been hit by particles.");
 		enemyHealth -= damageEachParticleAttack;
 
 	}
