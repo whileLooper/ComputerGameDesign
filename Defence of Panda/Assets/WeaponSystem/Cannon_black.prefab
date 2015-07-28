@@ -475,7 +475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenBullets: .00999999978
   laserRadius: 5
-  laserDamage: .200000003
+  laserDamage: .5
 --- !u!120 &12004064
 LineRenderer:
   m_ObjectHideFlags: 1

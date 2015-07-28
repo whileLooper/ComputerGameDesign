@@ -455,6 +455,11 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 496422, guid: 952b22f6234c405449196c0bd2d01682, type: 2}
   m_PrefabInternal: {fileID: 47190048}
+--- !u!224 &60016027 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 22492278, guid: 3ab82c06cffc9874bb05658516c2cfbe,
+    type: 2}
+  m_PrefabInternal: {fileID: 41369027}
 --- !u!4 &70118683 stripped
 Transform:
   m_PrefabParentObject: {fileID: 496422, guid: 952b22f6234c405449196c0bd2d01682, type: 2}
@@ -4126,6 +4131,72 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 496422, guid: 952b22f6234c405449196c0bd2d01682, type: 2}
   m_PrefabInternal: {fileID: 1317642950}
+--- !u!1 &1333022095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1333022096}
+  - 222: {fileID: 1333022098}
+  - 114: {fileID: 1333022097}
+  m_Layer: 5
+  m_Name: WaveText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1333022096
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1333022095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 60016027}
+  m_RootOrder: 5
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 10, y: -10}
+  m_SizeDelta: {x: 200, y: 60}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &1333022097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1333022095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1333022098
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1333022095}
 --- !u!1001 &1356430552
 Prefab:
   m_ObjectHideFlags: 0
@@ -5174,6 +5245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2487312986b364b2f94c1ce555b12ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waveText: {fileID: 1333022097}
   enemyAlpha: {fileID: 112020, guid: 1c4704734d5724176b650fcaeccbc3f6, type: 2}
   enemyBeta: {fileID: 112020, guid: 62554155934524fe9880511c8d94e746, type: 2}
   spawnPoint1: {fileID: 769461399}

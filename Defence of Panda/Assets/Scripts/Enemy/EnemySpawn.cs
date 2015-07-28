@@ -1,8 +1,12 @@
-﻿using UnityEngine;
+﻿//yzhu319 07/27/2015
+using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class EnemySpawn : MonoBehaviour {
-	
+
+	public Text waveText;
+
 	public GameObject enemyAlpha;
 	public GameObject enemyBeta;
 
@@ -12,30 +16,51 @@ public class EnemySpawn : MonoBehaviour {
 	//public float spawnTime = 5f;
 	public float beginWaitTime = 10f;
 	public float waveWaitTime12 = 20f;
-	public float waveWaitTime23 = 10f;
+	public float waveWaitTime23 = 40f;
 
-	public float enemyInterval1 = 8f;
+	public float enemyInterval1 = 10f;
 	public float enemyInterval2 = 6f;
-	public float enemyInterval3 = 4f;
+	public float enemyInterval3 = 10f;
+
+
+	Color waveTextColor; 
+	float textAlpha;
 
 	void Start(){
+		if (waveText == null){
+			Debug.LogError("Cannot find wave Text");
+		}
+		waveTextColor = waveText.color;
+		textAlpha = (float)(waveTextColor.a);
 		StartCoroutine(SpawnEnemies ());
 	}
 
 	IEnumerator SpawnEnemies ()
 	{
+		waveText.text = "Prepare your defence ...";
+
 		yield return new WaitForSeconds(beginWaitTime);
 
+		FadeOut ();
 
-		//InvokeRepeating ("Spawn", spawnTime, spawnTime);
 		Debug.Log("Wave 1 begins" + Time.time);
+		waveText.text = "<<< Wave 1 coming ...";
+
+		FadeIn ();
+
+
 		for(int i = 0; i < 5; i++){
 			Instantiate (enemyAlpha, spawnPoint1.transform.position, spawnPoint1.transform.rotation);
 			yield return new WaitForSeconds(enemyInterval1);
 		}
 		Debug.Log("Wave 1 ends" + Time.time);
+		FadeOut ();
 
 		yield return new WaitForSeconds(waveWaitTime12);
+
+		waveText.text = "Wave 2 coming ... >>>";
+
+		FadeIn ();
 
 
 		Debug.Log("Wave 2 begins" + Time.time);
@@ -44,8 +69,14 @@ public class EnemySpawn : MonoBehaviour {
 			yield return new WaitForSeconds(enemyInterval2);
 		}
 		Debug.Log("Wave 2 ends" + Time.time);
+		FadeOut ();
 
 		yield return new WaitForSeconds(waveWaitTime23);
+
+		waveText.text = "<<< Final wave coming ... >>>";
+
+		FadeIn ();
+
 
 		Debug.Log("Wave 3 begins" + Time.time);
 		for(int i = 0; i < 10; i++){
@@ -54,58 +85,21 @@ public class EnemySpawn : MonoBehaviour {
 			yield return new WaitForSeconds(enemyInterval3);
 		}
 		Debug.Log("Wave 3 ends" + Time.time);
+		FadeOut ();
+
 
 	}
-	
-	
-//	void SpawnWave1 ()
-//	{
-//		for(int i = 0; i < 5; i++){
-//			Instantiate (enemy, this.transform.position, this.transform.rotation);
-//			StartCoroutine (WaitBtwEnemy1 ());
-//		}
-//	}
-//
-//
-//	void SpawnWave2 ()
-//	{
-//		for(int i = 0; i < 10; i++){
-//			Instantiate (enemy, this.transform.position, this.transform.rotation);
-//			StartCoroutine (WaitBtwEnemy2 ());
-//		}
-//	}
-//
-//	void SpawnWave3 ()
-//	{
-//		for(int i = 0; i < 15; i++){
-//			Instantiate (enemy, this.transform.position, this.transform.rotation);
-//			StartCoroutine (WaitBtwEnemy3 ());
-//		}
-//	}
 
-//
-//	IEnumerator WaitAtBeginning() {
-//		yield return new WaitForSeconds(beginWaitTime);
-//	}
-//
-//	IEnumerator WaitBtwWave12 (){
-//		yield return new WaitForSeconds(waveWaitTime12);
-//	}
-//
-//	IEnumerator WaitBtwWave23 (){
-//		yield return new WaitForSeconds(waveWaitTime23);
-//	}
-//
-//	IEnumerator WaitBtwEnemy1 (){
-//		yield return new WaitForSeconds(enemyInterval1);
-//	}
-//
-//	IEnumerator WaitBtwEnemy2 (){
-//		yield return new WaitForSeconds(enemyInterval2);
-//	}
-//
-//	IEnumerator WaitBtwEnemy3 (){
-//		yield return new WaitForSeconds(enemyInterval3);
-//	}
 
+	void FadeIn(){
+		while(textAlpha < 1){
+			textAlpha += 0.1f * Time.deltaTime * 2;
+		}
+	}
+
+	void FadeOut(){
+		while(textAlpha > 0){
+			textAlpha -= 0.1f * Time.deltaTime * 2;
+		}
+	}
 }

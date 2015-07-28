@@ -2064,7 +2064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 100
   enemyHealth: 100
-  damageEachParticleAttack: 1
+  damageEachParticleAttack: .5
   healthBar: {fileID: 179694}
   healthBarBase: {fileID: 177974}
 --- !u!114 &11473664
@@ -2082,7 +2082,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a52a63f9a686b4379bc2d84769f30ea5, type: 3}
   - {fileID: 8300000, guid: 0a0bc14bfaaa349f5a189fe20e7ee4b9, type: 3}
   - {fileID: 8300000, guid: 27c00f67578be443ca1a05f98e2dbc34, type: 3}
-  enemyWorthEach: 5
+  enemyWorthEach: 10
 --- !u!135 &13529088
 SphereCollider:
   m_ObjectHideFlags: 1

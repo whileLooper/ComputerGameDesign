@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482868f95e6304cc4b4dd9a0caf9a127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprayerDamage: .0500000007
+  sprayerDamage: .100000001
   sprayRadius: 5
 --- !u!136 &13656574
 CapsuleCollider:
