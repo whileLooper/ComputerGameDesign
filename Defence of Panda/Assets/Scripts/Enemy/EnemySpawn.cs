@@ -13,6 +13,9 @@ public class EnemySpawn : MonoBehaviour {
 	public GameObject spawnPoint1;
 	public GameObject spawnPoint2;
 
+	public BaseHealth baseHealth;
+	public Animator anim;
+
 	//public float spawnTime = 5f;
 	public float beginWaitTime = 10f;
 	public float waveWaitTime12 = 20f;
@@ -87,19 +90,23 @@ public class EnemySpawn : MonoBehaviour {
 		Debug.Log("Wave 3 ends" + Time.time);
 		FadeOut ();
 
-
 	}
 
+	void checkBase() {
+		if (baseHealth.baseHealth > 0) {
+			anim.SetTrigger("Win");
+		}
+	}
 
 	void FadeIn(){
-		while(textAlpha < 1){
-			textAlpha += 0.1f * Time.deltaTime * 2;
+		while(textAlpha <= 1){
+			textAlpha += .1f * Time.deltaTime * 2;
 		}
 	}
 
 	void FadeOut(){
-		while(textAlpha > 0){
-			textAlpha -= 0.1f * Time.deltaTime * 2;
+		while(textAlpha >= 0){
+			textAlpha -= .1f * Time.deltaTime * 2;
 		}
 	}
 }

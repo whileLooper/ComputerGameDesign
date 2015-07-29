@@ -7,6 +7,7 @@ public class BaseHealth : MonoBehaviour {
 	public float startingHealth = 100.0f;
 	public float baseHealth;
 
+	public Animator anim;
 	public Slider baseHealthSlider;
 
 	//public float damageEachEnemyAttack = 2.0f;
@@ -19,12 +20,15 @@ public class BaseHealth : MonoBehaviour {
 	void Update () {
 		baseHealthSlider.value = baseHealth;
 
-		if (baseHealth < 0){
+		if (baseHealth <= 0){
 			//Game Over scripts here
 			Debug.Log ("GameOver\n");
-			Application.LoadLevel (Application.loadedLevel);
-
+			anim.SetTrigger("GameOver");
+			//Application.LoadLevel (Application.loadedLevel);
 		}
+		/*if (Input.GetKey (KeyCode.K)) {
+			anim.SetTrigger("GameOver");
+		}*/
 	}
 
 	void OnTriggerEnter(Collider other) {

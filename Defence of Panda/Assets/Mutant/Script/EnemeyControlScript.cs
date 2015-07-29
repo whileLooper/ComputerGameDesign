@@ -81,7 +81,7 @@ public class EnemeyControlScript : MonoBehaviour {
 
 		//add money when enemy died
 		if(myplayer != null){
-			myplayer.GetComponent<PlaceTurret>().money += enemyWorthEach;
+			PlaceTurret.money += enemyWorthEach;
 		}
 	}
 

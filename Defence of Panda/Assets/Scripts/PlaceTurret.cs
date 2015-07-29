@@ -20,7 +20,7 @@ public class PlaceTurret : MonoBehaviour {
 	private GameObject turretClone;
 	private GameObject hittedBox;
 
-	public int money = 100;
+	public static int money = 100;
 	public Text moneyText;
 
 	// Use this for initialization

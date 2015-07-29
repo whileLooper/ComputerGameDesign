@@ -26,7 +26,7 @@ public class PlayerScript : MonoBehaviour {
 	private Rigidbody body;
 
 	//Box moving variables
-	public int boxCount = 10;
+	public static int boxCount = 10;
 	public float rayLength = 1.1f;
 	public GameObject box;
 	public Text boxText;
@@ -59,6 +59,7 @@ public class PlayerScript : MonoBehaviour {
 		playerPos = transform.position;
 		oldMove = true;
 		body = GetComponent<Rigidbody> ();
+		boxText.text = "Boxes: " + boxCount;
 	}
 
 	void Update () {
@@ -192,7 +193,7 @@ public class PlayerScript : MonoBehaviour {
 					/*Money System*/
 					//return some money to  the player, if the box has turret on it.
 					if(hit.transform.childCount > 0){
-						GetComponent<PlaceTurret>().money += 40;
+						PlaceTurret.money += 40;
 					}
 
 					Destroy(hit.transform.gameObject);
@@ -219,7 +220,7 @@ public class PlayerScript : MonoBehaviour {
 		if (Input.GetKeyDown ("b")) {
 			boxCount++;
 			boxText.text = "Boxes: " + boxCount;
-			GetComponent<PlaceTurret>().money -= 100;
+			PlaceTurret.money -= 100;
 		}
 
 
