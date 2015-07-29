@@ -248,15 +248,15 @@ public class PlayerScript : MonoBehaviour {
 //		}
 
 
-		// Character drops dead on G key
-		if (Input.GetKeyDown (KeyCode.G)) {
-			//Instantiate(ragdoll, deathPos.transform.position, deathPos.transform.rotation);
-			GameObject rag = GameObject.Instantiate(ragdoll, deathPos.transform.position, 
-			                                        deathPos.transform.rotation) as GameObject;
-			CopyTransformRecurse(deathPos, rag.transform);
-
-			gameObject.SetActive(false);
-		}
+//		// Character drops dead on G key
+//		if (Input.GetKeyDown (KeyCode.G)) {
+//			//Instantiate(ragdoll, deathPos.transform.position, deathPos.transform.rotation);
+//			GameObject rag = GameObject.Instantiate(ragdoll, deathPos.transform.position, 
+//			                                        deathPos.transform.rotation) as GameObject;
+//			CopyTransformRecurse(deathPos, rag.transform);
+//
+//			gameObject.SetActive(false);
+//		}
 
 
 	}
