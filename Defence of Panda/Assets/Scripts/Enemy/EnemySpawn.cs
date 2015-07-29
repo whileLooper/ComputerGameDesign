@@ -89,10 +89,18 @@ public class EnemySpawn : MonoBehaviour {
 		}
 		Debug.Log("Wave 3 ends" + Time.time);
 		FadeOut ();
+		//yield return new WaitForSeconds (10);
+		int enemies = GameObject.FindGameObjectsWithTag ("Enemy").Length;
+		while (enemies > 0) {
+			yield return new WaitForSeconds(3);
+			enemies = GameObject.FindGameObjectsWithTag ("Enemy").Length;
+		}
+		checkBase ();
 
 	}
 
 	void checkBase() {
+
 		if (baseHealth.baseHealth > 0) {
 			anim.SetTrigger("Win");
 		}

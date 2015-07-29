@@ -6153,6 +6153,10 @@ Prefab:
       propertyPath: boxCount
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11411876, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
+      propertyPath: winAnim
+      value: 
+      objectReference: {fileID: 1925569065}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8b37eade49ab24d2a8a1138552227cf3, type: 2}
   m_IsPrefabParent: 0
@@ -7178,7 +7182,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1925569061}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: e7be0ad553d280b4fad96cc40a33c7e1, type: 2}
   m_CullingMode: 0

@@ -29,6 +29,7 @@ public class BaseHealth : MonoBehaviour {
 		/*if (Input.GetKey (KeyCode.K)) {
 			anim.SetTrigger("GameOver");
 		}*/
+
 	}
 
 	void OnTriggerEnter(Collider other) {
