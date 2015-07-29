@@ -5944,8 +5944,8 @@ MonoBehaviour:
   spawnPoint2: {fileID: 932058029}
   baseHealth: {fileID: 1184484001}
   anim: {fileID: 1925569065}
-  beginWaitTime: 10
-  waveWaitTime12: 20
+  beginWaitTime: 8
+  waveWaitTime12: 10
   waveWaitTime23: 10
   enemyInterval1: 8
   enemyInterval2: 6
