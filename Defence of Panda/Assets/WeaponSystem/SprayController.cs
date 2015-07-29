@@ -9,23 +9,46 @@ public class SprayController : MonoBehaviour {
 	public float sprayerDamage = 0.1f;
 	public float sprayRadius = 5.0f;
 	ParticleSystem iceSpray;
-
+	
 	Vector3 sprayStartPos;
 	Vector3 sprayTargetPos;
 	Vector3 sprayDirection;
 	Quaternion sprayArmRotation;
 
+	float timer;
+	public float timeBetweenAudios = 1.0f;
+	AudioSource weaponAudio; 
+	bool isAttacking;
+
+
 	void Start(){
 		iceSpray = GetComponentInChildren<ParticleSystem>();
+		weaponAudio = GetComponent<AudioSource>();
 		enemyMask = LayerMask.GetMask("EnemyLayer");
+		isAttacking = false;
+
 	}
 
 	void Update () {
 		SprayIce();
+		timer += Time.deltaTime;
+		if(timer >= timeBetweenAudios){
+			//sound effect when ATTACKing
+			if(isAttacking){
+				PlaySprayAudio();
+			}
+		}
+	}
+
+
+	void PlaySprayAudio(){
+		timer = 0.0f;
+		weaponAudio.Play ();
 	}
 
 	void SprayIce(){
 		enemyColliders = Physics.OverlapSphere(this.transform.position, sprayRadius, enemyMask);
+		isAttacking = false;
 
 		//if we have at least one enemy within attacking range
 		if(enemyColliders.Length != 0){
@@ -41,11 +64,9 @@ public class SprayController : MonoBehaviour {
 			enemyColliders[0].gameObject.GetComponent<EnemyHealth>().enemyHealth -= sprayerDamage;
 			//decrease speed;
 			enemyColliders[0].gameObject.GetComponent<NavMeshAgent>().speed = 0.4f;
+
+			isAttacking = true;
 		}
 
-//		//within a certain range, attack the enemy
-//		if(sprayDirection.magnitude < sprayRange){ 
-//			iceSpray.Play ();
-//		}
 	}
 }

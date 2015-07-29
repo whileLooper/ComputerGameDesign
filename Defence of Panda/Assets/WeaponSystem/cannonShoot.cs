@@ -3,7 +3,7 @@ using System.Collections;
 
 public class cannonShoot : MonoBehaviour {
 
-	public float timeBetweenBullets = 1.5f;
+	public float timeBetweenAudios = 1.0f;
 	public float laserRadius = 5.0f;
 	public float laserDamage = 0.3f;
 	Collider[] enemyColliders;
@@ -18,6 +18,9 @@ public class cannonShoot : MonoBehaviour {
 
 	ParticleSystem hitParticle;
 
+	AudioSource weaponAudio; 
+	bool isAttacking;
+
 	// Use this for initialization
 	void Start () {
 
@@ -26,15 +29,26 @@ public class cannonShoot : MonoBehaviour {
 		laser = GetComponent<LineRenderer>();
 		laser.enabled = false;
 		hitParticle = GetComponentInChildren<ParticleSystem>();
+		weaponAudio = GetComponent<AudioSource>();
+		isAttacking = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 		timer += Time.deltaTime;
-		if(timer >= timeBetweenBullets){
-			ShootLaser ();
+		if(timer >= timeBetweenAudios){
+			//sound effect when ATTACKing
+			if(isAttacking){
+				PlayLaserAudio();
+			}
 		}
+		ShootLaser ();
+	}
+
+	void PlayLaserAudio(){
+		timer = 0.0f;
+		weaponAudio.Play ();
 	}
 
 	void ShootLaser(){
@@ -42,8 +56,8 @@ public class cannonShoot : MonoBehaviour {
 		enemyColliders = Physics.OverlapSphere(this.transform.position, laserRadius, enemyMask);
 
 
-		timer = 0.0f;
 		laser.enabled = false;
+		isAttacking = false;
 		hitParticle.Stop ();
 
 		//within a certain range, attack the enemy
@@ -64,14 +78,18 @@ public class cannonShoot : MonoBehaviour {
 			hitParticle.transform.position =  laserTargetPos;
 
 			laser.enabled = true;
+			isAttacking = true;
 			hitParticle.Play ();
+
+
 
 			/*Health System*/
 			enemyColliders[0].gameObject.GetComponent<EnemyHealth>().enemyHealth -= laserDamage;
 
+
+
 		}
-//		if(laserDirection.magnitude < 5.0f){ 
-//		}
+
 
 	}
 }
