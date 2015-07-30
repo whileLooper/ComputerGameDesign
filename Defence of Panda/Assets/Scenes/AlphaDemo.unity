@@ -392,11 +392,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22468350, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -423
+      value: -524
       objectReference: {fileID: 0}
     - target: {fileID: 22468350, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 19
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 22435686, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
       propertyPath: m_RootOrder
@@ -420,7 +420,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22435686, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 22435686, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
       propertyPath: m_SizeDelta.y
@@ -428,7 +428,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22435686, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 19
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490724, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437884, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437884, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490724, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ab82c06cffc9874bb05658516c2cfbe, type: 2}
@@ -4315,7 +4331,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4384,7 +4400,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .5
   m_Pitch: 1
   Loop: 0
   Mute: 0
