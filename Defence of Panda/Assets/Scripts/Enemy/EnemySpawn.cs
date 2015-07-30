@@ -52,6 +52,7 @@ public class EnemySpawn : MonoBehaviour {
 		FadeOut ();
 		source.clip = clips [1];
 		source.Play ();
+		source.loop = true;
 		Debug.Log("Wave 1 begins" + Time.time);
 		waveText.text = "<<< Wave 1 coming ...";
 
