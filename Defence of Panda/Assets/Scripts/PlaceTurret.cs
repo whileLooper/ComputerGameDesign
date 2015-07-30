@@ -23,10 +23,18 @@ public class PlaceTurret : MonoBehaviour {
 	public static int money = 100;
 	public Text moneyText;
 
+
+	AudioSource source;
+	public AudioClip[] clips;
+	private AudioSource[] audioArray;
+
+
 	// Use this for initialization
 	void Start () {
 		currentTurret = turret1;
 		image.sprite = turretSprite1;
+		audioArray = GetComponents<AudioSource>();
+		source = audioArray [4];
 	}
 	
 	// Update is called once per frame
@@ -34,14 +42,20 @@ public class PlaceTurret : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Alpha1)) {
 			currentTurret = turret1;
 			image.sprite = turretSprite1;
+			source.clip = clips[0];
+			source.Play();
 		}
 		if (Input.GetKeyDown (KeyCode.Alpha2)) {
 			currentTurret = turret2;
 			image.sprite = turretSprite2;
+			source.clip = clips[0];
+			source.Play();
 		}
 		if (Input.GetKeyDown (KeyCode.Alpha3)) {
 			currentTurret = turret3;
 			image.sprite = turretSprite3;
+			source.clip = clips[0];
+			source.Play();
 		}
 
 		if (Input.GetKeyDown ("t")) {
@@ -63,11 +77,19 @@ public class PlaceTurret : MonoBehaviour {
 							turretClone.transform.parent = hittedBox.transform;
 
 							money -= 50;
+							source.clip = clips[1];
+							source.Play();
 
 						}
+
 					}
+
 				}
 
+			}
+			else {
+				source.clip = clips[2];
+				source.Play ();
 			}
 		}
 		moneyText.text = "Money: " + money;

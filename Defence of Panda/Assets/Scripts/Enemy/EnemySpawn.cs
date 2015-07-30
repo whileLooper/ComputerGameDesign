@@ -25,7 +25,9 @@ public class EnemySpawn : MonoBehaviour {
 	public float enemyInterval2 = 6f;
 	public float enemyInterval3 = 10f;
 
+	public AudioClip[] clips;
 
+	AudioSource source;
 	Color waveTextColor; 
 	float textAlpha;
 
@@ -35,6 +37,9 @@ public class EnemySpawn : MonoBehaviour {
 		}
 		waveTextColor = waveText.color;
 		textAlpha = (float)(waveTextColor.a);
+		source = GetComponent<AudioSource> ();
+		source.clip = clips [0];
+		source.Play ();
 		StartCoroutine(SpawnEnemies ());
 	}
 
@@ -45,7 +50,8 @@ public class EnemySpawn : MonoBehaviour {
 		yield return new WaitForSeconds(beginWaitTime);
 
 		FadeOut ();
-
+		source.clip = clips [1];
+		source.Play ();
 		Debug.Log("Wave 1 begins" + Time.time);
 		waveText.text = "<<< Wave 1 coming ...";
 
