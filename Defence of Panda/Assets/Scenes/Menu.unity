@@ -271,6 +271,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &169575254
 Transform:
   m_ObjectHideFlags: 0
@@ -3134,7 +3135,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -92.25, y: -134}
+  m_AnchoredPosition: {x: -180, y: -123}
   m_SizeDelta: {x: 260, y: 71}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1996080951
@@ -3215,6 +3216,7 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
+  m_RepeatDelay: .5
   m_AllowActivationOnMobileDevice: 0
 --- !u!114 &2083748180
 MonoBehaviour:
