@@ -14,6 +14,7 @@ public class PlayerScript : MonoBehaviour {
 	private Vector3 playerPos;
 
 	private static float healthPoint = 100;
+	private AudioSource[] audioArray;
 
 	Vector3 input;
 	Animator anim;
@@ -46,7 +47,8 @@ public class PlayerScript : MonoBehaviour {
 	bool running = false;
 	bool boxInRange = false;
 
-
+	AudioSource source;
+	public AudioClip[] clips;
 	static int idleState = Animator.StringToHash("Base Layer.Idle");
 	static int jumpState = Animator.StringToHash("Base Layer.Jump");
 
@@ -60,6 +62,8 @@ public class PlayerScript : MonoBehaviour {
 		oldMove = true;
 		body = GetComponent<Rigidbody> ();
 		boxText.text = "Boxes: " + boxCount;
+		audioArray = GetComponents<AudioSource>();
+		source = audioArray [3];
 	}
 
 	void Update () {
@@ -199,6 +203,8 @@ public class PlayerScript : MonoBehaviour {
 					Destroy(hit.transform.gameObject);
 					boxCount++;
 					boxText.text = "Boxes: " + boxCount;
+					source.clip = clips[2];
+					source.Play ();
 
 
 				}
@@ -211,16 +217,26 @@ public class PlayerScript : MonoBehaviour {
 					Instantiate(box, boxPos, new Quaternion());
 					boxCount--;
 					boxText.text = "Boxes: " + boxCount;
+					source.clip = clips[1];
+					source.Play ();
 
 
+				}
+				else {
+					source.clip = clips[3];
+					source.Play ();
 				}
 			}
 		}
 
 		if (Input.GetKeyDown ("b")) {
-			boxCount++;
-			boxText.text = "Boxes: " + boxCount;
-			PlaceTurret.money -= 100;
+			if (PlaceTurret.money >= 100) {
+				boxCount++;
+				boxText.text = "Boxes: " + boxCount;
+				PlaceTurret.money -= 100;
+				source.clip = clips[0];
+				source.Play ();
+			}
 		}
 
 
